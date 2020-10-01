@@ -30,6 +30,11 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+.wrapper {
+	max-width: 100vw;
+	overflow: hidden;
+}
+
 input[placeholder] {
 	text-overflow: ellipsis;
 }
@@ -61,6 +66,7 @@ svg {
 @import "header";
 
 @import "full";
+@import "aqua";
 
 // Footer
 @import "footer";

@@ -7,3 +7,11 @@
 	@include adaptive-font(70, 40);
 	line-height: 121%;
 }
+
+.btn {
+	border-radius: 50px;
+	padding: 20px 35px;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: lowercase;
+}
