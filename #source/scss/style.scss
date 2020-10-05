@@ -59,6 +59,10 @@ svg {
 	}
 }
 
+.main-content {
+	background: url("../../images/system_img/bg-wrap.jpg") center / cover no-repeat;
+}
+
 // Подключение общих блоков
 @import "blocks";
 
@@ -68,6 +72,8 @@ svg {
 @import "full";
 @import "aqua";
 @import "services";
+
+@import "shares";
 
 // Footer
 @import "footer";

@@ -1,13 +1,35 @@
 .services {
+	position: relative;
 	&__wrapper {
 		display: flex;
 		overflow-x: auto;
-
-		// @media (max-width: 1400px) {
-		// 	flex-wrap: wrap;
-		// }
 	}
 
+	&__leaf {
+		position: absolute;
+		top: -200px;
+		left: -45px;
+		z-index: 5;
+		width: 25vw;
+		transform: scale(1, -1) rotate(45deg);
+		img {
+			max-width: 100%;
+		}
+
+		@media (min-width: 1700px) {
+			left: -100px;
+		}
+
+		@media (max-width: $md) {
+			width: 500px;
+			top: -275px;
+			left: -105px;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
+		}
+	}
 	&__item {
 		flex: 0 1 25vw;
 		position: relative;
