@@ -1,6 +1,8 @@
 .footer {
 	background: url("../images/system_img/footer/bg.jpg") center / cover no-repeat;
 	padding: 77px 15px 30px 15px;
+	position: relative;
+	z-index: 1;
 
 	&__wrapper {
 		display: flex;

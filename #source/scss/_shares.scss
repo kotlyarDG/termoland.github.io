@@ -52,7 +52,7 @@
 		}
 
 		@media (max-width: $xs) {
-			position: unset;
+			position: static;
 			width: 40vw;
 		}
 	}
@@ -71,7 +71,7 @@
 		}
 
 		@media (max-width: $xs) {
-			position: unset;
+			position: static;
 			transform: none;
 			align-self: center;
 			margin: -75px 0 0 0;
@@ -90,7 +90,7 @@
 		}
 
 		@media (max-width: $xs) {
-			position: unset;
+			position: static;
 			align-self: flex-end;
 			margin: -75px 0 0 0;
 			width: 40vw;

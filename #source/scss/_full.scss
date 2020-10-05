@@ -66,11 +66,5 @@
 		background: url("../images/system_img/bg-btn.jpg");
 		border-radius: 50px;
 		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
-
-		transition: 0.4s;
-
-		&:hover {
-			transform: translate(0, 10px);
-		}
 	}
 }

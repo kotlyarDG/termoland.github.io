@@ -14,4 +14,9 @@
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: lowercase;
+	transition: 0.4s;
+
+	&:hover {
+		transform: translate(0, 10px);
+	}
 }

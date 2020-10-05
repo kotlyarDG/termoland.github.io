@@ -61,6 +61,22 @@ svg {
 
 .main-content {
 	background: url("../../images/system_img/bg-wrap.jpg") center / cover no-repeat;
+
+	position: relative;
+
+	&__lines-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+
+	&__lines-2 {
+		position: absolute;
+		top: 1200px;
+		right: 0;
+		z-index: 0;
+	}
 }
 
 // Подключение общих блоков
@@ -74,6 +90,8 @@ svg {
 @import "services";
 
 @import "shares";
+@import "store";
+@import "news";
 
 // Footer
 @import "footer";
