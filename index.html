@@ -14,6 +14,7 @@
 
 	<!-- Подключение CSS файлов -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -47,12 +48,12 @@
 				</div>
 				<nav class="header__column menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#">О НАС</a></li>
+						<li class="menu__item"><a class="class-link" href="#about">О НАС</a></li>
 						<li class="menu__item"><a href="#">СХЕМА</a></li>
-						<li class="menu__item"><a href="#">СОБЫТИЯ</a></li>
-						<li class="menu__item"><a href="#">НОВОСТИ</a></li>
-						<li class="menu__item"><a href="#">УСЛУГИ</a></li>
-						<li class="menu__item"><a href="#">МАГАЗИН</a></li>
+						<li class="menu__item"><a class="class-link" href="#events">СОБЫТИЯ</a></li>
+						<li class="menu__item"><a class="class-link" href="#">НОВОСТИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#">УСЛУГИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#">МАГАЗИН</a></li>
 					</ul>
 				</nav>
 				<form class="header__column search" data-da="menu__list,last,768">
@@ -68,6 +69,7 @@
 			</div>
 		</header>
 
+
 		<section class="full">
 			<div class="full__video">
 				<video src="video/bg-video.mp4" autoplay muted loop></video>
@@ -78,8 +80,10 @@
 			</div>
 		</section>
 
-		<section class="aqua">
-			<div class="aqua__wrapper">
+
+
+		<section class="aqua" id="about">
+			<div class="aqua__wrapper" data-aos="fade-right">
 				<div class="aqua__left">
 					<!-- <div class="aqua__left-img">
 						<img src="images/system_img/aqua-zona/bg-left.svg" alt="map">
@@ -129,7 +133,7 @@
 			<div class="services__leaf">
 				<img src="images/system_img/leaf-2.png" alt="">
 			</div>
-			<div class="services__wrapper">
+			<div class="services__wrapper" data-aos="fade-left">
 				<a href="#" class="services__item">
 					<h3 class="services__title">АБОНЕМЕНТЫ</h3>
 					<img src="images/system_img/services/01.jpg" alt="" class="services__img">
@@ -159,7 +163,7 @@
 				<img src="images/system_img/lines-2.svg" alt="">
 			</div>
 
-			<section class="week">
+			<section class="week" id="events" data-aos="fade-right">
 				<h2 class="week__title title">неделя мероприятий:</h2>
 				<div class="week__main-slider main-slider">
 
@@ -495,191 +499,191 @@
 				</div>
 
 
+
+			</section>
+
+			<section class="shares" data-aos="fade-left">
+				<div class="shares__wrapper">
+					<h2 class="shares__title title">АКЦИИ</h2>
+					<a href="#first-share" class="shares__img-left popup-link">
+						<img src="images/content_img/shares/01.jpg" alt="">
+					</a>
+					<a href="#second-share" class="shares__img-center popup-link">
+						<img src="images/content_img/shares/02.jpg" alt="">
+					</a>
+					<a href="#third-share" class="shares__img-right popup-link">
+						<img src="images/content_img/shares/03.jpg" alt="">
+					</a>
+				</div>
+			</section>
+
+			<section class="store" data-aos="fade-right">
+				<div class="store__dark-bg"><img src="images/system_img/bg-store-dark.svg" alt=""></div>
+
+				<div class="store__wrapper">
+					<div class="store__column-img">
+						<div class="store__leaf"><img src="images/system_img/leaf-2.png" alt=""></div>
+						<div class="store__bg">
+							<img src="images/system_img/bg-online_store.png" alt="">
+						</div>
+					</div>
+					<div class="store__column-content">
+						<div class="store__content">
+							<h2 class="store__title title">ИНТЕРНЕТ-МАГАЗИН termoland</h2>
+							<p class="store__text">Самые выгодные предложения на банные принадлежности</p>
+							<a href="#" class="store__btn btn">заказать</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news" data-aos="fade-left">
+				<div class="news__wrapper">
+					<h2 class="news__title title">новости termoland</h2>
+					<div class="news__content">
+						<div class="news__column-big">
+							<div class="news__row">
+								<div class="news__item item-news item-news--big">
+									<div class="item-news__img">
+										<img src="images/content_img/news/01.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Заголовок №1</p>
+										<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+											aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+											pariatur. Excepteur sint occaecat</p>
+									</div>
+								</div>
+							</div>
+							<div class="news__row">
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/02.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Заголовок №2</p>
+										<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/03.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Заголовок №3</p>
+										<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/04.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Заголовок №4</p>
+										<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/05.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Заголовок №5</p>
+										<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news__column-small">
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore</p>
+						</div>
+					</div>
+				</div>
+				<div class="news__leaf"><img src="images/system_img/leaf-3.png" alt=""></div>
+			</section>
+
+
 		</div>
-		</section>
 
-		<section class="shares">
-			<div class="shares__wrapper">
-				<h2 class="shares__title title">АКЦИИ</h2>
-				<a href="#first-share" class="shares__img-left popup-link">
-					<img src="images/content_img/shares/01.jpg" alt="">
-				</a>
-				<a href="#second-share" class="shares__img-center popup-link">
-					<img src="images/content_img/shares/02.jpg" alt="">
-				</a>
-				<a href="#third-share" class="shares__img-right popup-link">
-					<img src="images/content_img/shares/03.jpg" alt="">
-				</a>
-			</div>
-		</section>
-
-		<section class="store">
-			<div class="store__dark-bg"><img src="images/system_img/bg-store-dark.svg" alt=""></div>
-
-			<div class="store__wrapper">
-				<div class="store__column-img">
-					<div class="store__leaf"><img src="images/system_img/leaf-2.png" alt=""></div>
-					<div class="store__bg">
-						<img src="images/system_img/bg-online_store.png" alt="">
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__column footer__column--logo">
+					<div class="footer__logo">
+						<img src="images/system_img/logo-white.svg" alt="logo">
 					</div>
 				</div>
-				<div class="store__column-content">
-					<div class="store__content">
-						<h2 class="store__title title">ИНТЕРНЕТ-МАГАЗИН termoland</h2>
-						<p class="store__text">Самые выгодные предложения на банные принадлежности</p>
-						<a href="#" class="store__btn btn">заказать</a>
+				<div class="footer__column footer__column--center">
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Партнерам</p>
+						<a href='#' class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Правовая информация</p>
+						<a href="#" class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="news">
-			<div class="news__wrapper">
-				<h2 class="news__title title">новости termoland</h2>
-				<div class="news__content">
-					<div class="news__column-big">
-						<div class="news__row">
-							<div class="news__item item-news item-news--big">
-								<div class="item-news__img">
-									<img src="images/content_img/news/01.jpg" alt="">
-								</div>
-								<div class="item-news__body">
-									<p class="item-news__title">Заголовок №1</p>
-									<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-										pariatur. Excepteur sint occaecat</p>
-								</div>
+				<div class="footer__column footer__column-links">
+					<div class="footer__links links-footer">
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-phone.svg" alt="">
 							</div>
-						</div>
-						<div class="news__row">
-							<div class="news__item item-news">
-								<div class="item-news__img">
-									<img src="images/content_img/news/02.jpg" alt="">
-								</div>
-								<div class="item-news__body">
-									<p class="item-news__title">Заголовок №2</p>
-									<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore</p>
-								</div>
+							<p class="links-footer__text">Телефон</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-email.svg" alt="">
 							</div>
-							<div class="news__item item-news">
-								<div class="item-news__img">
-									<img src="images/content_img/news/03.jpg" alt="">
-								</div>
-								<div class="item-news__body">
-									<p class="item-news__title">Заголовок №3</p>
-									<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore</p>
-								</div>
+							<p class="links-footer__text">Почта</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-instagram.svg" alt="">
 							</div>
-							<div class="news__item item-news">
-								<div class="item-news__img">
-									<img src="images/content_img/news/04.jpg" alt="">
-								</div>
-								<div class="item-news__body">
-									<p class="item-news__title">Заголовок №4</p>
-									<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore</p>
-								</div>
+							<p class="links-footer__text">Instagram</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-facebook.svg" alt="">
 							</div>
-							<div class="news__item item-news">
-								<div class="item-news__img">
-									<img src="images/content_img/news/05.jpg" alt="">
-								</div>
-								<div class="item-news__body">
-									<p class="item-news__title">Заголовок №5</p>
-									<p class="item-news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore</p>
-								</div>
+							<p class="links-footer__text">Facebook</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-vk.svg" alt="">
 							</div>
-						</div>
-					</div>
-					<div class="news__column-small">
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
-						<p class="news__text-column">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore</p>
+							<p class="links-footer__text">ВКонтакте</p>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="news__leaf"><img src="images/system_img/leaf-3.png" alt=""></div>
-		</section>
-
-
-	</div>
-
-	<footer class="footer">
-		<div class="footer__wrapper">
-			<div class="footer__column footer__column--logo">
-				<div class="footer__logo">
-					<img src="images/system_img/logo-white.svg" alt="logo">
-				</div>
-			</div>
-			<div class="footer__column footer__column--center">
-				<div class="footer__item-center item-center">
-					<p class="item-center__text">Партнерам</p>
-					<a href='#' class="item-center__img">
-						<img src="images/system_img/footer/pdf.svg" alt="">
-					</a>
-				</div>
-				<div class="footer__item-center item-center">
-					<p class="item-center__text">Правовая информация</p>
-					<a href="#" class="item-center__img">
-						<img src="images/system_img/footer/pdf.svg" alt="">
-					</a>
-				</div>
-			</div>
-			<div class="footer__column footer__column-links">
-				<div class="footer__links links-footer">
-					<a href="#" class="links-footer__item">
-						<div class="links-footer__img">
-							<img src="images/system_img/footer/logo-phone.svg" alt="">
-						</div>
-						<p class="links-footer__text">Телефон</p>
-					</a>
-					<a href="#" class="links-footer__item">
-						<div class="links-footer__img">
-							<img src="images/system_img/footer/logo-email.svg" alt="">
-						</div>
-						<p class="links-footer__text">Почта</p>
-					</a>
-					<a href="#" class="links-footer__item">
-						<div class="links-footer__img">
-							<img src="images/system_img/footer/logo-instagram.svg" alt="">
-						</div>
-						<p class="links-footer__text">Instagram</p>
-					</a>
-					<a href="#" class="links-footer__item">
-						<div class="links-footer__img">
-							<img src="images/system_img/footer/logo-facebook.svg" alt="">
-						</div>
-						<p class="links-footer__text">Facebook</p>
-					</a>
-					<a href="#" class="links-footer__item">
-						<div class="links-footer__img">
-							<img src="images/system_img/footer/logo-vk.svg" alt="">
-						</div>
-						<p class="links-footer__text">ВКонтакте</p>
-					</a>
-				</div>
-			</div>
-		</div>
-		<p class="footer__ps">*информация не является публичной офертой</p>
-	</footer>
+			<p class="footer__ps">*информация не является публичной офертой</p>
+		</footer>
 
 
 	</div>
@@ -704,6 +708,7 @@
 	<script src="js/jquery-3.5.0.min.js"></script>
 
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- Main script file -->
 	<script src="js/script.js"></script>

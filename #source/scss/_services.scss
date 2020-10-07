@@ -1,5 +1,6 @@
 .services {
 	position: relative;
+	background: url("../images/system_img/bg-wrap.jpg");
 	&__wrapper {
 		display: flex;
 		overflow-x: auto;
@@ -11,7 +12,7 @@
 		left: -45px;
 		z-index: 5;
 		width: 25vw;
-		transform: scale(1, -1) rotate(45deg);
+
 		img {
 			max-width: 100%;
 		}
