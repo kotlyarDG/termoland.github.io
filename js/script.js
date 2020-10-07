@@ -139,8 +139,6 @@ $(document).ready(function () {
 
 	const popupLinks = document.querySelectorAll('.popup-link');
 	const body = document.querySelector('body');
-	const lockPadding = document.querySelectorAll('.lock-padding');
-	const video = document.querySelector('.video-youtube');
 
 	let unlock = true;
 
@@ -233,4 +231,22 @@ $(document).ready(function () {
 				Element.prototype.msMatchesSelector;
 		}
 	})();
-});
+
+	$('.main-slider').slick({
+		arrows: false,
+		dots: true,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 9500,
+		swipe: false
+	});
+
+	$('.second-slider').slick({
+		arrows: false,
+		infinite: true,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		swipe: false
+	});
+});	

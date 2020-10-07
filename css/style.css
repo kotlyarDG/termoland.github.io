@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 * {
   padding: 0;
@@ -942,6 +943,239 @@ svg rect {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.week {
+  padding: 10vh 0 10vh 30px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .week {
+    padding: 10vh 10px;
+  }
+}
+
+.week__title {
+  margin: 0 0 30px 0;
+  font-size: calc(35px + 35 * ((100vw - 320px) / 1600));
+}
+
+.main-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 100px 0 0 0;
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.main-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-slider .slick-dots li {
+  margin: 0 13px;
+}
+
+.main-slider .slick-dots li:first-child {
+  margin: 0 13px 0 0;
+}
+
+.main-slider .slick-dots li.slick-active {
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.main-slider .slick-dots li.slick-active button {
+  font-weight: bold;
+  color: #395a71;
+}
+
+.main-slider .slick-dots li.slick-active button:before {
+  height: 50px;
+  background-color: #395a71;
+  top: -59px;
+}
+
+.main-slider .slick-dots li button {
+  background: none;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+}
+
+.main-slider .slick-dots li button:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: -39px;
+  left: 0;
+}
+
+.second-slider__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px -25px 0 -25px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .second-slider__buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.slide-second {
+  padding: 80px 0 0 0;
+}
+
+.slide-second__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .slide-second__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.slide-second__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .slide-second__info {
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+}
+
+.slide-second__title {
+  font-weight: bold;
+  font-size: calc(35px + 25 * ((100vw - 320px) / 1600));
+  line-height: 121%;
+  color: #395a71;
+  margin: 0 0 20px 0;
+}
+
+.slide-second__text {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: lowercase;
+}
+
+.slide-second__img {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 45vw;
+  z-index: 0;
+  border-radius: 22% 48% 40% 29% / 30% 10% 20% 59%;
+  overflow: hidden;
+}
+
+.slide-second__img img {
+  width: 100%;
+}
+
+@media (min-width: 1700px) {
+  .slide-second__img {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-second__img {
+    position: static;
+    width: 90%;
+    border-radius: 22% 48% 40% 29% / 30% 52% 30% 59%;
+  }
+}
+
+.button-second {
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  .button-second {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-second {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 25px;
+  }
+}
+
+.button-second__img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.button-second__img img {
+  width: 100%;
+}
+
+.button-second__date {
+  margin: 30px 0 9px 0;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.button-second__name {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button-second._active .button-second__img {
+  border-radius: 50%;
 }
 
 .shares {
