@@ -109,7 +109,7 @@ svg rect {
 }
 
 .main-content {
-  background: url("../../images/system_img/bg-wrap.jpg") center/cover no-repeat;
+  background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
   position: relative;
 }
 
@@ -647,7 +647,7 @@ svg rect {
 
 @media (min-width: 991px) {
   .aqua__left {
-    background: url("../../images/system_img/aqua-zona/bg-left.svg") center/cover no-repeat;
+    background: url("../images/system_img/aqua-zona/bg-left.svg") center/cover no-repeat;
   }
 }
 
@@ -683,7 +683,7 @@ svg rect {
 
 .right-aqua {
   position: relative;
-  background: url("../../images/system_img/aqua-zona/bg-right.png") 0 -121px/cover no-repeat;
+  background: url("../images/system_img/aqua-zona/bg-right.png") 0 -121px/cover no-repeat;
 }
 
 @media (max-width: 420px) {

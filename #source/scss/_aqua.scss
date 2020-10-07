@@ -11,7 +11,7 @@
 
 	&__left {
 		@media (min-width: $sm) {
-			background: url("../../images/system_img/aqua-zona/bg-left.svg") center / cover no-repeat;
+			background: url("../images/system_img/aqua-zona/bg-left.svg") center / cover no-repeat;
 		}
 
 		@media (min-width: $xs) {
@@ -39,7 +39,7 @@
 .right-aqua {
 	position: relative;
 
-	background: url("../../images/system_img/aqua-zona/bg-right.png") 0 -121px / cover no-repeat;
+	background: url("../images/system_img/aqua-zona/bg-right.png") 0 -121px / cover no-repeat;
 
 	@media (max-width: 420px) {
 		background: none;
