@@ -17,6 +17,24 @@
 	transition: 0.4s;
 
 	&:hover {
-		transform: translate(0, 10px);
+		// transform: translate(0, 10px);
+		animation-name: rot;
+		animation-duration: 0.7s;
+		animation-timing-function: ease;
+	}
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(0);
+	}
+	25% {
+		transform: rotate(-10deg);
+	}
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0);
 	}
 }
