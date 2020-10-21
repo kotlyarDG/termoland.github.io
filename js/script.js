@@ -237,7 +237,7 @@ $(document).ready(function () {
 		dots: true,
 		fade: true,
 		autoplay: true,
-		autoplaySpeed: 9500,
+		autoplaySpeed: 60000,
 		swipe: false
 	});
 
@@ -246,7 +246,7 @@ $(document).ready(function () {
 		infinite: true,
 		fade: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 15000,
 		swipe: false
 	});
 
