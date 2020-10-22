@@ -1,6 +1,40 @@
 .store {
 	position: relative;
 
+	&__leaf-f {
+		position: absolute;
+		top: -40%;
+		right: -5%;
+		z-index: 10;
+
+		max-width: 35vw;
+
+		@media (max-width: 500px) {
+			top: -10%;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__leaf-s {
+		position: absolute;
+		bottom: -35%;
+		left: 0;
+		z-index: 10;
+
+		max-width: 45vw;
+
+		@media (max-width: 500px) {
+			bottom: -10%;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
 	@media (max-width: $xs) {
 		padding: 50px 10px;
 	}
