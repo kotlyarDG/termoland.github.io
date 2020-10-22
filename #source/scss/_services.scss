@@ -1,36 +1,12 @@
 .services {
 	position: relative;
+	z-index: 11;
 	background: url("../images/system_img/bg-wrap.jpg");
 	&__wrapper {
 		display: flex;
 		overflow-x: auto;
 	}
 
-	&__leaf {
-		position: absolute;
-		top: -200px;
-		left: -45px;
-		z-index: 5;
-		width: 25vw;
-
-		img {
-			max-width: 100%;
-		}
-
-		@media (min-width: 1700px) {
-			left: -100px;
-		}
-
-		@media (max-width: $md) {
-			width: 500px;
-			top: -275px;
-			left: -105px;
-		}
-
-		@media (max-width: $xs) {
-			display: none;
-		}
-	}
 	&__item {
 		flex: 0 1 25vw;
 		position: relative;

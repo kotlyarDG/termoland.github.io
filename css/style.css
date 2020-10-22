@@ -913,6 +913,7 @@ svg rect {
 
 .services {
   position: relative;
+  z-index: 11;
   background: url("../images/system_img/bg-wrap.jpg");
 }
 
@@ -921,38 +922,6 @@ svg rect {
   display: -ms-flexbox;
   display: flex;
   overflow-x: auto;
-}
-
-.services__leaf {
-  position: absolute;
-  top: -200px;
-  left: -45px;
-  z-index: 5;
-  width: 25vw;
-}
-
-.services__leaf img {
-  max-width: 100%;
-}
-
-@media (min-width: 1700px) {
-  .services__leaf {
-    left: -100px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .services__leaf {
-    width: 500px;
-    top: -275px;
-    left: -105px;
-  }
-}
-
-@media (max-width: 768px) {
-  .services__leaf {
-    display: none;
-  }
 }
 
 .services__item {
