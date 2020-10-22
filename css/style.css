@@ -2364,6 +2364,7 @@ svg rect {
 @media (max-width: 768px) {
   .item-product__img-main {
     margin: 0 0 20px 0;
+    width: 80%;
   }
 }
 
@@ -2412,11 +2413,27 @@ svg rect {
   margin: 10px 0 0 0;
 }
 
+.item-product__names-character--acessories p:nth-child(2) {
+  margin: 24px 0 0 0;
+}
+
+.item-product__names-character--acessories p:last-child {
+  margin: 13px 0 0 0;
+}
+
+.item-product__names-character--cosmetics p:nth-child(2) {
+  margin: 10px 0 10px 0;
+}
+
+.item-product__names-character--cosmetics p:last-child {
+  margin: 0 0 0 0;
+}
+
 .item-product__body-character p {
   font-size: 18px;
   line-height: 22px;
   color: #353535;
-  margin: 0 0 10px 0;
+  margin: 12.5px 0 0 0;
 }
 
 .item-product__colors {
@@ -2424,6 +2441,7 @@ svg rect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 15px 0;
 }
 
 .item-product__color {
@@ -2435,7 +2453,7 @@ svg rect {
 }
 
 .item-product__sizes {
-  margin: 15px 0 12.5px 0;
+  margin: 0 0 0 0;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2470,6 +2488,8 @@ svg rect {
       align-self: flex-start;
   color: #395a71;
   background-color: #fff;
+  font-weight: bold;
+  margin: 15px 0 0 0;
 }
 
 .item-product__images {
