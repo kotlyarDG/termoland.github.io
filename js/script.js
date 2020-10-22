@@ -260,7 +260,6 @@ $(document).ready(function () {
 		autoplaySpeed: 10000,
 		speed: 1000,
 		responsive: [
-
 			{
 				breakpoint: 769,
 				settings: {

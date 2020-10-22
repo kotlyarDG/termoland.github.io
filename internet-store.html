@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Tittle -->
+	<title>Tittle</title>
+
+	<!-- Кодировка -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<!-- Настройки вьюпорта для адекватного адаптива -->
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Подключение CSS файлов -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="">
+	<!-- Внешняя оболочка -->
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__column">
+					<div class="header__lang" data-da="menu__list,last,450">
+						<div class="header__lang-logo">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M24.2001 10.0832H21.5935C21.0596 8.3694 20.2525 6.75263 19.203 5.2954L19.1619 5.23832L19.097 5.21105C18.397 4.91671 17.6671 4.69918 16.9202 4.56227L16.1782 4.42626L16.6921 4.97849C18.054 6.44177 19.1002 8.16806 19.7674 10.0498H15.8751V4.6665V4.4165H15.6251H14.3751H14.1251V4.6665V10.0582H10.2329C10.9015 8.1728 11.9505 6.44359 13.3163 4.97865L13.8296 4.4281L13.0889 4.56217C12.3452 4.6968 11.6182 4.91147 10.9206 5.20244L10.8558 5.22947L10.8145 5.28628C9.76074 6.73756 8.94812 8.34892 8.40759 10.0582H5.78346H5.62955L5.56024 10.1956C5.33365 10.6449 5.13966 11.1099 4.97975 11.5871L4.86935 11.9165H5.2168H7.93553C7.73786 12.932 7.63668 13.9641 7.63346 14.9991L7.63346 15.0003C7.63561 16.1402 7.75485 17.2765 7.98916 18.3915H5.35013H4.99138L5.11559 18.7281C5.29219 19.2065 5.50329 19.6715 5.74725 20.1194L5.81829 20.2498H5.9668H8.47697C8.99374 21.8067 9.74198 23.2773 10.6968 24.612L10.7374 24.6687L10.8016 24.6963C11.517 25.0031 12.2643 25.2293 13.0297 25.3707L13.764 25.5063L13.2594 24.9559C12.0021 23.5844 11.0178 21.9872 10.3579 20.2498H14.1335V25.2832V25.5332H14.3835H15.6335H15.8835V25.2832V20.2498H19.642C18.98 21.9878 17.993 23.585 16.7328 24.9556L16.2216 25.5115L16.9635 25.3704C17.7325 25.2242 18.4828 24.9922 19.2002 24.6789L19.2632 24.6514L19.3033 24.5955C20.2566 23.2659 21.0047 21.8009 21.5229 20.2498H24.0085H24.156L24.2273 20.1207C24.4701 19.6811 24.6812 19.2247 24.859 18.755L24.987 18.4165H24.6251H21.9806C22.2268 17.295 22.3562 16.1508 22.3668 15.0021L22.3668 14.9991C22.3636 13.9641 22.2624 12.932 22.0647 11.9165H24.7585H25.1069L24.9953 11.5864C24.837 11.1183 24.6459 10.6618 24.4233 10.2206L24.354 10.0832H24.2001ZM20.5834 14.9983L20.5835 15.0012C20.5898 16.1421 20.4646 17.2797 20.2105 18.3915H15.8751V11.9165H20.2808C20.4883 12.9303 20.5897 13.9632 20.5834 14.9983ZM14.1251 18.3915H9.78723C9.27178 16.2581 9.24764 14.0355 9.71661 11.8915H14.1251V18.3915Z"
+									fill="white" stroke="white" stroke-width="0.5" />
+								<path
+									d="M14.9998 1.4165C12.3133 1.4165 9.68712 2.21315 7.45335 3.70571C5.21958 5.19826 3.47857 7.31969 2.45048 9.80172C1.42239 12.2838 1.15339 15.0149 1.67751 17.6498C2.20163 20.2847 3.49531 22.705 5.39498 24.6047C7.29464 26.5044 9.71496 27.7981 12.3499 28.3222C14.9848 28.8463 17.7159 28.5773 20.198 27.5492C22.68 26.5211 24.8014 24.7801 26.294 22.5463C27.7865 20.3126 28.5832 17.6864 28.5832 14.9998C28.5832 11.3973 27.1521 7.94234 24.6047 5.39497C22.0573 2.8476 18.6024 1.4165 14.9998 1.4165ZM14.9998 26.4165C12.7418 26.4165 10.5345 25.7469 8.65708 24.4925C6.77962 23.238 5.31632 21.4549 4.45222 19.3688C3.58812 17.2827 3.36203 14.9872 3.80254 12.7726C4.24306 10.5579 5.33039 8.52368 6.92704 6.92704C8.52369 5.33039 10.5579 4.24305 12.7726 3.80254C14.9872 3.36202 17.2827 3.58811 19.3688 4.45221C21.4549 5.31631 23.238 6.77962 24.4925 8.65708C25.7469 10.5345 26.4165 12.7418 26.4165 14.9998C26.4165 18.0277 25.2137 20.9316 23.0726 23.0726C20.9316 25.2137 18.0277 26.4165 14.9998 26.4165Z"
+									fill="white" stroke="white" stroke-width="0.5" />
+							</svg>
+						</div>
+						<p class="header__lang-text">ru</p>
+					</div>
+					<div class="header__logo">
+						<img src="images/system_img/logo-white.svg" alt="logo-white">
+					</div>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__column menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="class-link" href="#about">О НАС</a></li>
+						<li class="menu__item"><a class="class-link" href="#aqua">СХЕМА</a></li>
+						<li class="menu__item"><a class="class-link" href="#events">СОБЫТИЯ</a></li>
+						<li class="menu__item"><a class="class-link" href="#news">НОВОСТИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#services">УСЛУГИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#store">МАГАЗИН</a></li>
+					</ul>
+				</nav>
+				<form class="header__column search" data-da="menu__list,last,768">
+					<input class="search__input" type="search" placeholder="Найди меня">
+					<button class="search__btn" type="submit">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.5906 0.333496C6.28095 0.333496 0.333496 6.31516 0.333496 13.6668C0.333496 21.0185 6.28095 27.0002 13.5906 27.0002C16.5319 26.9995 19.3886 26.0092 21.7055 24.1868L28.9903 31.5135L31.3335 29.1568L24.0487 21.8302C25.8616 19.4996 26.8469 16.6259 26.8476 13.6668C26.8476 6.31516 20.9002 0.333496 13.5906 0.333496Z"
+								fill="white" />
+						</svg>
+					</button>
+				</form>
+			</div>
+		</header>
+
+		<section class="internet">
+			<div class="internet__wrapper">
+				<h1 class="internet__title title">ИНТЕРНЕТ-КАТАЛОГ termoland</h1>
+				<div class="internet__filter filter">
+					<div class="filter__buttons">
+						<div class="filter__btn" data-filter="1">Аксессуары</div>
+						<div class="filter__btn active-filter" data-filter="2">Одежда</div>
+						<div class="filter__btn" data-filter="3">Косметика</div>
+					</div>
+					<div class="filter__items">
+
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/01.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Банная шапочка</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/02.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Футболка “All we need is spa”</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/03.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Футболка “В любой непонятной ситуации иди в баню”</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/04.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Женский купальный костюм “Каждой твари по пару”</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/05.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Женский купальный костюм “All we need is spa</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/06.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Купальные шорты + футболка “Mood погреть кости”</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/07.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Тапочки махровые Termoland</div>
+						</div>
+						<div class="filter__item item-filter f_2">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/clothes/08.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Тапочки резиновые</div>
+						</div>
+						<!-- / CLOTHES -->
+						<!-- acessories -->
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/01.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Полотенце</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/02.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Банные принадлежности</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/03.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Вафельный халат “Иди в баню”</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/04.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Маски плавательные</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/05.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Круги для плаванья</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/06.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Бутылочка для воды</div>
+						</div>
+						<div class="filter__item item-filter f_1">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/acessories/07.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Бутылочка для воды</div>
+						</div>
+						<!-- / ACESSORIES -->
+						<!-- COSMETICS -->
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/01.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Мыло</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/02.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Банные масла</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/03.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Крем для тела</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/04.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Массажное масло</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/05.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Гели для душа</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/06.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Очищающий скраб</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/07.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Customize Hot Selling High Quality Gift Packaging Box Nail Tools
+							</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/08.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Customize Hot Selling High Quality Gift Packaging Box Nail Tools
+							</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/09.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Customize Hot Selling High Quality Gift Packaging Box Nail Tools
+							</div>
+						</div>
+						<div class="filter__item item-filter f_3">
+							<div class="item-filter__img">
+								<div class="item-filter__sale">-11%</div>
+								<img src="images/content_img/internet-store/cosmetics/10.jpg" alt="">
+							</div>
+							<div class="item-filter__price">
+								<span>12</span> 40 $
+							</div>
+							<div class="item-filter__info">Customize Hot Selling High Quality Gift Packaging Box Nail Tools
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__column footer__column--logo">
+					<div class="footer__logo">
+						<img src="images/system_img/logo-white.svg" alt="logo">
+					</div>
+				</div>
+				<div class="footer__column footer__column--center">
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Партнерам</p>
+						<a href='#' class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Правовая информация</p>
+						<a href="#" class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer__column footer__column-links">
+					<div class="footer__links links-footer">
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-phone.svg" alt="">
+							</div>
+							<p class="links-footer__text">Телефон</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-email.svg" alt="">
+							</div>
+							<p class="links-footer__text">Почта</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-instagram.svg" alt="">
+							</div>
+							<p class="links-footer__text">Instagram</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-facebook.svg" alt="">
+							</div>
+							<p class="links-footer__text">Facebook</p>
+						</a>
+						<a href="#" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-vk.svg" alt="">
+							</div>
+							<p class="links-footer__text">ВКонтакте</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="footer__ps">*информация не является публичной офертой</p>
+		</footer>
+
+
+	</div>
+
+	<!-- Подключение JS файлов -->
+	<!-- Jquery -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+
+
+	<!-- Main script file -->
+	<script src="js/script-internet.js"></script>
+</body>
+
+</html>

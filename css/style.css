@@ -2119,6 +2119,140 @@ svg rect {
   margin: 0;
 }
 
+.internet {
+  background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
+  padding: 88px 15px 100px 15px;
+}
+
+.internet__title {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__btn {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 25px;
+  color: #353535;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.filter__btn:hover {
+  color: #4e9a35;
+}
+
+@media (max-width: 470px) {
+  .filter__btn {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 12px;
+  }
+}
+
+.filter__btn.active-filter {
+  font-weight: bold;
+}
+
+.filter__btn.active-filter:hover {
+  color: #353535;
+}
+
+.filter__btn.active-filter:after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  display: block;
+  background: #4e9a35;
+  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  margin: 13px auto 0 auto;
+}
+
+.filter__items {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-filter {
+  width: 300px;
+  margin: 0 32px 70px 32px;
+}
+
+.item-filter__img {
+  position: relative;
+}
+
+.item-filter__img img {
+  width: 100%;
+}
+
+.item-filter__sale {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 3px 18px 7px 10px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  background-color: #e6caa9;
+}
+
+.item-filter__price {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  color: #4e9a35;
+}
+
+.item-filter__price span {
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.item-filter__info {
+  margin: 16px 0 0 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #353535;
+}
+
 .footer {
   background: url("../images/system_img/footer/bg.jpg") center/cover no-repeat;
   padding: 77px 15px 30px 15px;
