@@ -330,7 +330,6 @@ svg rect {
   font-size: 30px;
   line-height: 37px;
   margin: 0 0 30px 0;
-  white-space: nowrap;
 }
 
 @media (max-width: 1500px) {
@@ -338,6 +337,12 @@ svg rect {
     font-size: 22px;
     line-height: 27px;
     margin: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 1435px) {
+  .popup__info p {
+    white-space: nowrap;
   }
 }
 
@@ -788,7 +793,7 @@ svg rect {
   position: relative;
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: url("../images/system_img/bg-video.jpg") center/cover no-repeat;
+  background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
 }
 
 .full__video {
@@ -1928,6 +1933,7 @@ svg rect {
 
 .main-tickets__title {
   color: #fff;
+  text-align: center;
   font-size: calc(30px + 10 * ((100vw - 320px) / 1600));
 }
 

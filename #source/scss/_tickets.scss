@@ -23,6 +23,7 @@
 
 	&__title {
 		color: #fff;
+		text-align: center;
 		@include adaptive-font(40, 30);
 	}
 }
