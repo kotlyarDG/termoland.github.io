@@ -1,6 +1,28 @@
 .internet {
 	background: url("../images/system_img/bg-wrap.jpg") center / cover no-repeat;
 	padding: 88px 15px 100px 15px;
+	position: relative;
+
+	&__leaf {
+		position: absolute;
+		top: -250px;
+		left: 0;
+		z-index: 5;
+		width: 20vw;
+
+		@media (max-width: $sm) {
+			top: -150px;
+			width: 25vw;
+		}
+		@media (max-width: 480px) {
+			top: -100px;
+			width: 30vw;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
 
 	&__wrapper {
 	}

@@ -2122,6 +2122,33 @@ svg rect {
 .internet {
   background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
   padding: 88px 15px 100px 15px;
+  position: relative;
+}
+
+.internet__leaf {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  z-index: 5;
+  width: 20vw;
+}
+
+@media (max-width: 991px) {
+  .internet__leaf {
+    top: -150px;
+    width: 25vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .internet__leaf {
+    top: -100px;
+    width: 30vw;
+  }
+}
+
+.internet__leaf img {
+  max-width: 100%;
 }
 
 .internet__title {
