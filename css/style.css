@@ -1686,6 +1686,8 @@ svg rect {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 25px;
+  max-height: 600px;
+  overflow: auto;
 }
 
 .item-news__img {
@@ -1713,8 +1715,6 @@ svg rect {
 .item-news__text {
   font-size: 20px;
   line-height: 24px;
-  max-height: 300px;
-  overflow: auto;
 }
 
 @media (max-width: 1400px) {
