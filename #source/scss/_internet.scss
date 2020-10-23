@@ -125,12 +125,34 @@
 			}
 		}
 	}
-
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	&__items {
 		margin: 50px 0 0 0;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		width: auto;
+
+		@media (max-width: 1850px) {
+			width: 1480px;
+		}
+
+		@media (max-width: 1500px) {
+			width: 1120px;
+		}
+
+		@media (max-width: 1150px) {
+			width: 740px;
+		}
+
+		@media (max-width: $xs) {
+			width: auto;
+			justify-content: center;
+		}
 	}
 
 	&__item {
