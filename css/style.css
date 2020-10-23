@@ -1957,7 +1957,15 @@ svg rect {
 .item-ticket__text {
   font-size: 30px;
   line-height: 37px;
+  padding: 0 5px;
   color: #ffffff;
+}
+
+@media (max-width: 1400px) {
+  .item-ticket__text {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .item-ticket__body {
@@ -1987,6 +1995,7 @@ svg rect {
 .item-ticket__price {
   font-size: 30px;
   line-height: 37px;
+  white-space: nowrap;
   color: #ffffff;
   margin: 0 58px 0 0;
 }
