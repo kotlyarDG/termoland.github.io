@@ -63,6 +63,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	z-index: 6;
 	&__buttons {
 		display: inline-flex;
 
