@@ -51,7 +51,7 @@
 	&__wrapper {
 		padding: 0 70px;
 		position: relative;
-		z-index: 1;
+		z-index: 11;
 
 		@media (max-width: $xs) {
 			padding: 0 10px;
@@ -68,7 +68,7 @@
 	&__content {
 		display: flex;
 
-		@media (max-width: $md) {
+		@media (max-width: 1650px) {
 			flex-direction: column;
 		}
 	}
@@ -87,7 +87,7 @@
 			margin: 0 0 65px 0;
 		}
 
-		@media (max-width: $sm) {
+		@media (max-width: $lg) {
 			flex-direction: column;
 
 			&:first-child {
@@ -109,11 +109,11 @@
 	&__column-small {
 		flex: 0 1 20%;
 
-		@media (max-width: $md) {
+		@media (max-width: 1650px) {
 			margin: 50px 0 0 0;
 		}
 
-		@media (max-width: $sm) {
+		@media (max-width: $lg) {
 			margin: 25px 0 0 0;
 		}
 
@@ -140,6 +140,7 @@
 	padding: 0 25px;
 
 	&__img {
+		width: 100%;
 		img {
 			width: 100%;
 		}
@@ -158,9 +159,12 @@
 	&__text {
 		font-size: 20px;
 		line-height: 24px;
+
+		max-height: 300px;
+		overflow: auto;
 	}
 
-	@media (max-width: $sm) {
+	@media (max-width: $lg) {
 		flex: 0 1 100%;
 		flex-direction: row;
 		padding: 0 25px 0 0;
