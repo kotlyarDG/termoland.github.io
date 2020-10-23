@@ -1973,6 +1973,13 @@ svg rect {
   margin: 0 0 10px 0;
 }
 
+@media (max-width: 500px) {
+  .item-ticket__name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 .item-ticket__text {
   font-size: 30px;
   line-height: 37px;
