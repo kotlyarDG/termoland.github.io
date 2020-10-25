@@ -514,13 +514,8 @@ svg rect {
   max-height: 100%;
 }
 
-.popup-map__link-aqua {
-  display: none;
-}
-
 @media (max-width: 600px) {
   .popup-map__link-aqua {
-    display: block;
     position: absolute;
     top: 65%;
     left: 40%;

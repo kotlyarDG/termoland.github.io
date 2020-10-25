@@ -424,10 +424,7 @@ svg {
 	}
 
 	&__link-aqua {
-		display: none;
-
 		@media (max-width: 600px) {
-			display: block;
 			position: absolute;
 			top: 65%;
 			left: 40%;
