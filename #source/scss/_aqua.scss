@@ -60,6 +60,28 @@
 		}
 	}
 
+	&__link-aqua {
+		position: absolute;
+		display: block;
+		width: 200px;
+		height: 100px;
+		top: 65%;
+		left: 45%;
+		// background-color: rgba(0, 0, 0, 0.4);
+
+		@media (max-width: 1500px) {
+			left: 40%;
+		}
+		@media (max-width: 1100px) {
+			width: 150px;
+			height: 75px;
+		}
+
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+
 	&__leaf-f {
 		position: absolute;
 		top: -40%;
