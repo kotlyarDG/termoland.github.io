@@ -62,12 +62,13 @@
 
 	&__link-aqua {
 		position: absolute;
+		z-index: 55;
 		display: block;
 		width: 200px;
 		height: 100px;
 		top: 65%;
 		left: 45%;
-		// background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.4);
 
 		@media (max-width: 1500px) {
 			left: 40%;
