@@ -395,9 +395,26 @@ svg {
 		}
 	}
 }
-.open {
-}
-.close-popup {
+
+.popup-map {
+	&__wrapper {
+		width: 100vw;
+		height: 95vh;
+		margin: 0 auto;
+	}
+
+	&__content {
+		max-height: 100%;
+		width: auto;
+		background: url("../images/system_img/bg-wrap.jpg") center / cover no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: auto;
+		img {
+			max-height: 100%;
+		}
+	}
 }
 
 // Подключение общих блоков
