@@ -486,12 +486,13 @@ svg rect {
   width: 100vw;
   height: 95vh;
   margin: 0 auto;
+  background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
+  padding: 2px;
 }
 
 .popup-map__content {
   max-height: 100%;
   width: auto;
-  background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
