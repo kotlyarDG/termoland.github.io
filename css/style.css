@@ -2621,6 +2621,12 @@ svg rect {
           appearance: none;
 }
 
+@media (max-width: 768px) {
+  .form-ticket__input--date {
+    padding: 0 15px;
+  }
+}
+
 .form-ticket__input--select {
   padding: 0 0 0 15px;
   -webkit-appearance: none;
