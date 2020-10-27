@@ -2319,10 +2319,7 @@ svg rect {
 
 @media (max-width: 768px) {
   .main-tickets {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
 }
 
@@ -2343,12 +2340,24 @@ svg rect {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .main-tickets__aside {
+    height: 25vh;
+  }
+}
+
 .main-tickets__content {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 75%;
           flex: 0 1 75%;
   overflow-y: auto;
   background: url("../images/system_img/services/bg.jpg") center/cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .main-tickets__content {
+    height: 75vh;
+  }
 }
 
 .main-tickets__title {
@@ -2566,6 +2575,13 @@ svg rect {
   padding: 0 0 40px 0;
 }
 
+@media (max-width: 768px) {
+  .form-ticket {
+    display: block;
+    text-align: center;
+  }
+}
+
 .form-ticket__label {
   font-weight: 900;
   font-size: 30px;
@@ -2593,7 +2609,7 @@ svg rect {
 }
 
 .form-ticket__input--select {
-  text-align-last: center;
+  padding: 0 0 0 15px;
 }
 
 .form-ticket__date-time {
@@ -2620,6 +2636,13 @@ svg rect {
   }
   .form-ticket__date-time .form-ticket__label {
     margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-ticket__date-time {
+    display: block;
+    text-align: center;
   }
 }
 
