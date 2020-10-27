@@ -424,13 +424,14 @@ svg {
 	&__content {
 		max-height: 95%;
 		width: auto;
-
+		margin: 0 auto;
+		transform: translate(-15px, 0);
+		align-self: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		overflow: auto;
 		position: relative;
-		align-self: center;
 		img {
 			max-height: 100%;
 		}
