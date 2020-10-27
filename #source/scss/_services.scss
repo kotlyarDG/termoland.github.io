@@ -57,3 +57,37 @@
 		}
 	}
 }
+
+[data-aos="new-animation-left"] {
+	opacity: 0;
+	transition-property: transform, opacity;
+
+	&.aos-animate {
+		opacity: 1;
+	}
+
+	@media (max-width: $sm) {
+		transform: translateX(-100px);
+
+		&.aos-animate {
+			transform: translateX(0);
+		}
+	}
+}
+
+[data-aos="new-animation-right"] {
+	opacity: 0;
+	transition-property: transform, opacity;
+
+	&.aos-animate {
+		opacity: 1;
+	}
+
+	@media (max-width: $sm) {
+		transform: translateX(100px);
+
+		&.aos-animate {
+			transform: translateX(0);
+		}
+	}
+}
