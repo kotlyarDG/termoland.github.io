@@ -2588,6 +2588,14 @@ svg rect {
   color: #000000;
 }
 
+.form-ticket__input--date {
+  padding: 0 15px 0 0;
+}
+
+.form-ticket__input--select {
+  text-align-last: center;
+}
+
 .form-ticket__date-time {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -38,17 +38,21 @@
 					<form class="content-ticket__form form-ticket">
 						<label for="fio" class="form-ticket__label">ФИО</label>
 						<input type="text" class="form-ticket__input" id="fio">
+						<label for="master" class="form-ticket__label">имя мастера</label>
+						<select class="form-ticket__input form-ticket__input--select" id="master">
+							<option value="1">ДЕНИС</option>
+							<option value="2">АЛЕКСАНДР</option>
+						</select>
 						<div class="form-ticket__date-time">
 							<label for="date" class="form-ticket__label">Дата</label>
-							<input type="text" class="form-ticket__input" id="date">
+							<input type="date" class="form-ticket__input form-ticket__input--date" id="date">
 							<label for="time" class="form-ticket__label">время</label>
 							<input type="text" class="form-ticket__input" id="time">
 						</div>
-						<label for="master" class="form-ticket__label">имя мастера</label>
-						<input type="text" class="form-ticket__input" id="master">
+
 						<label for="phone" class="form-ticket__label">номер телефона</label>
 						<input type="text" class="form-ticket__input" id="phone">
-						<button type="submit" class="form-ticket__btn btn">заказать</button>
+						<button type="submit" class="form-ticket__btn btn">оплатить</button>
 					</form>
 				</div>
 			</div>
