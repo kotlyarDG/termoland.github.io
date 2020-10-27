@@ -9,6 +9,7 @@
 		@media (max-width: $sm) {
 			// flex-direction: column;
 			display: block;
+			height: 100vh;
 		}
 	}
 
@@ -22,9 +23,15 @@
 		padding: 0 10px;
 
 		@media (max-width: $sm) {
-			padding: 100px 10px 0 10px;
-			height: 250px;
+			padding: 10vh 10px 0 10px;
 			display: block;
+			height: 25%;
+		}
+
+		@media (max-width: 600px) {
+			padding: 7.5vh 10px 0 10px;
+			display: block;
+			height: 25%;
 		}
 	}
 

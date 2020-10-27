@@ -1319,6 +1319,7 @@ svg rect {
 @media (max-width: 991px) {
   .services__wrapper {
     display: block;
+    height: 100vh;
   }
 }
 
@@ -1342,9 +1343,17 @@ svg rect {
 
 @media (max-width: 991px) {
   .services__item {
-    padding: 100px 10px 0 10px;
-    height: 250px;
+    padding: 10vh 10px 0 10px;
     display: block;
+    height: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .services__item {
+    padding: 7.5vh 10px 0 10px;
+    display: block;
+    height: 25%;
   }
 }
 
