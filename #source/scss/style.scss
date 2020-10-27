@@ -304,6 +304,9 @@ svg {
 }
 
 .popup-first {
+	@media (max-width: $xs) {
+		padding: 0;
+	}
 	&__wrapper {
 		width: 80%;
 		margin: 0 auto;
@@ -311,6 +314,10 @@ svg {
 		border-radius: 90px;
 
 		padding: 30px;
+
+		@media (max-width: $xs) {
+			width: 95%;
+		}
 
 		@media (max-width: 500px) {
 			padding: 10px;
@@ -328,6 +335,10 @@ svg {
 	&__block {
 		max-height: 70vh;
 		overflow: auto;
+
+		@media (max-width: 600px) {
+			max-height: 80vh;
+		}
 	}
 
 	&__head {

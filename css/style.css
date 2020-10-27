@@ -384,12 +384,24 @@ svg rect {
   visibility: visible;
 }
 
+@media (max-width: 768px) {
+  .popup-first {
+    padding: 0;
+  }
+}
+
 .popup-first__wrapper {
   width: 80%;
   margin: 0 auto;
   background: url("../images/system_img/services/bg.jpg") center/cover no-repeat;
   border-radius: 90px;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .popup-first__wrapper {
+    width: 95%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -408,6 +420,12 @@ svg rect {
 .popup-first__block {
   max-height: 70vh;
   overflow: auto;
+}
+
+@media (max-width: 600px) {
+  .popup-first__block {
+    max-height: 80vh;
+  }
 }
 
 .popup-first__head {
