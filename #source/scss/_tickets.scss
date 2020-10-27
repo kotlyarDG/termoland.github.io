@@ -219,10 +219,12 @@
 
 		&--date {
 			padding: 0 15px 0 0;
+			appearance: none;
 		}
 
 		&--select {
 			padding: 0 0 0 15px;
+			appearance: none;
 		}
 	}
 
@@ -254,6 +256,7 @@
 		margin: 50px 0 0 0;
 		color: #395a71;
 		font-weight: bold;
+		background-color: #fff;
 	}
 }
 

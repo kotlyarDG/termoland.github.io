@@ -2616,10 +2616,16 @@ svg rect {
 
 .form-ticket__input--date {
   padding: 0 15px 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .form-ticket__input--select {
   padding: 0 0 0 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .form-ticket__date-time {
@@ -2660,6 +2666,7 @@ svg rect {
   margin: 50px 0 0 0;
   color: #395a71;
   font-weight: bold;
+  background-color: #fff;
 }
 
 #date {
