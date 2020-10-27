@@ -415,6 +415,7 @@ svg {
 		margin: 0 auto;
 		background: url("../images/system_img/bg-wrap.jpg") center / cover no-repeat;
 		padding: 2px;
+		display: flex;
 	}
 
 	&__close {
@@ -429,6 +430,7 @@ svg {
 		justify-content: center;
 		overflow: auto;
 		position: relative;
+		align-self: center;
 		img {
 			max-height: 100%;
 		}
