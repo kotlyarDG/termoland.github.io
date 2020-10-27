@@ -232,22 +232,66 @@ $(document).ready(function () {
 		}
 	})();
 
-	$('.main-slider').slick({
-		arrows: false,
-		dots: true,
-		fade: true,
-		autoplay: true,
-		autoplaySpeed: 60000,
-		swipe: false
-	});
+	// $('.main-slider').slick({
+	// 	arrows: false,
+	// 	dots: true,
+	// 	fade: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 60000,
+	// 	swipe: false
+	// });
+
+	// $('.second-slider').slick({
+	// 	arrows: false,
+	// 	infinite: true,
+	// 	fade: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 15000,
+	// 	swipe: false
+	// });
 
 	$('.second-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		arrows: false,
-		infinite: true,
-		fade: true,
-		autoplay: true,
-		autoplaySpeed: 15000,
-		swipe: false
+		asNavFor: '.buttons-slider'
+	});
+
+	$('.buttons-slider').slick({
+		slidesToShow: 4,
+		asNavFor: '.second-slider',
+		focusOnSelect: true,
+		arrows: false,
+
+		responsive: [
+			{
+				breakpoint: 1281,
+				settings: {
+					slidesToShow: 3,
+					asNavFor: '.second-slider',
+					focusOnSelect: true,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					asNavFor: '.second-slider',
+					focusOnSelect: true,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
+					asNavFor: '.second-slider',
+					focusOnSelect: true,
+					arrows: false
+				}
+			}
+		]
 	});
 
 	$('.shares__slider').slick({

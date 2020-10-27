@@ -22,6 +22,32 @@
 		z-index: 11;
 	}
 
+	&__buttons-slider {
+		position: relative;
+		z-index: 13;
+		margin: -120px 0 0 0;
+		width: 70vw;
+
+		@media (max-width: 1280px) {
+			margin: 0 0 0 0;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
+		}
+
+		& .slick-list {
+		}
+
+		& .slick-slide.slick-current {
+			& .button-second__img {
+				transition: 0.3s;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+		}
+	}
+
 	&__leaf-f {
 		position: absolute;
 		top: -20%;
@@ -124,28 +150,31 @@
 	}
 }
 .second-slider {
+	position: relative;
+	z-index: 12;
 	&__slide {
 	}
 
 	&__buttons {
-		display: flex;
-		margin: 100px -25px 0 -25px;
-		position: relative;
-		z-index: 1;
-
-		@media (max-width: $sm) {
-			flex-wrap: wrap;
-		}
 	}
 
 	&__button {
 	}
+
+	& .slick-track {
+		padding: 90px 0 0 0;
+
+		@media (max-width: $xs) {
+			padding: 0;
+		}
+	}
 }
 .slide-second {
-	padding: 80px 0 0 0;
+	// padding: 80px 0 0 0;
 	&__wrapper {
 		display: flex;
 		position: relative;
+		justify-content: space-between;
 
 		@media (max-width: $xs) {
 			flex-direction: column-reverse;
@@ -177,16 +206,22 @@
 		font-size: 30px;
 		line-height: 37px;
 		text-transform: lowercase;
+
+		@media (max-width: 600px) {
+			font-size: 22px;
+			line-height: 29px;
+		}
 	}
 
 	&__img {
 		// flex: 0 1 50%;
 
-		position: absolute;
-		top: -80px;
-		right: 0;
-		width: 45vw;
+		// position: absolute;
+		// top: -80px;
+		// right: 0;
+		width: 40vw;
 		z-index: 0;
+		transform: translate(0, -70px);
 
 		border-radius: 22% 48% 40% 29% / 30% 10% 20% 59%;
 		overflow: hidden;
@@ -201,31 +236,21 @@
 		@media (max-width: $xs) {
 			position: static;
 			width: 90%;
-
+			transform: none;
 			border-radius: 22% 48% 40% 29% / 30% 52% 30% 59%;
 		}
 	}
 }
 .button-second {
 	padding: 0 25px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	@media (max-width: $sm) {
-		flex: 0 1 50%;
-		padding: 25px;
-	}
-
-	@media (max-width: $xs) {
-		flex: 0 1 100%;
-		padding: 25px;
-	}
+	display: block;
+	text-align: center;
 
 	&__img {
 		width: 200px;
 		height: 200px;
 		overflow: hidden;
+		margin: 0 auto;
 
 		img {
 			width: 100%;
