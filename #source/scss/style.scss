@@ -445,10 +445,180 @@ svg {
 			width: 100px;
 			height: 75px;
 			z-index: 50;
+			// background-color: rgba(0, 0, 0, 0.4);
 		}
 
 		@media (max-width: 420px) {
 			left: 35%;
+		}
+
+		&--russian-bath {
+			@media (max-width: 600px) {
+				top: 85%;
+				left: 0;
+				width: 90px;
+				height: 70px;
+			}
+
+			@media (max-width: 350px) {
+				width: 80px;
+			}
+		}
+
+		&--salt-cave {
+			@media (max-width: 600px) {
+				top: 75%;
+				left: 26%;
+				width: 75px;
+				height: 55px;
+			}
+
+			@media (max-width: 350px) {
+				width: 70px;
+			}
+		}
+
+		&--shower-exp {
+			@media (max-width: 600px) {
+				top: 70%;
+				left: 0;
+				width: 75px;
+				height: 85px;
+			}
+
+			@media (max-width: 350px) {
+				width: 70px;
+			}
+		}
+
+		&--baln-bath {
+			@media (max-width: 600px) {
+				top: 48%;
+				left: 0;
+				width: 85px;
+				height: 50px;
+			}
+
+			@media (max-width: 350px) {
+				width: 70px;
+			}
+		}
+
+		&--cryo-sauna {
+			@media (max-width: 600px) {
+				top: 60%;
+				left: 0;
+				width: 85px;
+				height: 50px;
+			}
+
+			@media (max-width: 350px) {
+				width: 70px;
+			}
+		}
+
+		&--fish-garr {
+			@media (max-width: 600px) {
+				top: 48%;
+				left: 31%;
+				width: 75px;
+				height: 50px;
+			}
+
+			@media (max-width: 350px) {
+				width: 70px;
+			}
+		}
+
+		&--spa {
+			@media (max-width: 600px) {
+				top: 33%;
+				left: 0;
+				width: 150px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 130px;
+			}
+		}
+
+		&--biomp-lamp {
+			@media (max-width: 600px) {
+				top: 33%;
+				left: 50%;
+				width: 70px;
+				height: 40px;
+			}
+
+			@media (max-width: 350px) {
+				width: 60px;
+			}
+		}
+
+		&--hamam-first {
+			@media (max-width: 600px) {
+				top: 18%;
+				left: 0;
+				width: 150px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 130px;
+			}
+		}
+
+		&--hamam-second {
+			@media (max-width: 600px) {
+				top: 1%;
+				left: 0;
+				width: 70px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 60px;
+			}
+		}
+
+		&--hamam-third {
+			@media (max-width: 600px) {
+				top: 1%;
+				left: 22%;
+				width: 90px;
+				height: 50px;
+			}
+
+			@media (max-width: 350px) {
+				width: 80px;
+			}
+		}
+
+		&--children {
+			@media (max-width: 600px) {
+				top: 1%;
+				left: 72%;
+				width: 90px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 80px;
+			}
+		}
+
+		&--red-zone {
+			@media (max-width: 600px) {
+				top: 20%;
+				left: 0;
+				width: 90px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 80px;
+			}
 		}
 	}
 }
@@ -508,6 +678,11 @@ svg {
 		@media (max-width: $xs) {
 			margin: 5vh 0 0 0;
 		}
+
+		a {
+			font-weight: bold;
+			color: #fff;
+		}
 	}
 
 	&__btn {
@@ -518,21 +693,16 @@ svg {
 	}
 
 	&__items {
-		// margin: 50px 0 0 0;
 		width: 100%;
 		overflow-x: auto;
-		display: flex;
-		justify-content: center;
-
-		@media (max-width: 800px) {
-			justify-content: flex-start;
-		}
+		white-space: nowrap;
 	}
 
 	&__item {
-		flex: 0 0 100px;
+		width: 100px;
 		text-align: center;
 		margin: 0 20px;
+		display: inline-block;
 
 		&:first-child {
 			margin: 0 20px 0 0;

@@ -3,7 +3,6 @@
 	height: 100vh;
 
 	@media (max-width: $xs) {
-		// flex-direction: column;
 		display: block;
 	}
 
@@ -99,7 +98,6 @@
 	}
 
 	&._active {
-		transform: none;
 		opacity: 1;
 		visibility: visible;
 		display: block;

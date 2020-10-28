@@ -11,4 +11,5 @@ $(document).ready(function () {
 		$('.content-ticket--main').addClass('_active');
 		e.preventDefault();
 	});
+
 });
