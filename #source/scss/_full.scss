@@ -6,6 +6,14 @@
 
 	background: url("../images/system_img/bg-wrap.jpg") center / cover no-repeat;
 
+	@media (max-height: 400px) {
+		height: 120vh;
+	}
+
+	@media (max-height: 322px) {
+		height: 170vh;
+	}
+
 	&__video {
 		position: absolute;
 		top: 0;
@@ -19,6 +27,11 @@
 			@media (max-width: $md) {
 				width: auto;
 				height: 100vh;
+			}
+
+			@media (max-height: 400px) {
+				width: 100vw;
+				height: auto;
 			}
 		}
 
