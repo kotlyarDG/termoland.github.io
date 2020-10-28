@@ -262,6 +262,7 @@ $(document).ready(function () {
 		asNavFor: '.second-slider',
 		focusOnSelect: true,
 		arrows: false,
+		slidesToScroll: 4,
 
 		responsive: [
 			{

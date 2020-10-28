@@ -252,6 +252,7 @@
 		height: 200px;
 		overflow: hidden;
 		margin: 0 auto;
+		transition: 0.3s;
 
 		img {
 			width: 100%;
@@ -276,6 +277,7 @@
 
 	&._active {
 		.button-second__img {
+			transition: 0.3s;
 			border-radius: 50%;
 		}
 	}

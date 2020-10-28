@@ -2230,22 +2230,20 @@ svg rect {
   }
 }
 
+@media (max-height: 500px) {
+  .services__wrapper {
+    height: 240vh;
+  }
+}
+
 .services__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
-  padding: 0 10px;
+  padding: 0 10px 0 10px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -2265,6 +2263,7 @@ svg rect {
 }
 
 .services__title {
+  margin: 65vh 0 0 0;
   position: relative;
   z-index: 2;
   font-weight: 900;
@@ -2285,6 +2284,12 @@ svg rect {
 @media (max-width: 1300px) {
   .services__title {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .services__title {
+    margin: 0 0 0 0;
   }
 }
 
@@ -2624,6 +2629,9 @@ svg rect {
   height: 200px;
   overflow: hidden;
   margin: 0 auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button-second__img img {
@@ -2647,6 +2655,9 @@ svg rect {
 }
 
 .button-second._active .button-second__img {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 50%;
 }
 

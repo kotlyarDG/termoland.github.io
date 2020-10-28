@@ -11,16 +11,21 @@
 			display: block;
 			height: 100vh;
 		}
+
+		@media (max-height: 500px) {
+			height: 240vh;
+		}
 	}
 
 	&__item {
 		flex: 0 1 25%;
 		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
 		height: 100vh;
-		padding: 0 10px;
+		padding: 0 10px 0 10px;
+		text-align: center;
 
 		@media (max-width: $sm) {
 			padding: 10vh 10px 0 10px;
@@ -36,6 +41,7 @@
 	}
 
 	&__title {
+		margin: 65vh 0 0 0;
 		position: relative;
 		z-index: 2;
 		font-weight: 900;
@@ -54,6 +60,10 @@
 
 		@media (max-width: 1300px) {
 			font-size: 28px;
+		}
+
+		@media (max-width: $sm) {
+			margin: 0 0 0 0;
 		}
 	}
 }
