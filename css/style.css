@@ -2374,6 +2374,12 @@ svg rect {
 
 .content-ticket {
   padding: 5vw 50px 60px 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -2430,6 +2436,15 @@ svg rect {
   text-transform: uppercase;
   width: 100%;
   text-align: center;
+}
+
+.content-ticket._active {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 
 .item-ticket {
