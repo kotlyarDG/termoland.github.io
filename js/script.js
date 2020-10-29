@@ -5,6 +5,10 @@ $(document).ready(function () {
 		// $('body').toggleClass('_lock')
 	});
 
+	$('.menu__item').click(function () {
+		$('.header__burger,.menu').removeClass('_active')
+	});
+
 
 	(function () {
 		let originalPositions = [];
