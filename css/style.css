@@ -3208,6 +3208,31 @@ svg rect {
   }
 }
 
+@media (max-width: 768px) {
+  .item-news__title {
+    cursor: pointer;
+    position: relative;
+    padding: 0 25px 0 0;
+  }
+  .item-news__title:before {
+    content: url("../images/system_img/Vector-news.svg");
+    position: absolute;
+    top: 0;
+    right: 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .item-news__title._active:before {
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
 .item-news__text {
   font-size: 20px;
   line-height: 24px;
@@ -3217,6 +3242,12 @@ svg rect {
   .item-news__text {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-news__text {
+    display: none;
   }
 }
 

@@ -168,6 +168,26 @@
 			font-size: 25px;
 			line-height: 30px;
 		}
+
+		@media (max-width: $xs) {
+			cursor: pointer;
+			position: relative;
+			padding: 0 25px 0 0;
+			&:before {
+				content: url("../images/system_img/Vector-news.svg");
+				position: absolute;
+				top: 0;
+				right: 10px;
+				transition: 0.5s;
+			}
+
+			&._active {
+				&:before {
+					transform: rotate(-180deg);
+					transition: 0.5s;
+				}
+			}
+		}
 	}
 
 	&__text {
@@ -180,6 +200,10 @@
 		@media (max-width: 1400px) {
 			font-size: 18px;
 			line-height: 24px;
+		}
+
+		@media (max-width: $xs) {
+			display: none;
 		}
 	}
 
