@@ -2231,10 +2231,13 @@ svg rect {
 
 .aqua__leaf-s {
   position: absolute;
-  bottom: -60%;
+  bottom: -35%;
   left: -70px;
   z-index: 10;
-  max-width: 25vw;
+  max-width: 10vw;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 @media (max-width: 1199px) {

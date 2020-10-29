@@ -614,11 +614,12 @@
 
 	&__leaf-s {
 		position: absolute;
-		bottom: -60%;
+		bottom: -35%;
 		left: -70px;
 		z-index: 10;
 
-		max-width: 25vw;
+		max-width: 10vw;
+		transform: rotate(15deg);
 
 		@media (max-width: $md) {
 			max-width: 10vw;
