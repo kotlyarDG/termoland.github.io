@@ -233,7 +233,16 @@
 		color: #000000;
 
 		&--date {
-			padding: 0 15px 0 0;
+			padding: 0 15px 0 15px;
+			appearance: none;
+
+			@media (max-width: $xs) {
+				padding: 0 15px;
+			}
+		}
+
+		&--time {
+			padding: 0 15px 0 15px;
 			appearance: none;
 
 			@media (max-width: $xs) {
