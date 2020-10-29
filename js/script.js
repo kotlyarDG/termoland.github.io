@@ -304,7 +304,7 @@ $(document).ready(function () {
 	});
 
 	$('.shares__slider').slick({
-		arrows: false,
+		arrows: true,
 		slidesToShow: 1,
 		infinite: true,
 		centerMode: true,
@@ -316,7 +316,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 769,
 				settings: {
-					arrows: false,
+					arrows: true,
 					centerMode: true,
 					centerPadding: '0',
 					slidesToShow: 1

@@ -2697,11 +2697,25 @@ svg rect {
   z-index: 11;
 }
 
+@media (max-width: 1400px) {
+  .button-second__date {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .button-second__name {
   font-size: 20px;
   line-height: 24px;
   position: relative;
   z-index: 11;
+}
+
+@media (max-width: 1400px) {
+  .button-second__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .button-second._active .button-second__img {
@@ -2742,6 +2756,8 @@ svg rect {
   -webkit-transform: translateY(-57px);
       -ms-transform: translateY(-57px);
           transform: translateY(-57px);
+  /* Стрелка влево */
+  /* Стрелка вправо */
 }
 
 @media (max-width: 768px) {
@@ -2791,6 +2807,28 @@ svg rect {
         -ms-transform: none;
             transform: none;
   }
+}
+
+.shares__slider .slick-arrow {
+  font-size: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/system_img/services/vector.svg") center/cover no-repeat;
+  position: absolute;
+  z-index: 50;
+  top: 30%;
+}
+
+.shares__slider .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.shares__slider .slick-arrow.slick-next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 20px;
 }
 
 .shares__img {
