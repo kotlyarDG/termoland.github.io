@@ -254,7 +254,16 @@ $(document).ready(function () {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		asNavFor: '.buttons-slider'
+		asNavFor: '.buttons-slider',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					adaptiveHeight: true,
+				}
+			}
+		]
 	});
 
 	$('.buttons-slider').slick({
