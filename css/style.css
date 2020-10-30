@@ -1546,6 +1546,10 @@ svg rect {
   max-width: 100%;
 }
 
+.aqua__bg--mobile {
+  display: none;
+}
+
 .aqua__first-link {
   display: none;
 }

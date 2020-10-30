@@ -19,6 +19,21 @@
 		}
 	}
 
+	&__bg--mobile {
+		display: none;
+
+		// @media (max-width: 600px) {
+		// 	display: block;
+		// 	width: 100%;
+		// }
+	}
+
+	// &__bg {
+	// 	@media (max-width: 600px) {
+	// 		display: none;
+	// 	}
+	// }
+
 	&__first-link {
 		display: none;
 
