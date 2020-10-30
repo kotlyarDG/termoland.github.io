@@ -7,7 +7,6 @@
 		overflow-x: auto;
 
 		@media (max-width: $sm) {
-			// flex-direction: column;
 			display: block;
 			height: 100vh;
 		}
@@ -20,10 +19,7 @@
 	&__item {
 		flex: 0 1 25%;
 		position: relative;
-		// display: flex;
-		// align-items: center;
-		// justify-content: center;
-		height: 100vh;
+		height: calc(100vh - 70px);
 		padding: 0 10px 0 10px;
 		text-align: center;
 
@@ -41,7 +37,7 @@
 	}
 
 	&__title {
-		margin: 65vh 0 0 0;
+		margin: 60vh 0 0 0;
 		position: relative;
 		z-index: 2;
 		font-weight: 900;

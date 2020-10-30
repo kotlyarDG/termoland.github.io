@@ -2,21 +2,21 @@
 	background: url("../images/system_img/bg-wrap.jpg") center / cover no-repeat;
 	padding: 88px 15px 100px 15px;
 	position: relative;
+	margin: 100px 0 0 0;
 
 	&__leaf {
 		position: absolute;
 		top: -250px;
 		left: 0;
 		z-index: 5;
-		width: 20vw;
+		width: 10vw;
 
 		@media (max-width: $sm) {
-			top: -150px;
-			width: 25vw;
+			top: -100px;
 		}
 		@media (max-width: 480px) {
 			top: -100px;
-			width: 30vw;
+			width: 15vw;
 		}
 
 		img {
@@ -46,17 +46,11 @@
 		}
 	}
 
-	&__wrapper {
-	}
-
 	&__title {
 		width: 100%;
 		padding: 0 10px;
 		margin: 0 0 60px 0;
 		text-align: center;
-	}
-
-	&__filter {
 	}
 }
 .filter {
@@ -153,9 +147,6 @@
 			width: auto;
 			justify-content: center;
 		}
-	}
-
-	&__item {
 	}
 }
 
@@ -357,8 +348,8 @@
 	&__btn {
 		display: inline-block;
 		align-self: flex-start;
-		color: #395a71;
-		background-color: #fff;
+		color: #fff;
+		background: url("../images/system_img/services/bg.jpg") center / cover no-repeat;
 		font-weight: bold;
 		margin: 15px 0 0 0;
 	}

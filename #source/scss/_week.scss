@@ -1,7 +1,7 @@
 .week {
 	padding: 10vh 0 10vh 30px;
 	position: relative;
-	z-index: 1;
+	z-index: 12;
 
 	@media (max-width: $xs) {
 		padding: 10vh 10px;
@@ -48,20 +48,40 @@
 
 	&__leaf-f {
 		position: absolute;
-		top: -20%;
-		left: -10%;
-		z-index: 10;
+		top: -27%;
+		left: -15%;
+		z-index: 12;
 
 		transform: rotate(180deg);
 
-		max-width: 35vw;
+		max-width: 25vw;
+
+		@media (max-width: 2200px) {
+			top: -22%;
+		}
+
+		@media (max-width: 1900px) {
+			top: -19%;
+		}
 
 		@media (max-width: 1440px) {
-			top: -100px;
+			top: -18%;
+			left: -15%;
 		}
-		@media (max-width: 550px) {
-			top: -80px;
-			max-width: 55vw;
+
+		@media (max-width: 1100px) {
+			max-width: 30vw;
+		}
+		@media (max-width: $sm) {
+			top: -14%;
+			max-width: 35vw;
+		}
+		@media (max-width: $xs) {
+			max-width: 40vw;
+		}
+
+		@media (max-width: 620px) {
+			top: -100px;
 		}
 
 		img {
@@ -168,7 +188,6 @@
 	}
 }
 .slide-second {
-	// padding: 80px 0 0 0;
 	&__wrapper {
 		display: flex;
 		position: relative;
@@ -198,7 +217,7 @@
 
 	&__title {
 		font-weight: bold;
-		@include adaptive-font(60, 35);
+		@include adaptive-font(50, 25);
 		line-height: 121%;
 
 		color: #395a71;
@@ -206,8 +225,8 @@
 	}
 
 	&__text {
-		font-size: 30px;
-		line-height: 37px;
+		font-size: 26px;
+		line-height: 32px;
 		text-transform: lowercase;
 
 		@media (max-width: 1400px) {
@@ -216,17 +235,12 @@
 		}
 
 		@media (max-width: 600px) {
-			font-size: 22px;
-			line-height: 29px;
+			font-size: 18px;
+			line-height: 22px;
 		}
 	}
 
 	&__img {
-		// flex: 0 1 50%;
-
-		// position: absolute;
-		// top: -80px;
-		// right: 0;
 		width: 40vw;
 		z-index: 0;
 		transform: translate(0, -70px);

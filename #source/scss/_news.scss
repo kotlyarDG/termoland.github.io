@@ -1,5 +1,5 @@
 .news {
-	padding: 40px 0 200px 0;
+	padding: 40px 0 150px 0;
 	position: relative;
 
 	@media (max-width: $xs) {
@@ -8,7 +8,7 @@
 
 	&__leaf-f {
 		position: absolute;
-		bottom: -20%;
+		bottom: -25%;
 		left: 0;
 		z-index: 10;
 
@@ -29,7 +29,7 @@
 
 	&__leaf-s {
 		position: absolute;
-		bottom: -20%;
+		bottom: -25%;
 		right: 0;
 		z-index: 10;
 

@@ -1,6 +1,6 @@
 .footer {
 	background: url("../images/system_img/footer/bg.jpg") center / cover no-repeat;
-	padding: 77px 15px 30px 15px;
+	padding: 45px 15px 30px 15px;
 	position: relative;
 	z-index: 1;
 
@@ -43,18 +43,6 @@
 		}
 	}
 
-	&__column--center {
-	}
-
-	&__item-center {
-	}
-
-	&__column-links {
-	}
-
-	&__links {
-	}
-
 	&__ps {
 		width: 100%;
 		text-align: center;
@@ -67,7 +55,7 @@
 }
 .item-center {
 	&:first-child {
-		margin: 0 0 37px 0;
+		margin: 0 0 27px 0;
 	}
 	&__text {
 		font-weight: bold;
@@ -92,7 +80,7 @@
 	&__item {
 		display: flex;
 		align-items: center;
-		margin: 0 0 30px 0;
+		margin: 0 0 20px 0;
 
 		&:last-child {
 			margin: 0;

@@ -58,15 +58,24 @@
 			position: absolute;
 			z-index: 50;
 			top: 30%;
+			transition: 0.4s;
 		}
 		/* Стрелка влево */
 		.slick-arrow.slick-prev {
 			left: 20px;
+
+			&:hover {
+				transform: translate(-5px, -5px) rotate(-360deg);
+			}
 		}
 		/* Стрелка вправо */
 		.slick-arrow.slick-next {
 			transform: rotate(180deg);
 			right: 20px;
+
+			&:hover {
+				transform: translate(5px, -5px) rotate(179deg);
+			}
 		}
 	}
 

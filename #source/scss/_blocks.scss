@@ -4,7 +4,7 @@
 	text-transform: uppercase;
 	color: $blue;
 
-	@include adaptive-font(70, 40);
+	@include adaptive-font(60, 30);
 	line-height: 121%;
 }
 
@@ -16,11 +16,12 @@
 	text-transform: lowercase;
 	transition: 0.4s;
 
-	&:hover {
-		// transform: translate(0, 10px);
-		animation-name: rot;
-		animation-duration: 0.7s;
-		animation-timing-function: ease;
+	@media (min-width: $xs) {
+		&:hover {
+			animation-name: rot;
+			animation-duration: 0.7s;
+			animation-timing-function: ease;
+		}
 	}
 }
 
