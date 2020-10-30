@@ -44,6 +44,38 @@
 				overflow: hidden;
 			}
 		}
+
+		.slick-arrow {
+			font-size: 0;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background: url("../images/system_img/arrow-week.svg") center / cover no-repeat;
+			position: absolute;
+			z-index: 50;
+			top: 30%;
+			transition: 0.4s;
+		}
+		/* Стрелка влево */
+		.slick-arrow.slick-prev {
+			left: 0;
+
+			@media (min-width: $xs) {
+				&:hover {
+					transform: translate(-5px, -5px) rotate(-360deg);
+				}
+			}
+		}
+		/* Стрелка вправо */
+		.slick-arrow.slick-next {
+			transform: rotate(180deg);
+			right: -20px;
+			@media (min-width: $xs) {
+				&:hover {
+					transform: translate(5px, -5px) rotate(179deg);
+				}
+			}
+		}
 	}
 
 	&__leaf-f {
