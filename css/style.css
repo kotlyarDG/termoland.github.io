@@ -901,6 +901,195 @@ svg rect {
   }
 }
 
+@media (max-width: 600px) {
+  .popup-map__link-aqua--herbal {
+    top: 2%;
+    left: 50%;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--herbal {
+    width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--bar {
+    top: 2%;
+    left: 65%;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--bar {
+    width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--children-bas {
+    top: 35%;
+    left: 35%;
+    width: 100px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--children-bas {
+    width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--phyto-bar {
+    top: 42%;
+    left: 75%;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--phyto-bar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--phyto-bar-2 {
+    top: 42%;
+    left: 0;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--phyto-bar-2 {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--flush {
+    top: 35%;
+    left: 35%;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--flush {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--himal-sauna {
+    top: 55%;
+    left: 20%;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--himal-sauna {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--ice-dome {
+    top: 47%;
+    left: 80%;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--ice-dome {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--jade-sauna {
+    top: 67%;
+    left: 20%;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--jade-sauna {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--cedar {
+    top: 77%;
+    left: 80%;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--cedar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--juniper {
+    top: 67%;
+    left: 80%;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--juniper {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--alder {
+    top: 57%;
+    left: 80%;
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup-map__link-aqua--alder {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-map__link-aqua--russian-bath-2 {
+    top: 80%;
+    left: 10%;
+    width: 50px;
+    height: 40px;
+  }
+}
+
 .popup-aqua__wrapper {
   background: url("../images/system_img/services/bg.jpg") center/cover no-repeat;
   width: 85%;
@@ -990,13 +1179,20 @@ svg rect {
 }
 
 .popup-aqua__items {
-  width: 100%;
+  height: 100px;
   overflow-x: auto;
-  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup-aqua__item {
   width: 100px;
+  height: 100px;
   text-align: center;
   margin: 0 20px;
   display: inline-block;
@@ -1061,7 +1257,7 @@ svg rect {
   height: 70px;
   position: fixed;
   z-index: 555;
-  background: url("../images/system_img/header/bg-header.jpg");
+  background: url("../images/system_img/header/bg-header.jpg") center/cover no-repeat;
 }
 
 .header__wrapper {
@@ -1135,6 +1331,10 @@ svg rect {
   text-transform: uppercase;
   color: #ffffff;
   margin: 3px 0 0 0;
+}
+
+.header__logo {
+  width: 180px;
 }
 
 @media (max-width: 1450px) {
@@ -1215,6 +1415,7 @@ svg rect {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    height: 0px;
   }
 }
 
@@ -2439,9 +2640,593 @@ svg rect {
   }
 }
 
+.aqua__link-aqua--herbal {
+  width: 160px;
+  height: 120px;
+  left: 50%;
+  top: 5%;
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--herbal {
+    width: 150px;
+    left: 50%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--herbal {
+    left: 50%;
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--herbal {
+    left: 50%;
+    width: 90px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--herbal {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.aqua__link-aqua--bar {
+  width: 160px;
+  height: 120px;
+  left: 80%;
+  top: 2%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--bar {
+    left: 78%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--bar {
+    left: 81%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--bar {
+    left: 85%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--bar {
+    width: 150px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--bar {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--bar {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--bar {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.aqua__link-aqua--children-bas {
+  width: 160px;
+  height: 120px;
+  left: 45%;
+  top: 35%;
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--children-bas {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--children-bas {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--children-bas {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--relax-bas {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+.aqua__link-aqua--phyto-bar {
+  width: 160px;
+  height: 120px;
+  left: 57%;
+  top: 41%;
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--phyto-bar {
+    width: 180px;
+    left: 59%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--phyto-bar {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--phyto-bar {
+    width: 120px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--phyto-bar {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+.aqua__link-aqua--flush {
+  width: 160px;
+  height: 120px;
+  left: 67%;
+  top: 35%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--flush {
+    left: 68%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--flush {
+    left: 70%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--flush {
+    left: 70%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--flush {
+    width: 150px;
+    left: 75%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--flush {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--flush {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--flush {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.aqua__link-aqua--himal-sauna {
+  width: 160px;
+  height: 120px;
+  left: 63%;
+  top: 55%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--himal-sauna {
+    left: 63%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--himal-sauna {
+    left: 65%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--himal-sauna {
+    left: 65%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--himal-sauna {
+    width: 150px;
+    left: 70%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--himal-sauna {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--himal-sauna {
+    width: 90px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--himal-sauna {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+.aqua__link-aqua--ice-dome {
+  width: 160px;
+  height: 120px;
+  left: 78%;
+  top: 45%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--ice-dome {
+    left: 80%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--ice-dome {
+    left: 82%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--ice-dome {
+    left: 85%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--ice-dome {
+    width: 150px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--ice-dome {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--ice-dome {
+    width: 90px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--ice-dome {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+.aqua__link-aqua--jade-sauna {
+  width: 160px;
+  height: 120px;
+  left: 63%;
+  top: 67%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--jade-sauna {
+    left: 63%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--jade-sauna {
+    left: 65%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--jade-sauna {
+    left: 65%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--jade-sauna {
+    width: 150px;
+    left: 70%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--jade-sauna {
+    width: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--jade-sauna {
+    width: 90px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--jade-sauna {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+.aqua__link-aqua--cedar {
+  width: 160px;
+  height: 100px;
+  left: 78%;
+  top: 77%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--cedar {
+    left: 80%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--cedar {
+    left: 82%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--cedar {
+    left: 85%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--cedar {
+    width: 150px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--cedar {
+    width: 110px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--cedar {
+    width: 90px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--cedar {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.aqua__link-aqua--juniper {
+  width: 160px;
+  height: 100px;
+  left: 78%;
+  top: 67%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--juniper {
+    left: 80%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--juniper {
+    left: 82%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--juniper {
+    left: 85%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--juniper {
+    width: 150px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--juniper {
+    width: 110px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--juniper {
+    width: 90px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--juniper {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.aqua__link-aqua--alder {
+  width: 160px;
+  height: 100px;
+  left: 78%;
+  top: 57%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--alder {
+    left: 80%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--alder {
+    left: 82%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--alder {
+    left: 85%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--alder {
+    width: 150px;
+    left: 90%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--alder {
+    width: 110px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--alder {
+    width: 90px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--alder {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+.aqua__link-aqua--russian-bath-2 {
+  width: 80px;
+  height: 80px;
+  left: 63%;
+  top: 82%;
+}
+
+@media (max-width: 2400px) {
+  .aqua__link-aqua--russian-bath-2 {
+    left: 63%;
+  }
+}
+
+@media (max-width: 2150px) {
+  .aqua__link-aqua--russian-bath-2 {
+    left: 65%;
+  }
+}
+
+@media (max-width: 2050px) {
+  .aqua__link-aqua--russian-bath-2 {
+    left: 65%;
+  }
+}
+
+@media (max-width: 1820px) {
+  .aqua__link-aqua--russian-bath-2 {
+    width: 70px;
+    left: 68%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .aqua__link-aqua--russian-bath-2 {
+    width: 60px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aqua__link-aqua--russian-bath-2 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aqua__link-aqua--russian-bath-2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .aqua__leaf-f {
   position: absolute;
-  top: -40%;
+  top: -25%;
   right: 0;
   z-index: 10;
   max-width: 25vw;
