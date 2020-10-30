@@ -650,7 +650,6 @@ svg rect {
     width: 100px;
     height: 75px;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -1599,7 +1598,6 @@ svg rect {
   height: 100px;
   top: 65%;
   left: 45%;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 600px) {
