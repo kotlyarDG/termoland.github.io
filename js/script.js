@@ -359,4 +359,8 @@ $(document).ready(function () {
 	$('.aqua__link-aqua--woman').click(function () {
 		aquaImg.attr('src', "images/system_img/aqua-zona/bg-woman.png")
 	});
+
+	if ($(window).width() <= 601) {
+		aquaImg.attr('src', "images/system_img/aqua-zona/bg.png")
+	} else { }
 });	

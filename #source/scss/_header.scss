@@ -10,12 +10,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 50px;
+		padding: 0 25px;
 		width: 100%;
 		height: 100%;
 
 		@media (max-width: $lg) {
-			padding: 0 25px;
+			padding: 0 10px;
 		}
 
 		@media (max-width: 400px) {
@@ -154,6 +154,7 @@
 		font-size: 19px;
 		line-height: 23px;
 		color: #000;
+		text-align: center;
 
 		@media (max-width: $lg) {
 			padding: 9px 5px 8px 20px;

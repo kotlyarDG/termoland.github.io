@@ -77,7 +77,7 @@ svg {
 		top: 0;
 		left: 0;
 		z-index: 0;
-		opacity: 0.6;
+		opacity: 0.2;
 	}
 
 	&__lines-2 {
@@ -85,7 +85,7 @@ svg {
 		top: 1200px;
 		right: 0;
 		z-index: 0;
-		opacity: 0.6;
+		opacity: 0.2;
 	}
 }
 
@@ -432,7 +432,7 @@ svg {
 	}
 
 	&__content {
-		max-height: calc(95% - 100px);
+		max-height: calc(95vh - 100px);
 		width: auto;
 		margin: 0 auto;
 		transform: translate(-15px, 0);
@@ -455,11 +455,39 @@ svg {
 			width: 100px;
 			height: 75px;
 			z-index: 50;
-			// background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 
 		@media (max-width: 420px) {
 			left: 35%;
+		}
+
+		&--map-12 {
+			width: 50px;
+			height: 50px;
+			top: 90%;
+			left: 85%;
+		}
+
+		&--map-21 {
+			width: 50px;
+			height: 50px;
+			top: 90%;
+			left: 0;
+		}
+
+		&--map-23 {
+			width: 50px;
+			height: 50px;
+			top: 90%;
+			left: 85%;
+		}
+
+		&--map-32 {
+			width: 50px;
+			height: 50px;
+			top: 90%;
+			left: 0;
 		}
 
 		&--russian-bath {
@@ -628,6 +656,19 @@ svg {
 
 			@media (max-width: 350px) {
 				width: 80px;
+			}
+		}
+
+		&--red-zone-1 {
+			@media (max-width: 600px) {
+				top: 20%;
+				left: 85%;
+				width: 50px;
+				height: 80px;
+			}
+
+			@media (max-width: 350px) {
+				width: 40px;
 			}
 		}
 	}
