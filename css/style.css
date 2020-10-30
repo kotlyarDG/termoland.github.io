@@ -205,8 +205,8 @@ svg rect {
   position: fixed;
   display: block;
   width: 100vw;
-  min-height: calc(100vh - 100px);
-  top: 100px;
+  min-height: calc(100vh - 70px);
+  top: 70px;
   left: 0;
   z-index: 50;
   background-color: #fff;
@@ -244,14 +244,14 @@ svg rect {
 }
 
 .popup__block {
-  max-height: calc(70vh - 100px);
+  max-height: calc(70vh - 70px);
   overflow-y: auto;
   width: 100%;
 }
 
 @media (max-width: 600px) {
   .popup__block {
-    max-height: calc(85vh - 100px);
+    max-height: calc(85vh - 70px);
   }
 }
 
@@ -512,13 +512,13 @@ svg rect {
 }
 
 .popup-first__block {
-  max-height: calc(70vh - 100px);
+  max-height: calc(70vh - 70px);
   overflow: auto;
 }
 
 @media (max-width: 600px) {
   .popup-first__block {
-    max-height: calc(80vh - 100px);
+    max-height: calc(80vh - 70px);
   }
 }
 
@@ -611,7 +611,7 @@ svg rect {
 
 .popup-map__wrapper {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   margin: 0 auto;
   background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
   padding: 2px;
@@ -621,7 +621,7 @@ svg rect {
 }
 
 .popup-map__content {
-  max-height: calc(95vh - 100px);
+  max-height: calc(95vh - 70px);
   width: auto;
   margin: 0 auto;
   -webkit-transform: translate(-15px, 0);
@@ -917,7 +917,7 @@ svg rect {
 }
 
 .popup-aqua__content {
-  max-height: calc(70vh - 100px);
+  max-height: calc(70vh - 70px);
   overflow: auto;
   text-align: center;
   position: relative;
@@ -925,7 +925,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-aqua__content {
-    max-height: calc(85vh - 100px);
+    max-height: calc(85vh - 70px);
   }
 }
 
@@ -1058,7 +1058,7 @@ svg rect {
 
 .header {
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: fixed;
   z-index: 555;
   background: url("../images/system_img/header/bg-header.jpg");
@@ -1153,14 +1153,24 @@ svg rect {
   max-width: 100%;
 }
 
+@media (min-width: 1250px) {
+  .menu {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 0 20px;
+  }
+}
+
 @media (max-width: 1250px) {
   .menu {
     position: absolute;
     background: url("../images/system_img/footer/bg.jpg");
     z-index: 4;
-    top: 100px;
+    top: 69px;
     left: 0;
     width: 0;
+    height: 0;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -1170,6 +1180,9 @@ svg rect {
     opacity: 0;
   }
   .menu._active {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    display: block;
     width: 100%;
     padding: 10px;
     -webkit-transform: translate(0, 0);
@@ -1183,6 +1196,10 @@ svg rect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1250px) {
@@ -1191,9 +1208,9 @@ svg rect {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1404,8 +1421,8 @@ svg rect {
 
 .full {
   position: relative;
-  margin: 100px 0 0 0;
-  height: calc(100vh - 100px);
+  margin: 70px 0 0 0;
+  height: calc(100vh - 70px);
   overflow: hidden;
   background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
 }
