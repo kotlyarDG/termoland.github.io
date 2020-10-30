@@ -29,9 +29,9 @@ html {
 body {
 	font-family: "Montserrat", sans-serif;
 
-	// &._lock {
-	// 	overflow: hidden;
-	// }
+	&._lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
