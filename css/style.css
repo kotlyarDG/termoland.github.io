@@ -1559,12 +1559,50 @@ svg rect {
   z-index: 9;
 }
 
+@media (max-width: 600px) {
+  .aqua__wrapper {
+    background: url("../../images/system_img/aqua-zona/bg-Vector.svg") center/cover no-repeat;
+    padding: 5px;
+  }
+}
+
 .aqua__wrapper img {
   max-width: 100%;
 }
 
 .aqua__bg--mobile {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .aqua__bg--mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.aqua__mobile-text {
+  display: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.017em;
+  margin: 10px 0 0 0;
+  color: #395a71;
+  padding: 0 0 20px 0;
+}
+
+@media (max-width: 600px) {
+  .aqua__mobile-text {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .aqua__bg {
+    display: none;
+  }
 }
 
 .aqua__first-link {
