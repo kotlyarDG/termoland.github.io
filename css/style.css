@@ -580,10 +580,21 @@ svg rect {
   width: 100%;
   overflow-x: auto;
   border-radius: 25px;
+  overflow-y: hidden;
 }
 
 .popup-first__img {
   min-width: 150px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup-first__img:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .popup-first__img img {
@@ -1543,24 +1554,85 @@ svg rect {
   height: 100px;
   top: 65%;
   left: 45%;
-}
-
-@media (max-width: 1500px) {
-  .aqua__link-aqua {
-    left: 40%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .aqua__link-aqua {
-    width: 150px;
-    height: 75px;
-  }
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 600px) {
   .aqua__link-aqua {
     display: none;
+  }
+}
+
+.aqua__link-aqua--man {
+  top: 89%;
+  width: 180px;
+  left: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+  .aqua__link-aqua--man {
+    width: 170px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .aqua__link-aqua--man {
+    width: 130px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aqua__link-aqua--man {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .aqua__link-aqua--man {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+.aqua__link-aqua--woman {
+  top: 89%;
+  width: 180px;
+  left: 40%;
+  cursor: pointer;
+}
+
+@media (max-width: 2100px) {
+  .aqua__link-aqua--woman {
+    left: 37%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .aqua__link-aqua--woman {
+    left: 35%;
+    width: 150px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .aqua__link-aqua--woman {
+    width: 130px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aqua__link-aqua--woman {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .aqua__link-aqua--woman {
+    width: 80px;
+    height: 40px;
   }
 }
 
@@ -1579,25 +1651,25 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--russian-bath {
-    left: 10%;
+    left: 7%;
   }
 }
 
 @media (max-width: 1900px) {
   .aqua__link-aqua--russian-bath {
-    left: 7%;
+    left: 4%;
   }
 }
 
 @media (max-width: 1680px) {
   .aqua__link-aqua--russian-bath {
-    left: 3%;
+    left: 0%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--russian-bath {
-    left: 3%;
+    left: 0%;
   }
 }
 
@@ -1681,25 +1753,25 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--shower-exp {
-    left: 13%;
+    left: 10%;
   }
 }
 
 @media (max-width: 2050px) {
   .aqua__link-aqua--shower-exp {
-    left: 8%;
+    left: 5%;
   }
 }
 
 @media (max-width: 1820px) {
   .aqua__link-aqua--shower-exp {
-    left: 6%;
+    left: 3%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--shower-exp {
-    left: 5%;
+    left: 1%;
     width: 80px;
     height: 100px;
   }
@@ -1734,26 +1806,26 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--baln-bath {
-    left: 13%;
+    left: 10%;
   }
 }
 
 @media (max-width: 2050px) {
   .aqua__link-aqua--baln-bath {
-    left: 8%;
+    left: 5%;
   }
 }
 
 @media (max-width: 1820px) {
   .aqua__link-aqua--baln-bath {
     width: 120px;
-    left: 5%;
+    left: 1%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--baln-bath {
-    left: 5%;
+    left: 1%;
     width: 80px;
     height: 70px;
   }
@@ -1788,26 +1860,26 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--cryo-sauna {
-    left: 13%;
+    left: 10%;
   }
 }
 
 @media (max-width: 2050px) {
   .aqua__link-aqua--cryo-sauna {
-    left: 8%;
+    left: 5%;
   }
 }
 
 @media (max-width: 1820px) {
   .aqua__link-aqua--cryo-sauna {
     width: 120px;
-    left: 5%;
+    left: 1%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--cryo-sauna {
-    left: 5%;
+    left: 1%;
     width: 80px;
     height: 70px;
   }
@@ -1896,26 +1968,26 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--spa {
-    left: 13%;
+    left: 10%;
   }
 }
 
 @media (max-width: 2050px) {
   .aqua__link-aqua--spa {
-    left: 8%;
+    left: 5%;
   }
 }
 
 @media (max-width: 1820px) {
   .aqua__link-aqua--spa {
     width: 180px;
-    left: 5%;
+    left: 1%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--spa {
-    left: 5%;
+    left: 1%;
     width: 130px;
     height: 100px;
   }
@@ -2058,26 +2130,26 @@ svg rect {
 
 @media (max-width: 2150px) {
   .aqua__link-aqua--hamam-second {
-    left: 13%;
+    left: 10%;
   }
 }
 
 @media (max-width: 2050px) {
   .aqua__link-aqua--hamam-second {
-    left: 8%;
+    left: 5%;
   }
 }
 
 @media (max-width: 1820px) {
   .aqua__link-aqua--hamam-second {
     width: 80px;
-    left: 4%;
+    left: 1%;
   }
 }
 
 @media (max-width: 1500px) {
   .aqua__link-aqua--hamam-second {
-    left: 4%;
+    left: 1%;
     width: 60px;
     height: 100px;
   }

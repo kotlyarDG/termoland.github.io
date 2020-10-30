@@ -69,18 +69,63 @@
 		height: 100px;
 		top: 65%;
 		left: 45%;
-		// background-color: rgba(0, 0, 0, 0.4);
-
-		@media (max-width: 1500px) {
-			left: 40%;
-		}
-		@media (max-width: 1100px) {
-			width: 150px;
-			height: 75px;
-		}
+		background-color: rgba(0, 0, 0, 0.4);
 
 		@media (max-width: 600px) {
 			display: none;
+		}
+
+		&--man {
+			top: 89%;
+			width: 180px;
+			left: 50%;
+			cursor: pointer;
+
+			@media (max-width: 1450px) {
+				width: 170px;
+			}
+
+			@media (max-width: 1250px) {
+				width: 130px;
+				height: 60px;
+			}
+
+			@media (max-width: 1000px) {
+				width: 100px;
+			}
+			@media (max-width: 800px) {
+				width: 80px;
+				height: 40px;
+			}
+		}
+
+		&--woman {
+			top: 89%;
+			width: 180px;
+			left: 40%;
+			cursor: pointer;
+
+			@media (max-width: 2100px) {
+				left: 37%;
+			}
+
+			@media (max-width: 1450px) {
+				left: 35%;
+				width: 150px;
+			}
+
+			@media (max-width: 1250px) {
+				width: 130px;
+				height: 60px;
+			}
+
+			@media (max-width: 1000px) {
+				width: 100px;
+			}
+			@media (max-width: 800px) {
+				width: 80px;
+				height: 40px;
+			}
 		}
 
 		&--russian-bath {
@@ -94,19 +139,19 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 10%;
-			}
-
-			@media (max-width: 1900px) {
 				left: 7%;
 			}
 
+			@media (max-width: 1900px) {
+				left: 4%;
+			}
+
 			@media (max-width: 1680px) {
-				left: 3%;
+				left: 0%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 3%;
+				left: 0%;
 			}
 
 			@media (max-width: 1100px) {
@@ -168,19 +213,19 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 13%;
+				left: 10%;
 			}
 
 			@media (max-width: 2050px) {
-				left: 8%;
+				left: 5%;
 			}
 
 			@media (max-width: 1820px) {
-				left: 6%;
+				left: 3%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 5%;
+				left: 1%;
 				width: 80px;
 				height: 100px;
 			}
@@ -207,20 +252,20 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 13%;
+				left: 10%;
 			}
 
 			@media (max-width: 2050px) {
-				left: 8%;
+				left: 5%;
 			}
 
 			@media (max-width: 1820px) {
 				width: 120px;
-				left: 5%;
+				left: 1%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 5%;
+				left: 1%;
 				width: 80px;
 				height: 70px;
 			}
@@ -247,20 +292,20 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 13%;
+				left: 10%;
 			}
 
 			@media (max-width: 2050px) {
-				left: 8%;
+				left: 5%;
 			}
 
 			@media (max-width: 1820px) {
 				width: 120px;
-				left: 5%;
+				left: 1%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 5%;
+				left: 1%;
 				width: 80px;
 				height: 70px;
 			}
@@ -327,20 +372,20 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 13%;
+				left: 10%;
 			}
 
 			@media (max-width: 2050px) {
-				left: 8%;
+				left: 5%;
 			}
 
 			@media (max-width: 1820px) {
 				width: 180px;
-				left: 5%;
+				left: 1%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 5%;
+				left: 1%;
 				width: 130px;
 				height: 100px;
 			}
@@ -447,20 +492,20 @@
 			}
 
 			@media (max-width: 2150px) {
-				left: 13%;
+				left: 10%;
 			}
 
 			@media (max-width: 2050px) {
-				left: 8%;
+				left: 5%;
 			}
 
 			@media (max-width: 1820px) {
 				width: 80px;
-				left: 4%;
+				left: 1%;
 			}
 
 			@media (max-width: 1500px) {
-				left: 4%;
+				left: 1%;
 				width: 60px;
 				height: 100px;
 			}

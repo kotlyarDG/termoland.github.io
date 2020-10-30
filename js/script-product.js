@@ -138,7 +138,6 @@ $(document).ready(function () {
 	var image = $('.item-product__img-main img');
 
 	$('.link-img').click(function () {
-		console.log('111');
 		src = $(this).data('image');
 		image.attr("src", src);
 	});

@@ -351,4 +351,12 @@ $(document).ready(function () {
 		});
 	} else { }
 
+	var aquaImg = $('.aqua__bg');
+	$('.aqua__link-aqua--man').click(function () {
+		aquaImg.attr('src', "images/system_img/aqua-zona/bg-man.png")
+	});
+
+	$('.aqua__link-aqua--woman').click(function () {
+		aquaImg.attr('src', "images/system_img/aqua-zona/bg-woman.png")
+	});
 });	
