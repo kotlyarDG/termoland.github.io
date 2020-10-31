@@ -97,6 +97,10 @@
 			padding: 10px;
 			transform: translate(0, 0);
 			opacity: 1;
+
+			& .menu__list {
+				height: auto;
+			}
 		}
 	}
 

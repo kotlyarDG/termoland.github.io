@@ -1390,6 +1390,9 @@ svg rect {
             transform: translate(0, 0);
     opacity: 1;
   }
+  .menu._active .menu__list {
+    height: auto;
+  }
 }
 
 .menu__list {
