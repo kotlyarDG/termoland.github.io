@@ -3348,6 +3348,19 @@ svg rect {
   }
 }
 
+.services__block-test {
+  display: none;
+}
+
+.services__item--test {
+  cursor: pointer;
+  display: none;
+}
+
+.services__item--test._active {
+  display: block;
+}
+
 [data-aos="new-animation-left"] {
   opacity: 0;
   -webkit-transition-property: opacity, -webkit-transform;

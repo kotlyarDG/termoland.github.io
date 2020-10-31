@@ -62,6 +62,19 @@
 			margin: 0 0 0 0;
 		}
 	}
+
+	&__block-test {
+		display: none;
+	}
+
+	&__item--test {
+		cursor: pointer;
+		display: none;
+
+		&._active {
+			display: block;
+		}
+	}
 }
 
 [data-aos="new-animation-left"] {
