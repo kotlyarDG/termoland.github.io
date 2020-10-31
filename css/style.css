@@ -3408,7 +3408,7 @@ svg rect {
 
 @media (max-width: 768px) {
   .week {
-    padding: 10vh 10px;
+    padding: 10vh 10px 15px 10px;
   }
 }
 
@@ -3574,69 +3574,6 @@ svg rect {
   max-width: 100%;
 }
 
-.main-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  padding: 100px 0 0 0;
-  /* Активная точка */
-  /* Элемент точки */
-}
-
-.main-slider .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-slider .slick-dots li {
-  margin: 0 13px;
-}
-
-.main-slider .slick-dots li:first-child {
-  margin: 0 13px 0 0;
-}
-
-.main-slider .slick-dots li.slick-active {
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-
-.main-slider .slick-dots li.slick-active button {
-  font-weight: bold;
-  color: #395a71;
-}
-
-.main-slider .slick-dots li.slick-active button:before {
-  height: 50px;
-  background-color: #395a71;
-  top: -59px;
-}
-
-.main-slider .slick-dots li button {
-  background: none;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  position: relative;
-}
-
-.main-slider .slick-dots li button:before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 30px;
-  background-color: #000;
-  position: absolute;
-  top: -39px;
-  left: 0;
-}
-
 .second-slider {
   position: relative;
   z-index: 12;
@@ -3649,6 +3586,35 @@ svg rect {
 @media (max-width: 768px) {
   .second-slider .slick-track {
     padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-slider {
+    /* Стрелка влево */
+    /* Стрелка вправо */
+  }
+  .second-slider .slick-arrow {
+    font-size: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/system_img/arrow-week.svg") center/cover no-repeat;
+    position: absolute;
+    z-index: 50;
+    top: 30%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .second-slider .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .second-slider .slick-arrow.slick-next {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    right: 0px;
   }
 }
 
@@ -3827,6 +3793,7 @@ svg rect {
 
 @media (max-width: 768px) {
   .shares__wrapper {
+    padding: 10px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

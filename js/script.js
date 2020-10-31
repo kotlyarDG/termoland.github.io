@@ -244,9 +244,9 @@ $(document).ready(function () {
 		asNavFor: '.buttons-slider',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 769,
 				settings: {
-					arrows: false,
+					arrows: true,
 					adaptiveHeight: true,
 				}
 			}
