@@ -1374,9 +1374,9 @@ svg rect {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    -webkit-transform: translate(100%, 0);
-        -ms-transform: translate(100%, 0);
-            transform: translate(100%, 0);
+    -webkit-transform: translate(200vw, 0);
+        -ms-transform: translate(200vw, 0);
+            transform: translate(200vw, 0);
     opacity: 0;
   }
   .menu._active {
@@ -1389,6 +1389,9 @@ svg rect {
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1;
+  }
+  .menu._active .menu__list {
+    height: auto;
   }
   .menu._active .menu__list {
     height: auto;
