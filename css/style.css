@@ -1634,7 +1634,7 @@ svg rect {
   background: url("../images/system_img/bg-wrap.jpg") center/cover no-repeat;
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   .full {
     height: 120vh;
   }
@@ -1665,7 +1665,7 @@ svg rect {
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
   .full__video video {
     width: 100vw;
     height: auto;
