@@ -3421,7 +3421,7 @@ svg rect {
 
 @media (max-width: 768px) {
   .week {
-    padding: 10vh 10px 15px 10px;
+    padding: 10vh 10px 5px 10px;
   }
 }
 
@@ -3806,7 +3806,7 @@ svg rect {
 
 @media (max-width: 768px) {
   .shares__wrapper {
-    padding: 10px 0 0 0;
+    padding: 5px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
