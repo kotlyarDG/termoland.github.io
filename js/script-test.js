@@ -375,6 +375,12 @@ $(document).ready(function () {
 							$('.services__item').not(item).show(500);
 						}, 400);
 					});
+
+					setTimeout(function () {
+						$('.content-ticket--info').removeClass('_active');
+						$('.content-ticket--main').addClass('_active');
+					}, 900);
+
 				}
 			}
 
@@ -384,6 +390,13 @@ $(document).ready(function () {
 			$('.test__item-content_active').not($(this).next()).removeClass('test__item-content_active');
 			$(this).next().toggleClass('test__item-content_active');
 			$(this).next().slideToggle(500);
+			$('.content-ticket--info').removeClass('_active');
+			$('.content-ticket--main').addClass('_active');
+
+			setTimeout(function () {
+				$('.content-ticket--info').removeClass('_active');
+				$('.content-ticket--main').addClass('_active');
+			}, 1000);
 		}
 
 	});
