@@ -346,4 +346,124 @@ $(document).ready(function () {
 	if ($(window).width() <= 601) {
 		aquaImg.attr('src', "images/system_img/aqua-zona/bg.png")
 	} else { }
+
+
+
+	$('.services__item').click(function () {
+
+		if ($(window).width() > 990) {
+			var item = $(this);
+
+			if (item.hasClass('services__item_not-active')) {
+				item.removeClass('services__item_not-active');
+				item.addClass('services__item_active');
+				$('.services__item').not($(this)).hide(500, function () {
+
+					setTimeout(function () {
+						item.next().show(500);
+					}, 400);
+				});
+
+
+			}
+			else {
+				if (item.hasClass('services__item_active')) {
+					item.removeClass('services__item_active');
+					item.addClass('services__item_not-active');
+					item.next().hide(500, function () {
+						setTimeout(function () {
+							$('.services__item').not(item).show(500);
+						}, 400);
+					});
+
+					setTimeout(function () {
+						$('.content-ticket--info').removeClass('_active');
+						$('.content-ticket--main').addClass('_active');
+					}, 900);
+
+				}
+			}
+
+		}
+		else {
+			$('.test__item-content_active').not($(this).next()).slideUp(500);
+			$('.test__item-content_active').not($(this).next()).removeClass('test__item-content_active');
+			$(this).next().toggleClass('test__item-content_active');
+			$(this).next().slideToggle(500);
+			$('.content-ticket--info').removeClass('_active');
+			$('.content-ticket--main').addClass('_active');
+
+			setTimeout(function () {
+				$('.content-ticket--info').removeClass('_active');
+				$('.content-ticket--main').addClass('_active');
+			}, 1000);
+		}
+
+	});
+
+	$('.item-ticket__btn-ticket').click(function (e) {
+		$('.ticket--info').addClass('_active');
+		$('.ticket--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.item-ticket__btn-spa').click(function (e) {
+		$('.spa--info').addClass('_active');
+		$('.spa--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.item-ticket__btn-steam').click(function (e) {
+		$('.steam--info').addClass('_active');
+		$('.steam--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.item-ticket__btn-package').click(function (e) {
+		$('.package--info').addClass('_active');
+		$('.package--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-ticket').click(function (e) {
+		$('.ticket--info').removeClass('_active');
+		$('.ticket--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-spa').click(function (e) {
+		$('.spa--info').removeClass('_active');
+		$('.spa--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-steam').click(function (e) {
+		$('.steam--info').removeClass('_active');
+		$('.steam--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-package').click(function (e) {
+		$('.package--info').removeClass('_active');
+		$('.package--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--main').click(function (e) {
+		e.preventDefault();
+		if ($(window).width() > 990) {
+			$('.services__item_active').addClass('services__item_not-active');
+			$('.services__item_active').removeClass('services__item_active');
+
+			$('.test__item-content').hide(500, function () {
+				setTimeout(function () {
+					$('.services__item').show(500);
+				}, 400);
+			});
+		}
+		else {
+			$('.test__item-content_active').slideUp(500);
+			$('.test__item-content_active').removeClass('test__item-content_active');
+		}
+	});
 });	
