@@ -388,15 +388,51 @@ $(document).ready(function () {
 
 	});
 
-	$('.item-ticket__btn').click(function (e) {
-		$('.content-ticket--info').addClass('_active');
-		$('.content-ticket--main').removeClass('_active');
+	$('.item-ticket__btn-ticket').click(function (e) {
+		$('.ticket--info').addClass('_active');
+		$('.ticket--main').removeClass('_active');
 		e.preventDefault();
 	});
 
-	$('.content-ticket__btn-back--info').click(function (e) {
-		$('.content-ticket--info').removeClass('_active');
-		$('.content-ticket--main').addClass('_active');
+	$('.item-ticket__btn-spa').click(function (e) {
+		$('.spa--info').addClass('_active');
+		$('.spa--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.item-ticket__btn-steam').click(function (e) {
+		$('.steam--info').addClass('_active');
+		$('.steam--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.item-ticket__btn-package').click(function (e) {
+		$('.package--info').addClass('_active');
+		$('.package--main').removeClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-ticket').click(function (e) {
+		$('.ticket--info').removeClass('_active');
+		$('.ticket--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-spa').click(function (e) {
+		$('.spa--info').removeClass('_active');
+		$('.spa--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-steam').click(function (e) {
+		$('.steam--info').removeClass('_active');
+		$('.steam--main').addClass('_active');
+		e.preventDefault();
+	});
+
+	$('.content-ticket__btn-back--info-package').click(function (e) {
+		$('.package--info').removeClass('_active');
+		$('.package--main').addClass('_active');
 		e.preventDefault();
 	});
 
