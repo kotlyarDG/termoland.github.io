@@ -357,11 +357,11 @@ $(document).ready(function () {
 			if (item.hasClass('services__item_not-active')) {
 				item.removeClass('services__item_not-active');
 				item.addClass('services__item_active');
-				$('.services__item').not($(this)).hide(500, function () {
+				$('.services__item').not($(this)).hide(250, function () {
 
 					setTimeout(function () {
-						item.next().show(500);
-					}, 400);
+						item.next().show(250);
+					}, 200);
 				});
 
 
@@ -370,33 +370,33 @@ $(document).ready(function () {
 				if (item.hasClass('services__item_active')) {
 					item.removeClass('services__item_active');
 					item.addClass('services__item_not-active');
-					item.next().hide(500, function () {
+					item.next().hide(250, function () {
 						setTimeout(function () {
-							$('.services__item').not(item).show(500);
-						}, 400);
+							$('.services__item').not(item).show(250);
+						}, 200);
 					});
 
 					setTimeout(function () {
 						$('.content-ticket--info').removeClass('_active');
 						$('.content-ticket--main').addClass('_active');
-					}, 900);
+					}, 500);
 
 				}
 			}
 
 		}
 		else {
-			$('.test__item-content_active').not($(this).next()).slideUp(500);
+			$('.test__item-content_active').not($(this).next()).slideUp(250);
 			$('.test__item-content_active').not($(this).next()).removeClass('test__item-content_active');
 			$(this).next().toggleClass('test__item-content_active');
-			$(this).next().slideToggle(500);
+			$(this).next().slideToggle(250);
 			$('.content-ticket--info').removeClass('_active');
 			$('.content-ticket--main').addClass('_active');
 
 			setTimeout(function () {
 				$('.content-ticket--info').removeClass('_active');
 				$('.content-ticket--main').addClass('_active');
-			}, 1000);
+			}, 500);
 		}
 
 	});
@@ -455,14 +455,14 @@ $(document).ready(function () {
 			$('.services__item_active').addClass('services__item_not-active');
 			$('.services__item_active').removeClass('services__item_active');
 
-			$('.test__item-content').hide(500, function () {
+			$('.test__item-content').hide(250, function () {
 				setTimeout(function () {
-					$('.services__item').show(500);
-				}, 400);
+					$('.services__item').show(250);
+				}, 200);
 			});
 		}
 		else {
-			$('.test__item-content_active').slideUp(500);
+			$('.test__item-content_active').slideUp(250);
 			$('.test__item-content_active').removeClass('test__item-content_active');
 		}
 	});
