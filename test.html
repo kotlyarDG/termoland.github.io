@@ -1,0 +1,3018 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Tittle -->
+	<title>Termoland</title>
+
+	<!-- Кодировка -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<!-- Настройки вьюпорта для адекватного адаптива -->
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Подключение CSS файлов -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="">
+	<!-- Внешняя оболочка -->
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__column">
+					<div class="header__lang" data-da="menu__list,last,450">
+						<div class="header__lang-logo">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M24.2001 10.0832H21.5935C21.0596 8.3694 20.2525 6.75263 19.203 5.2954L19.1619 5.23832L19.097 5.21105C18.397 4.91671 17.6671 4.69918 16.9202 4.56227L16.1782 4.42626L16.6921 4.97849C18.054 6.44177 19.1002 8.16806 19.7674 10.0498H15.8751V4.6665V4.4165H15.6251H14.3751H14.1251V4.6665V10.0582H10.2329C10.9015 8.1728 11.9505 6.44359 13.3163 4.97865L13.8296 4.4281L13.0889 4.56217C12.3452 4.6968 11.6182 4.91147 10.9206 5.20244L10.8558 5.22947L10.8145 5.28628C9.76074 6.73756 8.94812 8.34892 8.40759 10.0582H5.78346H5.62955L5.56024 10.1956C5.33365 10.6449 5.13966 11.1099 4.97975 11.5871L4.86935 11.9165H5.2168H7.93553C7.73786 12.932 7.63668 13.9641 7.63346 14.9991L7.63346 15.0003C7.63561 16.1402 7.75485 17.2765 7.98916 18.3915H5.35013H4.99138L5.11559 18.7281C5.29219 19.2065 5.50329 19.6715 5.74725 20.1194L5.81829 20.2498H5.9668H8.47697C8.99374 21.8067 9.74198 23.2773 10.6968 24.612L10.7374 24.6687L10.8016 24.6963C11.517 25.0031 12.2643 25.2293 13.0297 25.3707L13.764 25.5063L13.2594 24.9559C12.0021 23.5844 11.0178 21.9872 10.3579 20.2498H14.1335V25.2832V25.5332H14.3835H15.6335H15.8835V25.2832V20.2498H19.642C18.98 21.9878 17.993 23.585 16.7328 24.9556L16.2216 25.5115L16.9635 25.3704C17.7325 25.2242 18.4828 24.9922 19.2002 24.6789L19.2632 24.6514L19.3033 24.5955C20.2566 23.2659 21.0047 21.8009 21.5229 20.2498H24.0085H24.156L24.2273 20.1207C24.4701 19.6811 24.6812 19.2247 24.859 18.755L24.987 18.4165H24.6251H21.9806C22.2268 17.295 22.3562 16.1508 22.3668 15.0021L22.3668 14.9991C22.3636 13.9641 22.2624 12.932 22.0647 11.9165H24.7585H25.1069L24.9953 11.5864C24.837 11.1183 24.6459 10.6618 24.4233 10.2206L24.354 10.0832H24.2001ZM20.5834 14.9983L20.5835 15.0012C20.5898 16.1421 20.4646 17.2797 20.2105 18.3915H15.8751V11.9165H20.2808C20.4883 12.9303 20.5897 13.9632 20.5834 14.9983ZM14.1251 18.3915H9.78723C9.27178 16.2581 9.24764 14.0355 9.71661 11.8915H14.1251V18.3915Z"
+									fill="white" stroke="white" stroke-width="0.5" />
+								<path
+									d="M14.9998 1.4165C12.3133 1.4165 9.68712 2.21315 7.45335 3.70571C5.21958 5.19826 3.47857 7.31969 2.45048 9.80172C1.42239 12.2838 1.15339 15.0149 1.67751 17.6498C2.20163 20.2847 3.49531 22.705 5.39498 24.6047C7.29464 26.5044 9.71496 27.7981 12.3499 28.3222C14.9848 28.8463 17.7159 28.5773 20.198 27.5492C22.68 26.5211 24.8014 24.7801 26.294 22.5463C27.7865 20.3126 28.5832 17.6864 28.5832 14.9998C28.5832 11.3973 27.1521 7.94234 24.6047 5.39497C22.0573 2.8476 18.6024 1.4165 14.9998 1.4165ZM14.9998 26.4165C12.7418 26.4165 10.5345 25.7469 8.65708 24.4925C6.77962 23.238 5.31632 21.4549 4.45222 19.3688C3.58812 17.2827 3.36203 14.9872 3.80254 12.7726C4.24306 10.5579 5.33039 8.52368 6.92704 6.92704C8.52369 5.33039 10.5579 4.24305 12.7726 3.80254C14.9872 3.36202 17.2827 3.58811 19.3688 4.45221C21.4549 5.31631 23.238 6.77962 24.4925 8.65708C25.7469 10.5345 26.4165 12.7418 26.4165 14.9998C26.4165 18.0277 25.2137 20.9316 23.0726 23.0726C20.9316 25.2137 18.0277 26.4165 14.9998 26.4165Z"
+									fill="white" stroke="white" stroke-width="0.5" />
+							</svg>
+						</div>
+						<p class="header__lang-text">ru</p>
+					</div>
+					<a href='index.html' class="header__logo">
+						<img src="images/system_img/logo-white.svg" alt="logo-white">
+					</a>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__column menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a class="popup-link" href="#first-popup">О НАС</a></li>
+						<li class="menu__item"><a class="class-link" href="#aqua">СХЕМА</a></li>
+						<li class="menu__item"><a class="class-link" href="#events">СОБЫТИЯ</a></li>
+						<li class="menu__item"><a class="class-link" href="#news">НОВОСТИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#services">УСЛУГИ</a></li>
+						<li class="menu__item"><a class="class-link" href="#store">МАГАЗИН</a></li>
+					</ul>
+				</nav>
+				<form class="header__column search" data-da="menu__list,last,768">
+					<input class="search__input" type="search" placeholder="Найди меня">
+					<button class="search__btn" type="submit">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.5906 0.333496C6.28095 0.333496 0.333496 6.31516 0.333496 13.6668C0.333496 21.0185 6.28095 27.0002 13.5906 27.0002C16.5319 26.9995 19.3886 26.0092 21.7055 24.1868L28.9903 31.5135L31.3335 29.1568L24.0487 21.8302C25.8616 19.4996 26.8469 16.6259 26.8476 13.6668C26.8476 6.31516 20.9002 0.333496 13.5906 0.333496Z"
+								fill="white" />
+						</svg>
+					</button>
+				</form>
+			</div>
+		</header>
+
+
+		<section class="full">
+			<div class="full__video">
+				<video src="video/bg-video.mp4" autoplay muted loop playsinline></video>
+			</div>
+			<div class="full__content">
+				<h1 class="full__title">твой <span>городской</span> курорт</h1>
+				<h2 class="full__subtitle">отдых начинается</h2>
+				<a href="#first-popup" class="full__btn btn popup-link">здесь</a>
+			</div>
+		</section>
+
+
+
+		<section class="aqua" id="aqua">
+			<div class="aqua__leaf-f">
+				<img src="images/system_img/l-1.png" alt="">
+			</div>
+			<div class="aqua__leaf-s">
+				<img src="images/system_img/l-2.png" alt="">
+			</div>
+			<div class="aqua__wrapper" data-aos="fade-out">
+				<img class="aqua__bg" src="images/system_img/aqua-zona/bg.png" alt="">
+				<img class="aqua__bg--mobile" src="images/system_img/aqua-zona/bg-mobile.png" alt="">
+
+				<a href="#map-popup-1" class="aqua__first-link popup-link"></a>
+				<a href="#map-popup-2" class="aqua__second-link popup-link"></a>
+				<a href="#map-popup-3" class="aqua__third-link popup-link"></a>
+
+				<div class="aqua__link-aqua aqua__link-aqua--man"></div>
+				<div class="aqua__link-aqua aqua__link-aqua--woman"></div>
+
+				<a href="#russian-bath-popup" class="aqua__link-aqua aqua__link-aqua--russian-bath popup-link"></a>
+				<a href="#salt-cave-popup" class="aqua__link-aqua aqua__link-aqua--salt-cave popup-link"></a>
+				<a href="#shower-exp-popup" class="aqua__link-aqua aqua__link-aqua--shower-exp popup-link"></a>
+				<a href="#baln-bath-popup" class="aqua__link-aqua aqua__link-aqua--baln-bath popup-link"></a>
+				<a href="#cryo-sauna-popup" class="aqua__link-aqua aqua__link-aqua--cryo-sauna popup-link"></a>
+				<a href="#fish-garr-popup" class="aqua__link-aqua aqua__link-aqua--fish-garr popup-link"></a>
+				<a href="#spa-popup" class="aqua__link-aqua aqua__link-aqua--spa popup-link"></a>
+				<a href="#biomp-lamp-popup" class="aqua__link-aqua aqua__link-aqua--biomp-lamp popup-link"></a>
+				<a href="#hamam-first-popup" class="aqua__link-aqua aqua__link-aqua--hamam-first popup-link"></a>
+				<a href="#hamam-second-popup" class="aqua__link-aqua aqua__link-aqua--hamam-second popup-link"></a>
+				<a href="#hamam-third-popup" class="aqua__link-aqua aqua__link-aqua--hamam-third popup-link"></a>
+				<a href="#children-popup" class="aqua__link-aqua aqua__link-aqua--children popup-link"></a>
+
+				<a href="#red-zone-popup" class="aqua__link-aqua aqua__link-aqua--red-zone popup-link"></a>
+				<a href="#herbal-popup" class="aqua__link-aqua aqua__link-aqua--herbal popup-link"></a>
+				<a href="#children-bas-popup" class="aqua__link-aqua aqua__link-aqua--children-bas popup-link"></a>
+				<a href="#relax-bas-popup" class="aqua__link-aqua aqua__link-aqua--relax-bas popup-link"></a>
+
+				<a href="#bar-popup" class="aqua__link-aqua aqua__link-aqua--bar popup-link"></a>
+				<a href="#phyto-bar-popup" class="aqua__link-aqua aqua__link-aqua--phyto-bar popup-link"></a>
+				<a href="#flush-popup" class="aqua__link-aqua aqua__link-aqua--flush popup-link"></a>
+				<a href="#himal-sauna-popup" class="aqua__link-aqua aqua__link-aqua--himal-sauna popup-link"></a>
+				<a href="#ice-dome-popup" class="aqua__link-aqua aqua__link-aqua--ice-dome popup-link"></a>
+				<a href="#jade-sauna-popup" class="aqua__link-aqua aqua__link-aqua--jade-sauna popup-link"></a>
+				<a href="#cedar-popup" class="aqua__link-aqua aqua__link-aqua--cedar popup-link"></a>
+				<a href="#juniper-popup" class="aqua__link-aqua aqua__link-aqua--juniper popup-link"></a>
+				<a href="#alder-popup" class="aqua__link-aqua aqua__link-aqua--alder popup-link"></a>
+				<a href="#russian-bath-2-popup" class="aqua__link-aqua aqua__link-aqua--russian-bath-2 popup-link"></a>
+			</div>
+			<div class="aqua__mobile-text">Нажми на треть, чтобы приблизить</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="services__wrapper">
+				<div class="services__item services__item_not-active"
+					style="background: url('images/system_img/services/01.jpg') center 33% / cover no-repeat;"
+					data-aos="new-animation-left">
+					<h3 class="services__title">Тарифы и Абонементы</h3>
+				</div>
+
+				<div class="test__item-content">
+
+					<div class="main-tickets__content content-ticket content-ticket--main _active">
+						<div class="content-ticket__wrapper">
+							<a href="index.html#services" class="content-ticket__btn-back content-ticket__btn-back--main">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<div class="content-ticket__items">
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">БУДНИЕ ДНИ до 17:00</p>
+										<p class="item-ticket__name">2 часа посещения</p>
+										<p class="item-ticket__text">Поминутная тарификация с 61 минуты (округление до 6 минут)
+										</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>400</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Полный день</p>
+										<p class="item-ticket__text">(Понедельник - пятница с 09:00 до 17:00)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>790</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Специальные тарифы</p>
+									<p class="item-ticket__text">Дети, школьники, студенты очного отделения, многодетные семьи,
+										пенсионеры по старости, люди с ограниченными возможностями (тариф действует при
+										предъявлении
+										подтверждающих документов).</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Специальный тариф </p>
+										<p class="item-ticket__text">(2 ЧАСА)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>300</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Специальный тариф</p>
+										<p class="item-ticket__text">(ДЕНЬ)</p>
+										<p class="item-ticket__text">Дети до 3 лет бесплатно</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>590</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Будние дни после 17:00,</p>
+									<p class="item-ticket__name">ВЫХОДНЫЕ И ПРАЗДНИКИ</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">2 часа посещения</p>
+										<p class="item-ticket__text">Поминутная тарификация с 61 минуты (округление до 6 минут)
+										</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>780</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Полный день</p>
+										<p class="item-ticket__text">(Понедельник - пятница с 09:00 до 17:00)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>990</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Специальные тарифы</p>
+									<p class="item-ticket__text">Дети, школьники, студенты очного отделения, многодетные семьи,
+										пенсионеры по старости, люди с ограниченными возможностями (тариф действует при
+										предъявлении
+										подтверждающих документов).</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Специальный тариф </p>
+										<p class="item-ticket__text">(2 ЧАСА)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>580</span> ₽</p>
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Специальный тариф</p>
+										<p class="item-ticket__text">(ДЕНЬ)</p>
+										<p class="item-ticket__text">Дети до 3 лет бесплатно</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>790</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">АБОНEМЕНТ</p>
+									<p class="item-ticket__name">«ЖАРКИЕ БУДНИ»</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">3 месяца (10 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1 490.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">6 месяцев (50 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>6 990.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">12 месяцев (100 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>11 990.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">АБОНEМЕНТ</p>
+									<p class="item-ticket__name">«КОГДА ХОЧУ, ТОГДА И ЛЕТО»</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">3 месяца (10 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1 990.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">6 месяцев (50 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>8 990.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__text">12 месяцев (100 часов)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>14 990.00</span> ₽</p>
+
+										<a href="tickets-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-tickets__content content-ticket content-ticket--info">
+						<div class="content-ticket__wrapper content-ticket__wrapper--flex">
+							<a href="tickets.html" class="content-ticket__btn-back content-ticket__btn-back--info">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<form class="content-ticket__form form-ticket">
+								<label for="fio" class="form-ticket__label">ФИО</label>
+								<input type="text" class="form-ticket__input" id="fio">
+								<label for="phone" class="form-ticket__label">номер телефона</label>
+								<input type="text" class="form-ticket__input" id="phone">
+								<button type="submit" class="form-ticket__btn btn">оплатить</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="services__item services__item_not-active"
+					style="background: url('images/system_img/services/02.jpg') center / cover no-repeat;"
+					data-aos="new-animation-right">
+					<h3 class="services__title">spa-услуги</h3>
+				</div>
+
+				<div class="test__item-content">
+
+					<div class="main-tickets__content content-ticket content-ticket--main _active">
+						<div class="content-ticket__wrapper">
+							<a href="index.html#services" class="content-ticket__btn-back content-ticket__btn-back--main">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<div class="content-ticket__items">
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Термальный СПА:</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Общий для всего тела</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1490</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Общий для всего тела</p>
+										<p class="item-ticket__text">60 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1890</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Шея</p>
+										<p class="item-ticket__text">15 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>490</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Спина</p>
+										<p class="item-ticket__text">30 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>990</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Голова</p>
+										<p class="item-ticket__text">10 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>590</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Голова + лицо</p>
+										<p class="item-ticket__text">20 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>890</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Ноги + стопы</p>
+										<p class="item-ticket__text">20 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>990</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Лимфодренажный уход</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2390</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Спортивный</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2390</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Детский</p>
+										<p class="item-ticket__text">30 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>690</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Антицеллюлитный</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2390</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Релакс на все тело</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1390</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Релакс на все тело</p>
+										<p class="item-ticket__text">60 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1790</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Парная программа</p>
+										<p class="item-ticket__text">40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2590</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">СПА-Уход в хаммаме</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Авторская программа от мастера</p>
+										<p class="item-ticket__text">до 120 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3490</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Кофейный пилинг, пенный СПА, массаж</p>
+										<p class="item-ticket__text">до 120 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3490</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Скрабирование с медом</p>
+										<p class="item-ticket__text">до 40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1590</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Пенный + мыльный уход в хамаме</p>
+										<p class="item-ticket__text">до 40 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2190</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Медовый уход в хаммаме</p>
+										<p class="item-ticket__text">до 30 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2490</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Фруктово-медовый уход в хаммаме</p>
+										<p class="item-ticket__text">до 30 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2790</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Пилинг рыбками</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Пилинг рыбками Гарра Руфа</p>
+										<p class="item-ticket__text">10 минут</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>390</span> ₽</p>
+										<a href="spa-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-tickets__content content-ticket content-ticket--info">
+						<div class="content-ticket__wrapper content-ticket__wrapper--flex">
+							<a href="spa.html" class="content-ticket__btn-back content-ticket__btn-back--info">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<form class="content-ticket__form form-ticket">
+								<label for="fio" class="form-ticket__label">ФИО</label>
+								<input type="text" class="form-ticket__input" id="fio">
+								<label for="master" class="form-ticket__label">имя мастера</label>
+								<select class="form-ticket__input form-ticket__input--select" id="master">
+									<option value="1">ХАСАН</option>
+									<option value="2">АЙБЕК</option>
+									<option value="3">МОХАМЕД</option>
+									<option value="4">АНАТОЛИЙ</option>
+								</select>
+								<div class="form-ticket__date-time">
+									<label for="date" class="form-ticket__label">Дата</label>
+									<input type="date" class="form-ticket__input form-ticket__input--date" id="date">
+									<label for="time" class="form-ticket__label">время</label>
+									<input type="time" class="form-ticket__input form-ticket__input--time" id="time">
+								</div>
+
+								<label for="phone" class="form-ticket__label">номер телефона</label>
+								<input type="text" class="form-ticket__input" id="phone">
+								<button type="submit" class="form-ticket__btn btn">оплатить</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="services__item services__item_not-active"
+					style="background: url('images/system_img/services/03.jpg') center 45% / cover no-repeat;"
+					data-aos="new-animation-left">
+					<h3 class="services__title">мастерская парений</h3>
+				</div>
+
+				<div class="test__item-content">
+
+					<div class="main-tickets__content content-ticket content-ticket--main _active">
+						<div class="content-ticket__wrapper">
+							<a href="index.html#services" class="content-ticket__btn-back content-ticket__btn-back--main">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<div class="content-ticket__items">
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Стандартные программы:</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Индивидуальный прогрев</p>
+										<p class="item-ticket__text">до 10 минут</p>
+										<p class="item-ticket__text">(знакомство с паром)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>990</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Классическое парение</p>
+										<p class="item-ticket__text">до 15 минут</p>
+										<p class="item-ticket__text">(парение дубовыми вениками)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1790</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Банная помывка</p>
+										<p class="item-ticket__text">до 20 минут</p>
+										<p class="item-ticket__text">(на выбор: лыковым мочалом или березовым веником)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>1490</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">АВТОРСКИЕ ПРОГРАММЫ:</p>
+									<p class="item-ticket__name">Для милых дам:</p>
+								</div>
+
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Кленовый сироп</p>
+										<p class="item-ticket__text">до 40 минут</p>
+										<p class="item-ticket__text">(мягкое парение кленовыми вениками, легкий контраст и
+											прогрев,
+											медовый уход)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2990</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Сладкий пар</p>
+										<p class="item-ticket__text">до 45 минут</p>
+										<p class="item-ticket__text">(легкое парение липовыми вениками в цвету, ароматерапия
+											пихтой и
+											травяными веничками, медовый уход, фруктовый пилинг)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3490</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Ягодный пирог</p>
+										<p class="item-ticket__text">до 60 минут</p>
+										<p class="item-ticket__text">(согревающее парение дубовыми вениками, освежающий контраст
+											массажными движениями и прохладным грейпфрутом, ароматерапия пихтой и травяными
+											веничками,
+											фирменный пилинг свежими ягодами со сливками)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3990</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Для настоящих мужчин:</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Бодрящий пар</p>
+										<p class="item-ticket__text">до 30 минут</p>
+										<p class="item-ticket__text">(парение дубовыми вениками, легкий контраст и прогрев)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>2290</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Можжевеловый рай</p>
+										<p class="item-ticket__text">до 45 минут</p>
+										<p class="item-ticket__text">(парение дубовыми вениками, можжевеловый скраб или медовый
+											уход на
+											выбор, ароматерапия пихтой и травяными веничками, контраст льдом с обливанием, прогрев
+											дубовым веником, горячая пропарка можевельником)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3490</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Хоккей</p>
+										<p class="item-ticket__text">до 50 минут</p>
+										<p class="item-ticket__text">(парение канадским дубом, контрастное обтирание ледяной
+											крошкой,
+											ароматерапия пихтой и травяными веничками, глубокий прогрев всего тела, контраст в
+											ледяной
+											купели, легкий прогрев)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>3990</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+
+								<div class="item-ticket__info">
+									<p class="item-ticket__name">Дополнительно:</p>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Ледяная пихта</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>290</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Аромавеник</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>290</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Сенная подложка</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>990</span> ₽</p>
+										<a href="steam-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="main-tickets__content content-ticket content-ticket--info">
+						<div class="content-ticket__wrapper content-ticket__wrapper--flex">
+							<a href="steam.html" class="content-ticket__btn-back content-ticket__btn-back--info">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<form class="content-ticket__form form-ticket">
+								<label for="fio" class="form-ticket__label">ФИО</label>
+								<input type="text" class="form-ticket__input" id="fio">
+								<label for="master" class="form-ticket__label">имя мастера</label>
+								<select class="form-ticket__input form-ticket__input--select" id="master">
+									<option value="1">ДЕНИС</option>
+									<option value="2">АЛЕКСАНДР</option>
+								</select>
+								<div class="form-ticket__date-time">
+									<label for="date" class="form-ticket__label">Дата</label>
+									<input type="date" class="form-ticket__input form-ticket__input--date" id="date">
+									<label for="time" class="form-ticket__label">время</label>
+									<input type="time" class="form-ticket__input" id="time">
+								</div>
+
+								<label for="phone" class="form-ticket__label">номер телефона</label>
+								<input type="text" class="form-ticket__input" id="phone">
+								<button type="submit" class="form-ticket__btn btn">оплатить</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="services__item services__item_not-active"
+					style="background: url('images/system_img/services/04.jpg') center / cover no-repeat;"
+					data-aos="new-animation-right">
+					<h3 class="services__title">пакетные предложения</h3>
+				</div>
+
+				<div class="test__item-content">
+
+					<div class="main-tickets__content content-ticket content-ticket--main _active">
+						<div class="content-ticket__wrapper">
+							<a href="index.html#services" class="content-ticket__btn-back content-ticket__btn-back--main">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<div class="content-ticket__items">
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Анти-стресс</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 3 ЧАСА
+											<br>
+											(Релакс-массаж на все тело, медовый уход в хаммаме, пилинг рыбками Гарра Руфа,
+											посещение
+											джакузи, безлимитное посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>4490</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Московский иммунитет</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 2 ЧАСА
+											<br>
+											(Распаривание с эвкалиптовым маслом, водные процедуры в джакузи, парение можжевеловыми
+											вениками, контрастное парение, безлимитное посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>4990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Бодрящее расслабление</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 2,5 ЧАСА
+											<br>
+											(Бодрящее парение в кедровой сауне, релакс-массаж всего тела, ингаляционное посещение
+											гималайской сауны, безлимитное посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>4990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Идеальная пара</p>
+										<p class="item-ticket__text">2 ЧЕЛОВЕКА, 2 ЧАСА
+											<br>
+											(Отдых в джакузи, распаривание в хамаме, парная массажная программа или пенный уход в
+											хамаме,
+											пилинг рыбками Гарра Руфа, DETOX-маска для лица, безлимитное посещение всех зон
+											комплекса)
+										</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>4990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">В отпуск на 4 часа</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 4 ЧАСА
+											<br>
+											(Распаривание в хамам, фруктово-медовый пилинг, пенный уход в хамаме, релакс массаж на
+											все
+											тело, маска для лица из сакской глины, пилинг рыбками Гарра Руфа, безлимитное посещение
+											всех
+											зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>5990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Русский пар</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 3 ЧАСА
+											<br>
+											(Легкий прогрев дубовыми вениками, водные процедуры в джакузи, помывка лыковым мочалом,
+											парение вениками по мёду, натуральный пилинг на основе мёда с солью, безлимитное
+											посещение
+											всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>5990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Стоп Усталость</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 3 ЧАСА
+											<br>
+											(Пенный спа-уход, скрабирование в хамаме, спортивный массаж, контрастное парение,
+											обливание
+											минералкой, посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>6490</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Я+ МАМА</p>
+										<p class="item-ticket__text">2 ЧЕЛОВЕКА, 2,5 ЧАСА
+											<br>
+											(Распаривание в хамаме, пенный уход для мамы и ребенка в хамме, легкий расслабляющий
+											массаж,
+											пилинг рыбками Гарра Руфа, безлимитное посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>6990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Сибирское путешествие</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 3ЧАСА
+											<br>
+											(Распаривание в травяной сауне, Таежная помывка березовыми веником и лыковым мочалом,
+											травяное скрабирование с медом, комплексе парение «Можевеловый рай», посещение всех зон
+											комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>6990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">100% DETOX</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 4 ЧАСА
+											<br>
+											(Распаривание в хамам, Кофейный пилинг, антицеллюлитный уход, расслабление в джакузи,
+											DETOX-обертывание и маска для лица, пилинг рыбками гарра руфа, посещение всех зон
+											комплекса)
+										</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>7990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Княжеский отдых</p>
+										<p class="item-ticket__text">1 ЧЕЛОВЕК, 4 ЧАСА
+											<br>
+											(Парение вениками на сенном матрасе, водные процедуры в джакузи, помывка лыковым
+											мочалом,
+											натуральный пилинг на основе мёда с травами в парной с догревом, общий массаж всего
+											тела 60
+											минут, посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>8490</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+								<div class="content-ticket__item item-ticket">
+									<div class="item-ticket__info">
+										<p class="item-ticket__name">Семейный день</p>
+										<p class="item-ticket__text">3 ЧЕЛОВЕКА, 4 ЧАСА
+											<br>
+											(Распаривание в хамам, легкий релакс массаж всего тела, таежная помывка березовым
+											веником,
+											скрабирование медом в русской парной, бодрящее или контрастное парение на выбор,
+											безлимитное
+											посещение всех зон комплекса)</p>
+									</div>
+									<div class="item-ticket__body">
+										<p class="item-ticket__price"><span>14990</span> ₽</p>
+										<a href="package-info.html" class="item-ticket__btn btn">заказать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="main-tickets__content content-ticket content-ticket--info">
+						<div class="content-ticket__wrapper content-ticket__wrapper--flex">
+							<a href="package-offers.html" class="content-ticket__btn-back content-ticket__btn-back--info">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M20 40C14.6957 40 9.60859 37.8929 5.85786 34.1421C2.10713 30.3914 -1.10609e-06 25.3043 -8.74228e-07 20C-6.42368e-07 14.6957 2.10714 9.60859 5.85786 5.85786C9.60859 2.10714 14.6957 -1.10609e-06 20 -8.74228e-07C25.3043 -6.42368e-07 30.3914 2.10714 34.1421 5.85786C37.8929 9.60859 40 14.6957 40 20C40 25.3043 37.8929 30.3914 34.1421 34.1421C30.3914 37.8929 25.3043 40 20 40ZM27.5 21.25C27.8315 21.25 28.3839 20.8839 28.3839 20.8839L28.75 20L28.3839 19.1161L27.5 18.75L15.5175 18.75L20.885 13.385C21.0012 13.2688 21.0934 13.1308 21.1563 12.979C21.2192 12.8271 21.2516 12.6644 21.2516 12.5C21.2516 12.3356 21.2192 12.1729 21.1563 12.021C21.0934 11.8692 21.0012 11.7312 20.885 11.615C20.7688 11.4988 20.6308 11.4066 20.479 11.3437C20.3271 11.2808 20.1644 11.2484 20 11.2484C19.8356 11.2484 19.6729 11.2808 19.521 11.3437C19.3692 11.4066 19.2312 11.4988 19.115 11.615L11.615 19.115C11.4986 19.2311 11.4062 19.3691 11.3432 19.5209C11.2802 19.6728 11.2478 19.8356 11.2478 20C11.2478 20.1644 11.2802 20.3272 11.3432 20.4791C11.4062 20.6309 11.4986 20.7689 11.615 20.885L19.115 28.385C19.3497 28.6197 19.6681 28.7516 20 28.7516C20.3319 28.7516 20.6503 28.6197 20.885 28.385C21.1197 28.1503 21.2516 27.8319 21.2516 27.5C21.2516 27.1681 21.1197 26.8497 20.885 26.615L15.5175 21.25L27.5 21.25Z"
+										fill="white" />
+								</svg>
+							</a>
+							<form class="content-ticket__form form-ticket">
+								<label for="fio" class="form-ticket__label">ФИО</label>
+								<input type="text" class="form-ticket__input" id="fio">
+								<label for="phone" class="form-ticket__label">номер телефона</label>
+								<input type="text" class="form-ticket__input" id="phone">
+								<button type="submit" class="form-ticket__btn btn">оплатить</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<div class="main-content">
+
+			<div class="main-content__lines-1">
+				<img src="images/system_img/lines-1.svg" alt="">
+			</div>
+
+			<div class="main-content__lines-2">
+				<img src="images/system_img/lines-2.svg" alt="">
+			</div>
+
+			<section class="week" id="events" data-aos="fade-out">
+
+				<div class="week__leaf-f">
+					<img src="images/system_img/l-3.png" alt="">
+				</div>
+				<div class="week__leaf-s">
+					<img src="images/system_img/l-3.png" alt="">
+				</div>
+
+				<h2 class="week__title title">анонс мероприятий:</h2>
+
+
+				<div class="week__second-slider second-slider">
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">WELL BEING</p>
+								<p class="slide-second__text">Открыт набор на новую программу самооздоровления основанную на
+									восточных практиках.</p>
+								<p class="slide-second__text">- улучшает ваше физическое тело<br>
+									- очищает организм<br>
+									- повышает иммунитет<br>
+									- учит справляться со стрессом и открывает путь к счастью</p>
+								<p class="slide-second__text">ПРОГРАММА<br>
+									- Согревание и настройка в паровой бане<br>
+									- Цигун упражнения самомассаж, дыхательная гимнастика, Тайцзы, аквафлоатинг и элементы
+									йоги<br>
+									- Mindfulness в гималайской сауне<br>
+									- Чайная церемония</p>
+								<p class="slide-second__text">Стоимость уточняйте у администраторов комплекса</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/02.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">ГОЛЫЕ И ПАРНЫЕ</p>
+								<p class="slide-second__text">Дадим пару по-мужски</p>
+								<p class="slide-second__text">Каждый четверг в TERMOLAND специальный часовый ритуал для
+									настоящих мужчин! Истинное парение в русской парной (находится в мужской раздевалке, отдельно
+									от общественных парных) в лучших русских традициях и да, абсолютно голышом!<br>
+									После ритуала всех гостей ждут беседы с банщиками и дегустация
+									травяного чая.</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/03.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">РУССКИЙ НАРОДНЫЙ ХЕЛЛУИН<br>Тебе будет страшно... Страшно круто!
+								</p>
+								<p class="slide-second__text">Мы представляем самую оригинальную вечеринку этого года - РУССКИЙ
+									НАРОДНЫЙ ХЕЛЛУИН</p>
+								<p class="slide-second__text">С 30 октября по 1 ноября вас ждут:<br>
+									- Парения с чемпионами России Артемом Казельским и Артемом Габдулиным<br>
+									- Ритуалы по защите от злых духов<br>
+									- Шаманские музыкальные парен<br>
+									- Мистические джакузи<br>
+									- Анимационная программа для детей<br>
+									- И ПЕРВЫЙ В МИРЕ тыквенный бассейн</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/04.jpg" alt="">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">30 ОКТЯБРЯ<br>ПАРЕНИЕ С ЧЕМПИОНАМИ РОССИИ</p>
+								<p class="slide-second__text">Расписание парений с ЧЕМПИОНАМИ РОССИИ</p>
+								<p class="slide-second__text">30 октября с 12.00<br>
+									Артемом Казельским и Артемом Габдуриным:</p>
+								<p class="slide-second__text">14.00 - Церемония знакомства и прогрев опахало с аром паром -
+									Гималайская сауна<br>
+									15.00 - Ароматный прогрев полотенцем - Гималайская сауна<br>
+									16.00 - Прогрев с веером с кристаллами ментола - Травяная сауна<br>
+									18.00 - Ингаляция гималайской солью и парение опахальным дубом - Гималайская Сауна<br>
+									19.00 - Парение опахальным дубом и ароматной пихтой с легкими мурашками - Травяная Сауна<br>
+									20.00 - Горячая Музыкальная Медитация - Гималайская Сауна</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/05.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">31 ОКТЯБРЯ<br>
+									ШАМАНСКИЕ МУЗЫКАЛЬНЫЕ ПАРЕНИЯ</p>
+								<p class="slide-second__text">Расписание коллективных практик</p>
+								<p class="slide-second__text">12.00 - Закаливающее парение с эвкалиптом и пихтой - Гималайская
+									сауна - ВХОД СВОБОДЕН<br>
+									14.00 - Ингаляционное парение с чесноком и льдом - Травяная сауна - 290₽;<br>
+									15.00 - Мастер-класс по приготовлению тыквенного скраба и проработка его на теле - ХАМАМ№1 -
+									ВХОД СВОБОДЕН<br>
+									16.00 - Ритуал-парения защиты от злых духов - Травяная сауна - ВХОД СВОБОДЕН<br>
+									18.00 - Ингаляционное парение с чесноком и льдом - Травяная сауна - 290₽;<br>
+									19.00 - Шаманское музыкальное парение - Гималайская сауна - ВХОД СВОБОДЕН<br>
+									20.00 - Мастер-класс по приготовлению тыквенного скраба и проработка его на теле - ХАМАМ№1 -
+									ВХОД СВОБОДЕН<br>
+									21.00 - Закаливающее парение с эвкалиптом и пихтой - Гималайская сауна - ВХОД СВОБОДЕН</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/06.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">1 НОЯБРЯ<br>
+									ХЭЛЛОУИНСКИЕ ПРИКЛЮЧЕНИЯ</p>
+								<p class="slide-second__text">Расписание коллективных практик</p>
+								<p class="slide-second__text">12.00 - Детская анимационная программа<br>
+									12.30 - Закаливающее парение с эвкалиптом и пихтой - Гималайская сауна - ВХОД СВОБОДЕН<br>
+									14.00 - Ингаляционное парение с чесноком и льдом - Травяная сауна - 290₽;<br>
+									15.00 - Мастер-класс по приготовлению тыквенного скраба и проработка его на теле - ХАМАМ№1 -
+									ВХОД СВОБОДЕН<br>
+									16.00 - Ингаляционное парение с чесноком и льдом - Травяная сауна - 290₽;<br>
+									18.00 - Закаливающее парение с эвкалиптом и пихтой - Гималайская сауна - ВХОД СВОБОДЕН<br>
+									19.00 - Мастер-класс по приготовлению тыквенного скраба и проработка его на теле - ХАМАМ№1 -
+									ВХОД СВОБОДЕН<br>
+									20.00 - Ингаляционное парение с чесноком и льдом - Травяная сауна - 290₽;<br>
+									21.00 - Закаливающее парение с эвкалиптом и пихтой - Гималайская сауна - ВХОД СВОБОДЕН</p>
+								<p class="slide-second__text"></p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/07.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="second-slider__slide">
+						<div class="slide-second__wrapper">
+							<div class="slide-second__info">
+								<p class="slide-second__title">ОТПАРИМ ОТ ДУШИ</p>
+								<p class="slide-second__text">Ежедневно в нашем комплексе проходят бесплатные коллективные
+									парения для всех желающих (следите за расписанием в наших социальных сетях или на
+									информационных стойках комплекса).</p>
+								<p class="slide-second__text">Вы можете попасть на:<br>
+									- Травяное парение<br>
+									- Музыкальное парение<br>
+									- Контрастное парение</p>
+								<p class="slide-second__text">Виртуозные пар-шоу от наших мастеров ещё никого не оставили
+									равнодушным. Приходите и убедитесь сами!</p>
+							</div>
+							<div class="slide-second__img">
+								<img src="images/content_img/events/08.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="week__buttons-slider buttons-slider">
+
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/02.jpg" alt="">
+						</div>
+						<p class="button-second__date">Каждую среду</p>
+						<p class="button-second__name">“WELL BEING”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/03.jpg" alt="">
+						</div>
+						<p class="button-second__date">Каждый четверг</p>
+						<p class="button-second__name">“ГОЛЫЕ И ПАРНЫЕ”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/04.jpg" alt="">
+						</div>
+						<p class="button-second__date">С 30 октября по 1 ноября</p>
+						<p class="button-second__name">“РУССКИЙ НАРОДНЫЙ ХЕЛЛУИН”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/05.jpg" alt="">
+						</div>
+						<p class="button-second__date">30 октября</p>
+						<p class="button-second__name">“ПАРЕНИЕ С ЧЕМПИОНАМИ РОССИИ”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/06.jpg" alt="">
+						</div>
+						<p class="button-second__date">31 октября</p>
+						<p class="button-second__name">“ШАМАНСКИЕ МУЗЫКАЛЬНЫЕ ПАРЕНИЯ”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/07.jpg" alt="">
+						</div>
+						<p class="button-second__date">1 НОЯБРЯ</p>
+						<p class="button-second__name">“ХЭЛЛОУИНСКИЕ ПРИКЛЮЧЕНИЯ”</p>
+					</div>
+					<div class="second-slider__button button-second">
+						<div class="button-second__img"><img src="images/content_img/events/08.jpg" alt="">
+						</div>
+						<p class="button-second__date">Ежедневно</p>
+						<p class="button-second__name">“ОТПАРИМ ОТ ДУШИ”</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="shares" data-aos="fade-out">
+				<div class="shares__wrapper">
+					<h2 class="shares__title title">АКЦИИ</h2>
+					<div class="shares__slider">
+						<a href="#first-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/01.jpg" alt="">
+						</a>
+						<a href="#second-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/02.jpg" alt="">
+						</a>
+						<a href="#third-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/03.jpg" alt="">
+						</a>
+						<a href="#fourth-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/04.jpg" alt="">
+						</a>
+
+						<a href="#first-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/01.jpg" alt="">
+						</a>
+						<a href="#second-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/02.jpg" alt="">
+						</a>
+						<a href="#third-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/03.jpg" alt="">
+						</a>
+						<a href="#fourth-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/04.jpg" alt="">
+						</a>
+
+						<a href="#first-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/01.jpg" alt="">
+						</a>
+						<a href="#second-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/02.jpg" alt="">
+						</a>
+						<a href="#third-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/03.jpg" alt="">
+						</a>
+						<a href="#fourth-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/04.jpg" alt="">
+						</a>
+
+						<a href="#first-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/01.jpg" alt="">
+						</a>
+						<a href="#second-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/02.jpg" alt="">
+						</a>
+						<a href="#third-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/03.jpg" alt="">
+						</a>
+						<a href="#fourth-share" class="shares__img popup-link">
+							<img src="images/content_img/shares/04.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="store" id="store" data-aos="fade-out">
+
+				<div class="store__leaf-f">
+					<img src="images/system_img/l-5.png" alt="">
+				</div>
+				<div class="store__leaf-s">
+					<img src="images/system_img/l-6.png" alt="">
+				</div>
+
+				<div class="store__dark-bg"><img src="images/system_img/bg-store-dark.svg" alt=""></div>
+
+				<div class="store__wrapper">
+					<div class="store__column-img">
+						<div class="store__leaf"><img src="images/system_img/leaf-2.png" alt=""></div>
+						<div class="store__bg">
+							<img src="images/system_img/bg-online_store.png" alt="">
+						</div>
+					</div>
+					<div class="store__column-content">
+						<div class="store__content">
+							<h2 class="store__title title">ИНТЕРНЕТ-КАТАЛОГ termoland</h2>
+							<p class="store__text">Самые выгодные предложения на банные принадлежности</p>
+							<a href="" class="store__btn btn">в разработке</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news" id="news" data-aos="fade-out">
+
+				<div class="news__leaf-f">
+					<img src="images/system_img/l-7.png" alt="">
+				</div>
+				<div class="news__leaf-s">
+					<img src="images/system_img/l-8.png" alt="">
+				</div>
+
+				<div class="news__wrapper">
+					<h2 class="news__title title">новости termoland</h2>
+					<div class="news__content">
+						<div class="news__column-big">
+							<div class="news__row">
+								<div class="news__item item-news item-news--big">
+									<div class="item-news__img">
+										<img src="images/content_img/news/01.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Отвечаем на 5 самых популярных вопросов</p>
+										<p class="item-news__text">Что входит в стоимость посещения?
+											<br>
+											- Вам доступны все зоны нашего комплекса. Также вы можете посещать массовые практики.
+											Дополнительно оплачиваются услуги индивидуального парения и SPA-процедур, услуги
+											банщиков, блюда и напитки из кафе, аренда полотенца и халата.
+											<br>
+											Что нужно брать с собой для посещения?
+											<br>
+											- Вам понадобится полотенце, купальник или плавки, тапочки или сланцы, средства личной
+											гигиены, банные принадлежности.
+											Если вы что-то забыли, мы с удовольствием предоставим в аренду полотенце и халат, а
+											также в продаже имеется всё необходимое как для взрослых, так и для детей.
+											<br>
+											Нужно ли записываться заранее на дополнительные услуги комплекса: массаж, парения и
+											другие?
+											<br>
+											- Нет, предварительная запись не нужна.
+											<br>
+											Можно ли к вам со своей едой и напитками?
+											<br>
+											- Нет, со своей едой и напитками приходить в комплекс нельзя.
+											Но у нас есть зона кафе, где вы сможете полноценно перекусить.
+											<br>
+											- Сколько стоит посещение?
+											<br>
+											👩🏻🧔🏼Взрослые:
+											<br>
+											🔹Будни до 17:00 - 200₽/час или 790₽/день
+											<br>
+											🔸Будни после 17:00, выходные и праздничные дни - 390₽/час или 990₽/день.
+											<br>
+											👧🏼👴🏻Дети, студенты, многодетные семьи, люди с ограниченными возможностями,
+											пенсионеры по старости:
+											<br>
+											🔸Будни до 17:00 - 150₽/час или 590₽/день
+											<br>
+											🔹Будние после 17:00, выходные и праздничные дни - 290₽/час или 790₽/день.
+											<br>
+											👶🏻Дети до 3 лет - бесплатно.
+											<br>
+											*минимальное время посещения 2 часа</p>
+									</div>
+								</div>
+							</div>
+							<div class="news__row">
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/02.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Самые полезные травы для бани</p>
+										<p class="item-news__text">Наиболее ароматные травы для использования в бане - это:
+											<br>
+											Полынь - богата эфирными маслами, дубильными веществами, фитонцидами. Отлично
+											дезинфицирует воздух.
+											<br>
+											Чабрец - если после бани выпить свежезаваренного чая с чабрецом, вы почувствуете
+											легкость и второе дыхание.
+											<br>
+											Зверобой - используется как природное средство от депрессии и наполняет парилку
+											неповторимым ароматом.
+											<br>
+											Мята - наполняет сауну свежим ароматом и подарит море позитивных ощущений в процессе
+											парения.
+											<br>
+											Душица - полезна для волос, кожи и дыхательных путей. Оказывает благотворное действие
+											на верхние дыхательные пути.
+											<br>
+											Ромашка - ей лечатся простудные заболевания, кожные и болезни суставов. Отваром ромашки
+											полезно сполоснуть волосы после бани.
+											<br>
+											Кроме того, с помощью травы для бани можно позабыть про сезонную депрессию, стресс и
+											хандру, а также привлечь в свою жизнь любовь, благосостояние и удачу. Для этих целей
+											еще наши прапрадеды использовали сокрытую мощь растений, а знания свои передавали своим
+											потомкам. В отличие от них вам не придется самим заниматься сбором и сушкой трав,
+											достаточно всего лишь приобрести сборы и использовать их при посещении бани.</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/03.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Как правильно париться в бане, не причинив вред своему
+											здоровью?</p>
+										<p class="item-news__text">Итак:
+											<br>
+											- Обязательно посещать парную в шапочке чтобы избежать перенагрева сосудов головы.
+											<br>
+											- Посещать баню нужно только в трезвом виде. Всё остальное (даже чуть-чуть пивка)
+											вредно для здоровья, излишняя нагрузка на сердце.
+											<br>
+											- В парной по возможности находиться в горизонтальном положении.
+											<br>
+											- На каменку поддавать только чистой теплой/горячей водой. При подаче ароматическими
+											растворами на камни вода испаряется, а масло начинает гореть и человек в парной
+											начинает дышать продуктами горения.
+											Для ароматерапии можно обрызгать стены парной арома отварами и маслами.
+											<br>
+											- Во время посещения бани необходимо потреблять большое количество воды, также можно и
+											травяной чай, воду с лимоном.
+											Вода должна быть как минимум комнатной температуры (не ледяная) дабы не создавать
+											стресс для внутренних органов. Это создаст более комфортные условия для вашего
+											пребывания в парной.
+											<br>
+											- Парную можно и нужно периодически проветривать для насыщения ее кислородом!
+											<br>
+											Надеемся, эти простые правила стали для вас полезны и вы будете применять их на
+											практике для правильного и исключительно полезного парения.</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/04.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">8 интересных фактов про хамам</p>
+										<p class="item-news__text">Одним из самых загадочных мест для SPA-процедур был и остается
+											хаммам. Не только потому, что ты чувствуешь себя как в сказке, а потому что в его
+											строительство закладывается особый смыл, а в ритуалы - философия.
+											<br>
+											Сегодня мы представим для вас несколько интересных фактов о самой посещаемой зоне
+											нашего комплекса.
+											<br>
+											- Первый хамам был построен в Стамбуле в 7 веке нашей Эры.
+											<br>
+											- До появления хамамов люди мылись только в проточной воде.
+											<br>
+											- Во многих исламских странах существовал закон, дающий право жене подать на развод,
+											если муж не пускает ее в хамам.
+											<br>
+											- Потолок хамама неспроста имеет округлую форму купола. Из-за повышенной влажности,
+											которая достигает 100%, в воздухе образуется конденсат.
+											Если бы потолок был плоским, капли падали прямо на голову парильщиков, а куполообразная
+											форма позволят влаге стекать по стенкам.
+											<br>
+											- Хамам не «смывает», а наоборот, закрепляет загар за счет высокого увлажнения кожи. Он
+											становится более ровным и выглядит очень красиво.
+											<br>
+											- Считается, что посещать хамам лучше всего утром. Именно в это время тело больше
+											склонно к расслаблению и процедуры будут иметь более сильный оздоровительный эффект.
+											<br>
+											- Даже на «Титанике» был настоящий хаммам. Посещение стоило 1 доллар.
+											<br>
+											- Если верить восточной мудрости, посещение хаммама одарит вас целыми десятью благами,
+											среди которых внимание красивых женщин, так что одиноким мужчинам, которые мечтают
+											встретить любовь, следует чаще посещать турецкую баню.
+											<br>
+											Надеемся, что в следующее посещение нашего удобного хаммама в Москве вы сможете не
+											только хорошо отдохнуть, но и удивить друзей интересными фактами из истории.</p>
+									</div>
+								</div>
+								<div class="news__item item-news">
+									<div class="item-news__img">
+										<img src="images/content_img/news/05.jpg" alt="">
+									</div>
+									<div class="item-news__body">
+										<p class="item-news__title">Почему важно ходить на массаж в Москве?</p>
+										<p class="item-news__text">Тёплые, мягкие, уверенные прикосновения, лёгкая музыка, нежный
+											аромат масел – массаж даёт именно тот телесный опыт, которого так не хватает в Москве в
+											прохладные дни осени.
+											<br>
+											На массаже SPA-мастер расслабляет ваше тело и снимает зажимы, тонизирует и наполняет
+											энергией.
+											<br>
+											Вы можете выбрать массаж на 30 или 60 минут – в любом случае мастер подарbт тепло и
+											заботу, заряжающие на незабываемый день.
+											<br>
+											Массаж в Москве поможет вам восстановить душевное и энергетическое равновесие,
+											зарядиться энергией на длительное время и просто красиво отдохнуть.
+											<br>
+											Польза массажа доказана клинически:
+											<br>
+											- укрепляет иммунную систему организма;
+											<br>
+											- повышает упругость и эластичность кожи;
+											<br>
+											- улучшает кровообращение и циркуляцию лимфы;
+											<br>
+											- активизирует работу потовых и сальных желёз;
+											<br>
+											- нормализирует психоэмоциональное состояние;
+											<br>
+											- снижает болевые ощущения;
+											<br>
+											- увеличивает чувствительность кожи;
+											<br>
+											- ускоряет метаболический процесс;
+											<br>
+											- избавляет от отёчности;
+											<br>
+											- укрепляет мышцы</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__column footer__column--logo">
+					<div class="footer__logo">
+						<img src="images/system_img/logo-white.svg" alt="logo">
+					</div>
+				</div>
+				<div class="footer__column footer__column--center">
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Партнерам</p>
+						<a href='#' class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__item-center item-center">
+						<p class="item-center__text">Правовая информация</p>
+						<a href="#" class="item-center__img">
+							<img src="images/system_img/footer/pdf.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="footer__column footer__column-links">
+					<div class="footer__links links-footer">
+						<a href="tel:+74951201058" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-phone.svg" alt="">
+							</div>
+							<p class="links-footer__text">+ 7 (495) 120 10 58</p>
+						</a>
+						<a href="mailto:hello@termo.land" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-email.svg" alt="">
+							</div>
+							<p class="links-footer__text">hello@termo.land</p>
+						</a>
+						<a href="https://instagram.com/termo.land" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-instagram.svg" alt="">
+							</div>
+							<p class="links-footer__text">Instagram</p>
+						</a>
+						<a href="https://www.facebook.com/termoland.msk/" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-facebook.svg" alt="">
+							</div>
+							<p class="links-footer__text">Facebook</p>
+						</a>
+						<a href="https://vk.com/termo.land" class="links-footer__item">
+							<div class="links-footer__img">
+								<img src="images/system_img/footer/logo-vk.svg" alt="">
+							</div>
+							<p class="links-footer__text">ВКонтакте</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<p class="footer__ps">*информация не является публичной офертой</p>
+		</footer>
+
+
+	</div>
+
+	<div id="first-share" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content-block popup__content">
+				<div class="popup__block">
+					<h2 class="popup__title">СОЦИАЛЬНЫЙ СПА</h2>
+					<div class="popup__body">
+						<div class="popup__img">
+							<img src="images/content_img/shares/01.jpg" alt="">
+							<div>
+								<p class="popup__date-info">время действия акции неограниченно</p>
+								<p class="popup__date-info">0+</p>
+							</div>
+						</div>
+						<div class="popup__info">
+							<p>Специально для социальных групп населения, которые живут рядом с комплексом мы представляем
+								акцию "СОЦИАЛЬНЫЙ СПА"</p>
+							<p>Двухчасовое посещение комплекса и процедура в бальнеологической ванне (на выбор: солевая,
+								концентрированная) ВСЕГО за 500 РУБ.</p>
+
+						</div>
+					</div>
+					<a href="#" class="popup__btn btn close-popup">Классная акция!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="second-share" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content-block popup__content">
+				<div class="popup__block">
+					<h2 class="popup__title">УМНОЖАЕМ</h2>
+					<div class="popup__body">
+						<div class="popup__img">
+							<img src="images/content_img/shares/02.jpg" alt="">
+							<div>
+								<p class="popup__date-info">время действия акции неограниченно</p>
+								<p class="popup__date-info">0+</p>
+							</div>
+						</div>
+						<div class="popup__info">
+							<p>МЫ УМНОЖАЕМ ВАШИ ЧАСЫ</p>
+							<p>Покупайте абонементы в TERMOLAND вместе со своим другом и получайте дополнительные часы на обе
+								карты!</p>
+							<p>Список тарифов и бонусов:<br>
+								Жаркие будни 3 месяца (10 часов)<br>
+								1 490.00₽ - 2 часа в подарок<br>
+								Когда хочу, тогда и лето 3 месяца (10 часов)<br>
+								1 990.00₽ - 3 часа в подарок<br>
+								Жаркие будни 6 месяцев (50 часов)<br>
+								6 990.00₽ - 8 часов в подарок<br>
+								Когда хочу, тогда и лето 6 месяцев (50 часов)<br>
+								8 990.00₽ - 10 часов в подарок<br>
+								Жаркие будни 12 месяцев (100 часов)<br>
+								11 990.00₽ - 15 часов в подарок<br>
+								Когда хочу, тогда и лето 12 месяцев (100 часов)<br>
+								14 990.00₽ - 20 часов в подарок</p>
+						</div>
+					</div>
+					<a href="#" class="popup__btn btn close-popup">Классная акция!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="third-share" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content-block popup__content">
+				<div class="popup__block">
+					<h2 class="popup__title">ХЕЛЛОУИН</h2>
+					<div class="popup__body">
+						<div class="popup__img">
+							<img src="images/content_img/shares/03.jpg" alt="">
+							<div>
+								<p class="popup__date-info">время действия акции 30 октября - 1 ноября</p>
+								<p class="popup__date-info">0+</p>
+							</div>
+						</div>
+						<div class="popup__info">
+							<p>Тебе будет страшно... Страшно круто!</p>
+							<p>Мы представляем самую оригинальную вечеринку этого года - РУССКИЙ НАРОДНЫЙ ХЕЛЛУИН</p>
+							<p>С 30 октября по 1 ноября вас ждут:<br>
+								- Парения с чемпионами России Артемом Казельским и Артемом Габдулиным<br>
+								- Ритуалы по защите от злых духов<br>
+								- Шаманские музыкальные парен<br>
+								- Мистические джакузи<br>
+								- Анимационная программа для детей<br>
+								- И ПЕРВЫЙ В МИРЕ тыквенный бассейн</p>
+							<p>ТАКОГО ЕЩЁ НЕ БЫЛО<br>
+								Меняйте планы на выходные!<br>
+								Ждем вас в гости!</p>
+						</div>
+					</div>
+					<a href="#" class="popup__btn btn close-popup">Классная акция!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fourth-share" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content-block popup__content">
+				<div class="popup__block">
+					<h2 class="popup__title">СЕАНСЫ ПАРЕНИЙ</h2>
+					<div class="popup__body">
+						<div class="popup__img">
+							<img src="images/content_img/shares/04.jpg" alt="">
+							<div>
+								<p class="popup__date-info">время действия акции неограниченно</p>
+								<p class="popup__date-info">0+</p>
+							</div>
+						</div>
+						<div class="popup__info">
+							<p>Коллективные полезные практики</p>
+							<p>Ежедневно в нашем комплексе проходят бесплатные коллективные парения для всех желающих (следите
+								за расписанием в наших социальных сетях или на информационных стойках комплекса).</p>
+							<p>Вы можете попасть на:<br>
+								- Травяное парение<br>
+								- Музыкальное парение<br>
+								- Контрастное парение</p>
+							<p>Виртуозные пар-шоу от наших мастеров ещё никого не оставили равнодушным. Приходите и убедитесь
+								сами!</p>
+						</div>
+					</div>
+					<a href="#" class="popup__btn btn close-popup">Классная акция!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-first" id="first-popup">
+		<div class="popup-first__wrapper popup__wrapper">
+			<div class="popup-first__content popup__content">
+				<div class="popup-first__block">
+					<div class="popup-first__head">
+						<div class="popup-first__close close-popup">
+							<img src="images/system_img/popup-close.svg" alt="">
+						</div>
+						<div class="popup-first__logo">
+							<img src="images/system_img/logo-black.png" alt="">
+						</div>
+					</div>
+					<h2 class="popup-first__title">твой курорт в самом центре Москвы</h2>
+					<p class="popup-first__text">Принято считать, что стресс — обычное состояние для жителя мегаполиса:
+						напряженная
+						работа, бесконечные пробки, недостаток сна и бешенный темп. Приводят к упадку сил, хронической
+						депрессии
+						и
+						постоянным эмоциональным качелям. Если пустить все на самотек, то упадок сил и эмоциональные качели
+						становятся постоянными спутниками.</p>
+					<a class="popup-first__tagline class-link close-popup" href="#services">НАША ЦЕЛЬ ПОБЕДИТЬ СТРЕСС</a>
+					<div class="popup-first__images">
+						<a href="#hamam-first-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/01.jpg" alt=""></a>
+						<a href="#himal-sauna-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/02.jpg" alt=""></a>
+						<a href="#jade-sauna-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/03.jpg" alt=""></a>
+						<a href="#children-bas-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/04.jpg" alt=""></a>
+						<a href="#relax-bas-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/05.jpg" alt=""></a>
+						<a href="#bar-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/06.jpg" alt=""></a>
+						<a href="#herbal-popup" class="popup-first__img popup-link"><img
+								src="images/content_img/popup-first/07.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-map" id="map-popup-1">
+		<div class="popup-map__wrapper">
+			<div class="popup-map__close close-popup">
+				<img src="images/system_img/popup-close.svg" alt="">
+			</div>
+			<div class="popup-map__content popup__content">
+				<img src="images/system_img/scheme/01.png" alt="">
+				<a href="#map-popup-2" class="popup-map__link-aqua popup-map__link-aqua--map-12 popup-link"></a>
+
+				<a href="#russian-bath-popup"
+					class="popup-map__link-aqua popup-map__link-aqua--russian-bath popup-link"></a>
+				<a href="#salt-cave-popup" class="popup-map__link-aqua popup-map__link-aqua--salt-cave popup-link"></a>
+				<a href="#shower-exp-popup" class="popup-map__link-aqua popup-map__link-aqua--shower-exp popup-link"></a>
+				<a href="#baln-bath-popup" class="popup-map__link-aqua popup-map__link-aqua--baln-bath popup-link"></a>
+				<a href="#cryo-sauna-popup" class="popup-map__link-aqua popup-map__link-aqua--cryo-sauna popup-link"></a>
+				<a href="#fish-garr-popup" class="popup-map__link-aqua popup-map__link-aqua--fish-garr popup-link"></a>
+				<a href="#spa-popup" class="popup-map__link-aqua popup-map__link-aqua--spa popup-link"></a>
+				<a href="#biomp-lamp-popup" class="popup-map__link-aqua popup-map__link-aqua--biomp-lamp popup-link"></a>
+				<a href="#hamam-first-popup" class="popup-map__link-aqua popup-map__link-aqua--hamam-first popup-link"></a>
+				<a href="#hamam-second-popup"
+					class="popup-map__link-aqua popup-map__link-aqua--hamam-second popup-link"></a>
+				<a href="#hamam-third-popup" class="popup-map__link-aqua popup-map__link-aqua--hamam-third popup-link"></a>
+				<a href="#children-popup" class="popup-map__link-aqua popup-map__link-aqua--children popup-link"></a>
+				<a href="#red-zone-popup" class="popup-map__link-aqua popup-map__link-aqua--red-zone-1 popup-link"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-map" id="map-popup-2">
+		<div class="popup-map__wrapper">
+			<div class="popup-map__close close-popup">
+				<img src="images/system_img/popup-close.svg" alt="">
+			</div>
+			<div class="popup-map__content popup__content popup-map__content-2">
+				<img src="images/system_img/scheme/02.png" alt="">
+
+				<a href="#map-popup-1" class="popup-map__link-aqua popup-map__link-aqua--map-21 popup-link"></a>
+				<a href="#map-popup-3" class="popup-map__link-aqua popup-map__link-aqua--map-23 popup-link"></a>
+
+				<a href="#red-zone-popup" class="popup-map__link-aqua popup-map__link-aqua--red-zone popup-link"></a>
+				<a href="#herbal-popup" class="popup-map__link-aqua popup-map__link-aqua--herbal popup-link"></a>
+				<a href="#children-bas-popup"
+					class="popup-map__link-aqua popup-map__link-aqua--children-bas popup-link"></a>
+				<a href="#relax-bas-popup" class="popup-map__link-aqua popup-map__link-aqua--relax-bas popup-link"></a>
+				<a href="#phyto-bar-popup" class="popup-map__link-aqua popup-map__link-aqua--phyto-bar popup-link"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-map" id="map-popup-3">
+		<div class="popup-map__wrapper">
+			<div class="popup-map__close close-popup">
+				<img src="images/system_img/popup-close.svg" alt="">
+			</div>
+			<div class="popup-map__content popup__content">
+				<img src="images/system_img/scheme/03.png" alt="">
+
+				<a href="#map-popup-2" class="popup-map__link-aqua popup-map__link-aqua--map-32 popup-link"></a>
+
+				<a href="#bar-popup" class="popup-map__link-aqua popup-map__link-aqua--bar popup-link"></a>
+				<a href="#phyto-bar-popup" class="popup-map__link-aqua popup-map__link-aqua--phyto-bar-2 popup-link"></a>
+				<a href="#flush-popup" class="popup-map__link-aqua popup-map__link-aqua--flush popup-link"></a>
+				<a href="#himal-sauna-popup" class="popup-map__link-aqua popup-map__link-aqua--himal-sauna popup-link"></a>
+				<a href="#ice-dome-popup" class="popup-map__link-aqua popup-map__link-aqua--ice-dome popup-link"></a>
+				<a href="#jade-sauna-popup" class="popup-map__link-aqua popup-map__link-aqua--jade-sauna popup-link"></a>
+				<a href="#cedar-popup" class="popup-map__link-aqua popup-map__link-aqua--cedar popup-link"></a>
+				<a href="#juniper-popup" class="popup-map__link-aqua popup-map__link-aqua--juniper popup-link"></a>
+				<a href="#alder-popup" class="popup-map__link-aqua popup-map__link-aqua--alder popup-link"></a>
+				<a href="#russian-bath-2-popup"
+					class="popup-map__link-aqua popup-map__link-aqua--russian-bath-2 popup-link"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="russian-bath-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">РУСКАЯ БАНЯ</h2>
+				<p class="popup-aqua__text">Русская баня не только очищает, но и дает целебную силу. Парная отличается
+					высокой температурой и умеренной влажностью. В таких условиях наши капилляры раскрываются, усиливается
+					кровоток, ускоряются обменные процессы, происходит очищение поверхностного слоя кожи.
+
+					Для комфорта гостей, предлагаем отдельную женскую парную</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/01.svg" alt="">
+						</div>
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/02.svg" alt="">
+						</div>
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/03.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="russian-bath-2-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">РУСКАЯ БАНЯ</h2>
+				<p class="popup-aqua__text">Русская баня не только очищает, но и дает целебную силу. Парная отличается
+					высокой температурой и умеренной влажностью. В таких условиях наши капилляры раскрываются, усиливается
+					кровоток, ускоряются обменные процессы, происходит очищение поверхностного слоя кожи.
+
+					Для комфорта гостей, предлагаем отдельную мужскую парную, в которой мы проводим специальные мужские
+					парения каждый четверг в 17.00</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/01.svg" alt="">
+						</div>
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/02.svg" alt="">
+						</div>
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/russian-bath/03.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="salt-cave-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">СОЛЯНАЯ ПЕЩЕРА</h2>
+				<p class="popup-aqua__text">Соляная пещера — это простой и приятный способ укрепить иммунитет и
+					предотвратить простуды. Из-за высокой концентрации целебной соли в ней абсолютно отсутствуют бактерии и
+					вирусы. А атмосфера просто волшебна. Крупная соль, как песок на пляже, щекочет ступни, затемненное
+					помещение с неярким приятным светом, тихая музыка или звуки природы из динамиков, шезлонги или удобные
+					кресла — идеальное место для релаксации.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/salt-cave/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/salt-cave/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/salt-cave/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="shower-exp-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ДУШ ВПЕЧАТЛЕНИЙ</h2>
+				<p class="popup-aqua__text">Ничего так не улучшает настроение, как цветотерапия. А если сочетать её с
+					правильной температурой, напором воды и с приятными звуками, то эффект превзойдет все ожидания!
+
+					Душ впечатлений состоит из нескольких программ. Пение птиц, раскаты грома, сверкание молнии, шум океана и
+					другие звуки не оставят вас равнодушными.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/shower-exp/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/shower-exp/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/shower-exp/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/shower-exp/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="baln-bath-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">БАЛЬНЕОЛОГИЧЕСКИЕ ВАННЫ</h2>
+				<p class="popup-aqua__text">Неверояное расслабление возможно получить при прохождении процедур в наших
+					бальонеологических спа-ваннах. Их лечебный эффект которых основан на действии растворенных в воде веществ
+					(солевых или концернтрированных на ваш выбор). Ванны осуществляют расслабляющий и стимулирующий
+					гидромассаж, поэтому они рекомендованы для физиотерапии патологий репродуктивной, нервной,
+					опорно-двигательной, эндокринной систем.</p>
+				<a href="#" class="popup-aqua__btn btn">от 300 до 400 руб</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/baln-bath/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/baln-bath/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/baln-bath/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/baln-bath/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="cryo-sauna-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">КРИО САУНА</h2>
+				<p class="popup-aqua__text">Криосауна – эффективный способ обновления кожных покровов и внутренних органов
+					благодаря воздействию экстремально низких температур. Доказано позитивное действие процедуры при болезнях
+					суставов, позвоночника ЖКТ, дерматологических, эндокринных и неврологических проблемах, болевых
+					синдромах. Методика полезна при гинекологических заболеваниях, нарушениях эрекции.</p>
+				<a href="#" class="popup-aqua__btn btn">1500 руб</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/cryo-sauna/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/cryo-sauna/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/cryo-sauna/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="fish-garr-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">Рыбки Гарра Руффа</h2>
+				<p class="popup-aqua__text">Волшебные рыбки Гарра Руфа приплыли к нам из далеких южных стран. В процессе
+					ухаживания за Вашей кожей, рыбки вырабатывают особый фермент - антралин, способный замедлять старение
+					клеток. Нежно ощипывая ваши ножки, они воздействуют на рефлексогенные зоны стоп, тем самым оказывая
+					благоприятное влияние на общее состояние организма.</p>
+				<a href="#" class="popup-aqua__btn btn">390 руб</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/fish-garr/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/fish-garr/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/fish-garr/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/fish-garr/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="spa-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">СПА-ЗОНА</h2>
+				<p class="popup-aqua__text">Скинь с себя оковы дневных забот и избавься от стресса в SPA-зоне городского
+					курорта "TERMOLAND".
+
+					Практики термального ухода, обертывания, пиллинги, проработки всех групп мышц SPA-мастерами комплекса
+					помогут телу приобрести красоту, здоровье и наполнится энергией.
+
+					В городском курорте TERMOLAND каждый подберет для себя оптимальную процедуру. Вы сможете провести её
+					самостоятельно или совместно со SPA-мастером.
+
+					<a href="spa.html">Записаться на SPA процедуры можно</a></p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу. Желательно посещение по бронированию.</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/spa/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/spa/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/spa/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/spa/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="biomp-lamp-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ЛАМПА БИОПТРОН</h2>
+				<p class="popup-aqua__text">Лампа БИОПТРОН – это один из аппаратов светотерапии. Она обладает высоким
+					качеством и надёжностью. В её составе нет ультрафиолетовых лучей, пагубно влияющих на организм человека.
+					<br>
+					Достоинствами БИОПТРОН являются:
+					<br>
+					- отсутствие побочных эффектов;
+					<br>
+					- эффективность лечения (если курс подобран грамотно).
+					<br>
+					Показания:В целях уменьшения морщин, мышечные боли, заживление ран, дерматологические болезни, сезонные
+					аффективные расстройства, болезни опорно-двигательного аппарата, кожные проявления аллергии, герпес,
+					заболевания лёгких и бронхов, болезни суставов различной этиологии, борется с прыщами</p>
+				<a href="#" class="popup-aqua__btn btn">200 руб</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/biomp-lamp/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/biomp-lamp/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/biomp-lamp/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="hamam-first-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ХАМАМ</h2>
+				<p class="popup-aqua__text">Древний секрет хорошего самочувствия и молодости восточных красавиц. Отдых на
+					горячем мраморе в облаке невесомой мыльной пены, пилинг и мыльный массаж очистят душу и тело, придадут
+					сил и вернут хорошее настроение. Ведь хаммам - это не только прекрасный отдых, но и, что особенно важно
+					для женщины.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-first/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-first/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-first/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="hamam-second-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ХАМАМ ГРЯЗЕВОЙ</h2>
+				<p class="popup-aqua__text">У нашего грязевого хамама вы можете воспользоваться одной из 3 видов целебных
+					глин, двух видов грязей и кофейным жмыхом, а после хорошенько прогреться следуя инструкциям на входе.
+					Такая процедура делает кожу упругой, тонизирует мышцы, стимулирует обменные процессы организма.
+					<br>
+					Виды грязевых процедур:
+					<br>
+					Желтая глина
+					<br>
+					Белая глина
+					<br>
+					Голубая глина
+					<br>
+					Лечебная грязь «Ейская»
+					<br>
+					Лечебная грязь «Сакская»
+					<br>
+					Кофейный жмых</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-second/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-second/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-second/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-second/04.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-second/05.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="hamam-third-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ХАМАМ МЫЛЬНЫЙ</h2>
+				<p class="popup-aqua__text">После посещения мыльного хаммама гарантировано очищение и омоложение кожи.
+					Отличительная особенность этого вида бани - ритуал по нанесению на тело натуральных компонентов:
+					косметической грязи, органического скраба и натуральной мыльной пены.
+
+					В городском курорте TERMOLAND каждый подберет для себя оптимальную процедуру. Вы сможете провести её
+					самостоятельно или совместно со SPA-мастером.</p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу. Желательно посещение по бронированию.</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-third/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-third/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-third/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-third/04.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/hamam-third/05.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="children-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ДЕТСКИЙ УГОЛОК</h2>
+				<p class="popup-aqua__text">Не пускают надолго в баньку?..Не беда! В нашем комплексе расположена комфортная
+					игровая зона для детей от 3-х лет, которая оборудована развивающими играми и разнообразными веселыми
+					игрушками. Здесь малышу будет интересно поиграть, пока родители хорошенько прогреваются на наших
+					парениях.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="red-zone-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ЗОНА ИНФРАКРАСНЫХ ОБОГРЕВАТЕЛЕЙ</h2>
+				<p class="popup-aqua__text">Яркие солнечные лучи способны дарить положительные эмоции и тепло даже в
+					холодное время года. Испытывать подобные ощущения хочется постоянно, и «ТЕРМОЛЭНД» вам в этом поможет,
+					т.к. у нас есть зона инфракрасных обогревателей.
+					<br>
+					Польза:
+					<br>
+					Ускоряет физико-химические процессы в организме.
+					<br>
+					Регенерирует ткани
+					<br>
+					Ускоряет рост клеток и кровоток Улучшает кровообращение
+					<br>
+					Снижает давление.
+					<br>
+					Расслабляет мышцы
+					<br>
+					Улучшает сон
+					<br>
+					Поднимает настроение.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/red-zone/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/red-zone/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/red-zone/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="herbal-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ТРАВЯНАЯ САУНА</h2>
+				<p class="popup-aqua__text">Сила травяной сауны в сочетании прогревания тела и ингаляции травами. Этот союз
+					тепла и ароматов содействует релаксации, снятию напряжения и благотворно влияет на органы дыхательной
+					системы. Регулярно один аромат сменяется другим: мята, зверобой, лаванда, чабрец, ромашка и др. Одни
+					облегчают дыхание и борются с болезнетворными бактериями, другие помогают настроить гармонию и улучшить
+					сон.
+					<br>
+					Приходи в сауну в определенное время — сможешь застать подходящий для себя аромат.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/herbal/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/herbal/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/herbal/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="bar-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">БАР</h2>
+				<p class="popup-aqua__text">Проголодались? Самое время подкрепится в нашем кафе!
+
+					Пиццы, Горячие закуски и огромное разнообразие снеков ждут вас на наших витринах.
+
+					А если хочется попить, то вашу жажду утолят: сладкие газированные напитки, холодные чаи, энергетики и
+					легкие напитки для взрослых;)</p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/bar/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/bar/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/bar/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/bar/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="children-bas-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ДЕТСКИЙ БАССЕЙН</h2>
+				<p class="popup-aqua__text">Самое подходящее место для игры в морских пиратов и веселых дельфинов. Скатиться
+					с горки, поиграть с фонтанами, принести маме воды в ладошках – самые дорогие моменты с вашими детьми в
+					TERMOLAND. И это, не считая оздоровительного эффекта, который оказывает вода – закаляйтесь и укрепляйте
+					иммунитет своих деток. Детский бассейн предназначен для детей от 3-х лет в присутствии родителей или
+					ответственных сопровождающих.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children-bas/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children-bas/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/children-bas/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="relax-bas-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">РЕЛАКС БАССЕЙН</h2>
+				<p class="popup-aqua__text">Водной стихии в комплексе отводится достаточно пространства, но центральное
+					место отведено развлекательному бассейну с водопадами и зонами гидромассажа. Самое подходящее место для
+					отдыха после банных процедур.Бассейн наполнен тёплой водой, имеет глубину - 1,3 м. и размер 22х11 м.
+					Температура воды - 34 ℃.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/relax-bas/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/relax-bas/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/relax-bas/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="phyto-bar-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ФИТО-БАР</h2>
+				<p class="popup-aqua__text">Выпить кислородный коктейль не выходя из бассейна? Расслабится целебным травяным
+					настоем? Или просто покайфовать от вкусного и полезного напитка? За этим всем вам пора отправится в наш
+					фито бар, который расположен у большого бассейна</p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/phyto-bar/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/phyto-bar/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/phyto-bar/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="flush-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ЗОНА КОСЛОРОДНЫХ МИКСОВ</h2>
+				<p class="popup-aqua__text">Достаточно 2-х минут дыхания концентрированной кислородной смесью, для насыщения
+					крови кислородом, соизмеримой с 3-х часовой прогулкой по чистому лесу! Польза: Восполнение нехватки
+					кислорода в крови, эффективная профилактика различных заболеваний, детоксикация и очищение организма,
+					повышение физического тонуса, снятие усталости, повышение эффективности тренировок, нормализация качества
+					сна, увеличение эффективности работы головного мозга, снижение уровня стресса и депрессии, снижение
+					интенсивности головной боли, нормализация кровяного давления, снижение риска скрытой гипоксии плода у
+					беременных, укрепляет иммунитет</p>
+				<a href="#" class="popup-aqua__btn btn">СТОИМОСТЬ ПРОЦЕДУРЫ 50 ₽</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/flush/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/flush/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/flush/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="jacuzzi-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ДЖАКУЗИ</h2>
+				<p class="popup-aqua__text">Джакузи – это всегда расслабление, но что будет, если погрузится в морской или
+					минеральный джакузи? Значит пора! Только в «Термоленд» вы можете расслабится в необычных и максимально
+					полезных джакузи разной температуры и полезными элементами.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jacuzzi/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jacuzzi/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jacuzzi/03.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jacuzzi/04.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="himal-sauna-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ГИМАЛАЙСКАЯ САУНА</h2>
+				<p class="popup-aqua__text">Гималайскую сауну любят за целительный эффект и умеренный температурный режим.
+					Стены сауны состоят из натуральных соляных плиток, которую добывают в самом сердце гор в Пакистане. Она
+					содержит 84 полезных микроэлемента, среди которых: йод, калий, кальций, магний, медь и др.
+
+					Благодаря насыщению воздуха полезными микроэлементами, соляная сауна оказывает лечебное действие на весь
+					организм, но особенно на дыхательные пути и кожные покровы.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/himal-sauna/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/himal-sauna/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/himal-sauna/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="ice-dome-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ЛЕДЯНАЯ КУПЕЛЬ</h2>
+				<p class="popup-aqua__text">Вода освежает, смывает пот и налипшие от веника листья. Во время погружения в
+					холодную воду капилляры кожи резко сужаются, кровь активнее поступает к сердцу и головному мозгу.
+					Погружение становиться для организма стрессом. В этот момент активизируются все защитные силы,
+					укрепляется иммунитет, появляется бодрость.
+
+					Тем, кто ведет малоподвижный образ жизни, особенно полезно принимать контрастные процедуры, но искупаться
+					может любой желающий, если нет серьезный противопоказаний.
+
+					Окунание в холодную купель: закаляет организм, поднимает настроение, приводит в тонус кожу, укрепляет
+					сердечнососудистую систему.</p>
+
+				<div class="popup-aqua__items" style="margin-top: 20px;">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/ice-dome/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/ice-dome/02.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="jade-sauna-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">НЕФРИТОВАЯ САУНА</h2>
+				<p class="popup-aqua__text">Нефрит издревле считали камнем, продлевающим молодость, дарующим энергию и
+					укрепляющим здоровье.
+
+					Особенность нефритовой сауны кроется в целебных свойствах камня – нефрита, составляющего основу каменки.
+
+					Этот полудрагоценный камень оказывает положительный эффект на организм. Чем выше температура, тем больше
+					его полезность.</p>
+				<a href="#" class="popup-aqua__btn btn">Посещение бесплатно</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jade-sauna/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jade-sauna/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/jade-sauna/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="cedar-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">КЕДРОВАЯ ПАРНАЯ</h2>
+				<p class="popup-aqua__text">Устал и размяк от постоянного напряжения мегаполиса? Хочешь стать крепче и
+					сильнее? Отправляйся в кедровую парную на индивидуальное парение с нашим ПАР Мастером. Кедр – могучее
+					дерево, растущее только в нашей стране. В нем содержится множество витаминов и минералов, которые играют
+					важную роль в регуляции обмена веществ. Кедровая парная несет неоценимую пользу органам дыхания,
+					способствуя прогреванию тела и отхождению мокроты, активизируя защитные свойства организма.
+
+					<a href="steam.html">Записаться на индивидуальное парение можно</a></p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу. Желательно посещение по бронированию.</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="juniper-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">МОЖЕВЕЛОВАЯ ПАРНАЯ</h2>
+				<p class="popup-aqua__text">Можжевельник обитает на нашей планете уже в течение десятков миллионов лет. С
+					давних пор известны лечебные свойства этого растения, а его аромат и внешний вид делают его идеальным для
+					парильных процедур и укрепления иммунитета.
+
+					Наша можжевеловая парная обладает приятным ароматом хвои, эфирных масел. Особенно полезно париться здесь
+					людям, у которых имеются проблемы с кожей, дыхательной или нервной системой, подвижностью суставов.
+					Хороша он для использования в целях выведения токсинов из организма, снятия головной боли и лечения
+					мигреней.
+
+					<a href="steam.html">Записаться на индивидуальное парение можно</a></p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу. Желательно посещение по бронированию.</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-aqua" id="alder-popup">
+		<div class="popup-aqua__wrapper">
+			<div class="popup-aqua__content popup__content">
+				<div class="popup-aqua__close close-popup">
+					<img src="images/system_img/close-white.svg" alt="">
+				</div>
+				<h2 class="popup-aqua__title">ОЛЬХОВАЯ ПАРНАЯ</h2>
+				<p class="popup-aqua__text">Ольха содержит в себе каротин, витамин С, а так же большое количество дубильных
+					веществ, алкалоидов и витамина РР. Наша ольховая парная, оказывает благотворное влияние на органы
+					дыхания, поэтому парные процедуры здесь будут особенно полезны курильщикам, астматикам и страдающим
+					бронхитом. После парения дыхание облегчается, улучшается вентиляция легких, лучше отходит мокрота,
+					улучшается работа бронхов.
+
+					<a href="steam.html">Записаться на индивидуальное парение можно</a></p>
+				<a href="#" class="popup-aqua__btn btn">Оплата по заказу. Желательно посещение по бронированию.</a>
+				<div class="popup-aqua__items">
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/01.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/02.svg" alt="">
+						</div>
+
+					</div>
+					<div class="popup-aqua__item">
+						<div class="popup-aqua__img">
+							<img src="images/system_img/steams/03.svg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Подключение JS файлов -->
+	<!-- Jquery -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Main script file -->
+	<script src="js/script-test.js"></script>
+</body>
+
+</html>
