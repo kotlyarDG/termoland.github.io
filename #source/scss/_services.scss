@@ -2,37 +2,42 @@
 	position: relative;
 	z-index: 11;
 	background: url("../images/system_img/bg-wrap.jpg");
+	width: 100vw;
 	&__wrapper {
 		display: flex;
-		overflow-x: auto;
+		width: 100%;
+		height: calc(100vh - 70px);
 
 		@media (max-width: $sm) {
 			display: block;
-			height: 100vh;
-		}
-
-		@media (max-height: 500px) {
-			height: 240vh;
+			height: auto;
 		}
 	}
 
 	&__item {
-		flex: 0 1 25%;
+		cursor: pointer;
 		position: relative;
-		height: calc(100vh - 70px);
+
 		padding: 0 10px 0 10px;
 		text-align: center;
+		width: 25%;
+		height: 100%;
 
 		@media (max-width: $sm) {
 			padding: 10vh 10px 0 10px;
 			display: block;
-			height: 25%;
+			height: 35vh;
+			width: 100%;
 		}
 
 		@media (max-width: 600px) {
 			padding: 7.5vh 10px 0 10px;
 			display: block;
-			height: 25%;
+			height: 25vh;
+		}
+
+		@media (max-height: 450px) {
+			height: 50vh;
 		}
 	}
 

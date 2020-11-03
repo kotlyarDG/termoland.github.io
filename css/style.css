@@ -3269,43 +3269,39 @@ svg rect {
   position: relative;
   z-index: 11;
   background: url("../images/system_img/bg-wrap.jpg");
+  width: 100vw;
 }
 
 .services__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
+  width: 100%;
+  height: calc(100vh - 70px);
 }
 
 @media (max-width: 991px) {
   .services__wrapper {
     display: block;
-    height: 100vh;
-  }
-}
-
-@media (max-height: 500px) {
-  .services__wrapper {
-    height: 240vh;
+    height: auto;
   }
 }
 
 .services__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+  cursor: pointer;
   position: relative;
-  height: calc(100vh - 70px);
   padding: 0 10px 0 10px;
   text-align: center;
+  width: 25%;
+  height: 100%;
 }
 
 @media (max-width: 991px) {
   .services__item {
     padding: 10vh 10px 0 10px;
     display: block;
-    height: 25%;
+    height: 35vh;
+    width: 100%;
   }
 }
 
@@ -3313,7 +3309,13 @@ svg rect {
   .services__item {
     padding: 7.5vh 10px 0 10px;
     display: block;
-    height: 25%;
+    height: 25vh;
+  }
+}
+
+@media (max-height: 450px) {
+  .services__item {
+    height: 50vh;
   }
 }
 
@@ -4793,6 +4795,46 @@ svg rect {
 
 #time {
   margin: 0;
+}
+
+.test {
+  height: 90vh;
+  background-color: #555;
+}
+
+.test__wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test__item-link {
+  width: 25%;
+  height: 100%;
+  background-color: #499;
+  cursor: pointer;
+}
+
+.test__item-content {
+  display: none;
+  width: 75%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  .test__item-content {
+    width: 100%;
+    height: 75vh;
+  }
+}
+
+@media (max-height: 450px) {
+  .test__item-content {
+    height: 150vh;
+  }
 }
 
 .internet {
