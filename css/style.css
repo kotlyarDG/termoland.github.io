@@ -3956,10 +3956,10 @@ svg rect {
 
 .store__leaf-s {
   position: absolute;
-  bottom: -35%;
+  bottom: -45%;
   left: 0;
   z-index: 10;
-  max-width: 45vw;
+  max-width: 40vw;
 }
 
 @media (max-width: 500px) {
@@ -4025,6 +4025,9 @@ svg rect {
 }
 
 .store__bg img {
+  -webkit-transform: translateX(-15px);
+      -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
   max-width: 100%;
 }
 
