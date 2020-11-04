@@ -3797,7 +3797,7 @@ svg rect {
 }
 
 .shares {
-  padding: 50px 0 0 0;
+  padding: 40px 0 0 0;
   position: relative;
   z-index: 11;
 }
@@ -3822,6 +3822,7 @@ svg rect {
 .shares__title {
   width: 100%;
   text-align: center;
+  margin: 0 0 40px 0;
 }
 
 .shares__slider {
@@ -4340,7 +4341,7 @@ svg rect {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0 25px 0 0;
-    margin: 0 0 65px 0;
+    margin: 0 0 25px 0;
   }
   .item-news .item-news__img {
     -webkit-box-flex: 0;
