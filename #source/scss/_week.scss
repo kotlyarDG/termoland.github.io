@@ -40,8 +40,6 @@
 		& .slick-slide.slick-current {
 			& .button-second__img {
 				transition: 0.3s;
-				border-radius: 50%;
-				overflow: hidden;
 			}
 		}
 
@@ -314,7 +312,6 @@
 	&._active {
 		.button-second__img {
 			transition: 0.3s;
-			border-radius: 50%;
 		}
 	}
 }

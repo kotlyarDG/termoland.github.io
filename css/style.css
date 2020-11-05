@@ -514,6 +514,8 @@ svg rect {
 .popup-first__block {
   max-height: calc(70vh - 70px);
   overflow: auto;
+  border-radius: 90px;
+  padding: 30px 15px;
 }
 
 @media (max-width: 600px) {
@@ -3459,8 +3461,6 @@ svg rect {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 .week__buttons-slider .slick-arrow {
@@ -3793,7 +3793,6 @@ svg rect {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 50%;
 }
 
 .shares {
@@ -4274,7 +4273,13 @@ svg rect {
 
 .item-news__body {
   max-height: 400px;
-  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .item-news__title {
@@ -4319,6 +4324,10 @@ svg rect {
 .item-news__text {
   font-size: 20px;
   line-height: 24px;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 @media (max-width: 1400px) {

@@ -336,7 +336,9 @@ $(document).ready(function () {
 
 	var aquaImg = $('.aqua__bg');
 	$('.aqua__link-aqua--man').click(function () {
-		aquaImg.attr('src', "images/system_img/aqua-zona/bg-man.png")
+
+		aquaImg.attr('src', "images/system_img/aqua-zona/bg-man.png");
+
 	});
 
 	$('.aqua__link-aqua--woman').click(function () {
