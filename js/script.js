@@ -350,6 +350,9 @@ $(document).ready(function () {
 	} else { }
 
 
+	var Sum = 0.0;
+	var Title = "";
+
 
 	$('.services__item').click(function () {
 
@@ -406,25 +409,54 @@ $(document).ready(function () {
 	$('.item-ticket__btn-ticket').click(function (e) {
 		$('.ticket--info').addClass('_active');
 		$('.ticket--main').removeClass('_active');
+		Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+		Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
 		e.preventDefault();
 	});
 
 	$('.item-ticket__btn-spa').click(function (e) {
 		$('.spa--info').addClass('_active');
 		$('.spa--main').removeClass('_active');
+		Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+		Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
 		e.preventDefault();
 	});
 
 	$('.item-ticket__btn-steam').click(function (e) {
 		$('.steam--info').addClass('_active');
 		$('.steam--main').removeClass('_active');
+		Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+		Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
 		e.preventDefault();
 	});
 
 	$('.item-ticket__btn-package').click(function (e) {
 		$('.package--info').addClass('_active');
 		$('.package--main').removeClass('_active');
+		Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+		Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
 		e.preventDefault();
+	});
+
+	$('.form-ticket__btn__pay').click(function (e) {
+		e.preventDefault();
+		let fio = $("#fio").val();
+		let phone = $("#phone").val();
+		let date = $("#date").val();
+		let time = $("#time").val();
+		let master = $("#master option:selected").text();
+		console.log(master)
+		let sum = Sum;
+		let title = Title;
+		let message = `${title} ${fio} ${phone} ${date ? date : ''} ${time ? time : ''} ${master ? master : ''}`;
+		ipayCheckout({
+			amount: sum,
+			currency: 'RUB',
+			order_number: '',
+			description: message
+		},
+			function (order) { showSuccessfulPurchase(order) },
+			function (order) { showFailurefulPurchase(order) });
 	});
 
 	$('.content-ticket__btn-back--info-ticket').click(function (e) {
