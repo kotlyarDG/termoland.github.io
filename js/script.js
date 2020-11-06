@@ -438,7 +438,7 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
-	$('.form-ticket__btn__pay').click(function (e) {
+	$('.form-ticket__btn__pay-max').click(function (e) {
 		e.preventDefault();
 		let fio = $("#fio").val();
 		let phone = $("#phone").val();
@@ -449,6 +449,23 @@ $(document).ready(function () {
 		let sum = Sum;
 		let title = Title;
 		let message = `${title} ${fio} ${phone} ${date ? date : ''} ${time ? time : ''} ${master ? master : ''}`;
+		ipayCheckout({
+			amount: sum,
+			currency: 'RUB',
+			order_number: '',
+			description: message
+		},
+			function (order) { showSuccessfulPurchase(order) },
+			function (order) { showFailurefulPurchase(order) });
+	});
+
+	$('.form-ticket__btn__pay-min').click(function (e) {
+		e.preventDefault();
+		let fio = $("#fio").val();
+		let phone = $("#phone").val();
+		let sum = Sum;
+		let title = Title;
+		let message = `${title} ${fio} ${phone} `;
 		ipayCheckout({
 			amount: sum,
 			currency: 'RUB',
