@@ -666,29 +666,29 @@ svg rect {
 }
 
 .popup-map__link-aqua--map-12 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
-  left: 85%;
+  left: 75%;
 }
 
 .popup-map__link-aqua--map-21 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
   left: 0;
 }
 
 .popup-map__link-aqua--map-23 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
-  left: 85%;
+  left: 75%;
 }
 
 .popup-map__link-aqua--map-32 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
   left: 0;
 }
@@ -1765,13 +1765,6 @@ svg rect {
           align-items: center;
   position: relative;
   z-index: 9;
-}
-
-@media (max-width: 600px) {
-  .aqua__wrapper {
-    background: url("../../images/system_img/aqua-zona/bg-Vector.svg") center/cover no-repeat;
-    padding: 5px;
-  }
 }
 
 .aqua__wrapper img {
@@ -5363,6 +5356,7 @@ svg rect {
 }
 
 .footer__logo {
+  margin: 75px 0 0 0;
   width: 75%;
 }
 
@@ -5377,12 +5371,36 @@ svg rect {
 }
 
 .footer__ps {
-  width: 100%;
-  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   margin: 30px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .footer__ps {
+    text-align: center;
+  }
+}
+
+.footer__ps2 {
+  width: 33%;
+  margin: -30px auto 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer__ps2 {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+
+.footer__time {
+  margin: 40px 0;
 }
 
 .item-center:first-child {
