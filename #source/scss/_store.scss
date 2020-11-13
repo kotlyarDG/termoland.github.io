@@ -20,11 +20,11 @@
 
 	&__leaf-s {
 		position: absolute;
-		bottom: -35%;
+		bottom: -45%;
 		left: 0;
 		z-index: 10;
 
-		max-width: 45vw;
+		max-width: 40vw;
 
 		@media (max-width: 500px) {
 			bottom: -10%;
@@ -73,6 +73,7 @@
 	&__bg {
 		width: 100%;
 		img {
+			transform: translateX(-15px);
 			max-width: 100%;
 		}
 	}

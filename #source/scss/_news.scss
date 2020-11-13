@@ -155,7 +155,9 @@
 
 	&__body {
 		max-height: 400px;
-		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		// overflow: auto;
 	}
 
 	&__title {
@@ -195,7 +197,8 @@
 		line-height: 24px;
 
 		// max-height: 300px;
-		// overflow: auto;
+		overflow: auto;
+		flex: 1 1 auto;
 
 		@media (max-width: 1400px) {
 			font-size: 18px;
@@ -211,7 +214,7 @@
 		flex: 0 1 100%;
 		flex-direction: row;
 		padding: 0 25px 0 0;
-		margin: 0 0 65px 0;
+		margin: 0 0 25px 0;
 
 		& .item-news__img {
 			flex: 0 1 40%;

@@ -86,7 +86,7 @@
 		height: 0;
 
 		transition: all 0.5s ease;
-		transform: translate(100%, 0);
+		transform: translate(200vw, 0);
 		opacity: 0;
 
 		&._active {
@@ -97,6 +97,14 @@
 			padding: 10px;
 			transform: translate(0, 0);
 			opacity: 1;
+
+			& .menu__list {
+				height: auto;
+			}
+
+			& .menu__list {
+				height: auto;
+			}
 		}
 	}
 

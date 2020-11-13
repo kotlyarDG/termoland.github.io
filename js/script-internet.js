@@ -2,31 +2,42 @@ $(document).ready(function () {
 
 	$('.header__burger').click(function (event) {
 		$('.header__burger,.menu').toggleClass('_active')
-		// $('body').toggleClass('_lock')
+		$('body').toggleClass('_lock')
 	});
 
+	$('.menu__item').click(function () {
+		$('.header__burger,.menu').removeClass('_active')
+	});
+
+	$(document).on('click', '.class-link', function (e) {
+		var linkID = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(linkID).offset().top
+		}, 'slow');
+		e.preventDefault();
+	});
 
 	// Скрипт для фильтрации по кнопке с классом filter__btn
-	var cat = $('.active-filter').data('filter');
-	$('.filter__item').hide();
-	$('.filter__item.f_' + cat).show();
+	// var cat = $('.active-filter').data('filter');
+	// $('.filter__item').hide();
+	// $('.filter__item.f_' + cat).show();
 
-	$('.filter__btn').click(function (event) {
-		cat = $(this).data('filter');
-		event.preventDefault();
+	// $('.filter__btn').click(function (event) {
+	// 	cat = $(this).data('filter');
+	// 	event.preventDefault();
 
-		// Присвоение ссылке класса active-filter
-		$('.filter__btn.active-filter').removeClass('active-filter')
-		$(this).addClass('active-filter')
+	// 	// Присвоение ссылке класса active-filter
+	// 	$('.filter__btn.active-filter').removeClass('active-filter')
+	// 	$(this).addClass('active-filter')
 
-		// При категории 1 - показывает все элементы с классом filter__item
-		// В ином случае показывает элементы с классом f_ + номер категории
+	// 	// При категории 1 - показывает все элементы с классом filter__item
+	// 	// В ином случае показывает элементы с классом f_ + номер категории
 
-		$('.filter__item').hide();
-		$('.filter__item.f_' + cat).show();
+	// 	$('.filter__item').hide();
+	// 	$('.filter__item.f_' + cat).show();
 
 
-	});
+	// });
 
 	(function () {
 		let originalPositions = [];
