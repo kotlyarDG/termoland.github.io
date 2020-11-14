@@ -651,7 +651,7 @@ svg rect {
 @media (max-width: 600px) {
   .popup-map__link-aqua {
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 40%;
     width: 100px;
     height: 75px;
@@ -666,36 +666,36 @@ svg rect {
 }
 
 .popup-map__link-aqua--map-12 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
-  left: 85%;
+  left: 75%;
 }
 
 .popup-map__link-aqua--map-21 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
   left: 0;
 }
 
 .popup-map__link-aqua--map-23 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
-  left: 85%;
+  left: 75%;
 }
 
 .popup-map__link-aqua--map-32 {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   top: 90%;
   left: 0;
 }
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--russian-bath {
-    top: 85%;
+    top: 75%;
     left: 0;
     width: 90px;
     height: 70px;
@@ -710,7 +710,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--salt-cave {
-    top: 75%;
+    top: 65%;
     left: 26%;
     width: 75px;
     height: 55px;
@@ -725,7 +725,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--shower-exp {
-    top: 70%;
+    top: 60%;
     left: 0;
     width: 75px;
     height: 85px;
@@ -740,7 +740,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--baln-bath {
-    top: 48%;
+    top: 38%;
     left: 0;
     width: 85px;
     height: 50px;
@@ -755,7 +755,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--cryo-sauna {
-    top: 60%;
+    top: 50%;
     left: 0;
     width: 85px;
     height: 50px;
@@ -770,7 +770,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--fish-garr {
-    top: 48%;
+    top: 43%;
     left: 31%;
     width: 75px;
     height: 50px;
@@ -785,23 +785,23 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--spa {
-    top: 33%;
+    top: 30%;
     left: 0;
-    width: 150px;
-    height: 80px;
+    width: 120px;
+    height: 60px;
   }
 }
 
 @media (max-width: 350px) {
   .popup-map__link-aqua--spa {
-    width: 130px;
+    width: 100px;
   }
 }
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--biomp-lamp {
-    top: 33%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     width: 70px;
     height: 40px;
   }
@@ -815,10 +815,10 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--hamam-first {
-    top: 18%;
+    top: 17%;
     left: 0;
-    width: 150px;
-    height: 80px;
+    width: 120px;
+    height: 60px;
   }
 }
 
@@ -861,7 +861,7 @@ svg rect {
 @media (max-width: 600px) {
   .popup-map__link-aqua--children {
     top: 1%;
-    left: 72%;
+    left: 62%;
     width: 90px;
     height: 80px;
   }
@@ -875,7 +875,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--red-zone {
-    top: 20%;
+    top: 18%;
     left: 0;
     width: 90px;
     height: 80px;
@@ -890,8 +890,8 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--red-zone-1 {
-    top: 20%;
-    left: 85%;
+    top: 18%;
+    left: 80%;
     width: 50px;
     height: 80px;
   }
@@ -965,7 +965,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--phyto-bar-2 {
-    top: 42%;
+    top: 37%;
     left: 0;
     width: 70px;
     height: 60px;
@@ -980,7 +980,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--flush {
-    top: 35%;
+    top: 30%;
     left: 35%;
     width: 70px;
     height: 60px;
@@ -995,7 +995,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--himal-sauna {
-    top: 55%;
+    top: 45%;
     left: 20%;
     width: 70px;
     height: 60px;
@@ -1010,7 +1010,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--ice-dome {
-    top: 47%;
+    top: 40%;
     left: 80%;
     width: 50px;
     height: 40px;
@@ -1025,7 +1025,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--jade-sauna {
-    top: 67%;
+    top: 59%;
     left: 20%;
     width: 70px;
     height: 60px;
@@ -1040,7 +1040,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--cedar {
-    top: 77%;
+    top: 69%;
     left: 80%;
     width: 50px;
     height: 40px;
@@ -1055,7 +1055,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--juniper {
-    top: 67%;
+    top: 59%;
     left: 80%;
     width: 50px;
     height: 40px;
@@ -1070,7 +1070,7 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--alder {
-    top: 57%;
+    top: 50%;
     left: 80%;
     width: 50px;
     height: 40px;
@@ -1085,8 +1085,8 @@ svg rect {
 
 @media (max-width: 600px) {
   .popup-map__link-aqua--russian-bath-2 {
-    top: 80%;
-    left: 10%;
+    top: 72%;
+    left: 17%;
     width: 50px;
     height: 40px;
   }
@@ -1125,6 +1125,22 @@ svg rect {
   top: 0;
   left: 0;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .popup-aqua__close--desktop {
+    display: none;
+  }
+}
+
+.popup-aqua__close--mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .popup-aqua__close--mobile {
+    display: block;
+  }
 }
 
 .popup-aqua__title {
@@ -1765,13 +1781,6 @@ svg rect {
           align-items: center;
   position: relative;
   z-index: 9;
-}
-
-@media (max-width: 600px) {
-  .aqua__wrapper {
-    background: url("../../images/system_img/aqua-zona/bg-Vector.svg") center/cover no-repeat;
-    padding: 5px;
-  }
 }
 
 .aqua__wrapper img {
@@ -4469,7 +4478,7 @@ svg rect {
       -ms-flex: 0 1 75%;
           flex: 0 1 75%;
   overflow-y: auto;
-  background: url("../images/system_img/services/bg.jpg") center/cover no-repeat;
+  background: url("../images/system_img/services/bg.jpg");
 }
 
 @media (max-width: 768px) {
@@ -4492,6 +4501,7 @@ svg rect {
   opacity: 0;
   visibility: hidden;
   display: none;
+  height: 100%; /* TODO */
 }
 
 @media (max-width: 768px) {
@@ -5363,6 +5373,7 @@ svg rect {
 }
 
 .footer__logo {
+  margin: 75px 0 0 0;
   width: 75%;
 }
 
@@ -5377,12 +5388,36 @@ svg rect {
 }
 
 .footer__ps {
-  width: 100%;
-  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   margin: 30px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .footer__ps {
+    text-align: center;
+  }
+}
+
+.footer__ps2 {
+  width: 33%;
+  margin: -30px auto 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer__ps2 {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+
+.footer__time {
+  margin: 40px 0;
 }
 
 .item-center:first-child {
