@@ -41,6 +41,7 @@
 	opacity: 0;
 	visibility: hidden;
 	display: none;
+	height: 100%; //TODO
 
 	@media (max-width: $xs) {
 		padding: 5vw 10px 60px 10px;

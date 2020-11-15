@@ -14,10 +14,13 @@
 	<!-- Подключение CSS файлов -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="https://3dsec.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
+	<link rel="stylesheet" href="css/style.css?v=1" />
+	<!-- <script src="https://3dsec.sberbank.ru/payment/docsite/assets/js/ipay.js"></script> -->
+	<script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
+	
 	<script>
-		var ipay = new IPAY({ api_token: '94v01svekim74gjfunavn5quh' });
+		// var ipay = new IPAY({ api_token: '94v01svekim74gjfunavn5quh' });
+		var ipay = new IPAY({ api_token: 'b1n8kooldm7h0p2jiontrpg537' })
 	</script>
 </head>
 
@@ -1119,7 +1122,7 @@
 
 
 				<div class="week__second-slider second-slider">
-					<div class="second-slider__slide">
+					 <div class="second-slider__slide">
 						<div class="slide-second__wrapper">
 							<div class="slide-second__info">
 								<p class="slide-second__title">WELL BEING</p>
@@ -1176,14 +1179,14 @@
 									<br>
 									И еще много-много полезного и главное ВИТАМИННОГО!<br>
 									<br>
-									*Расписание платных и бесплатных коллективных практик появится в нашей группе в ближайшее
+									Расписание платных и бесплатных коллективных практик появится в нашей группе в ближайшее
 									время</p>
 							</div>
 							<div class="slide-second__img">
 								<img src="images/content_img/events/04.jpg" alt="">
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="second-slider__slide">
 						<div class="slide-second__wrapper">
@@ -1207,7 +1210,6 @@
 				</div>
 
 				<div class="week__buttons-slider buttons-slider">
-
 					<div class="second-slider__button button-second">
 						<div class="button-second__img"><img src="images/content_img/events/02.jpg" alt="">
 						</div>
@@ -1259,7 +1261,6 @@
 						<a href="#fourth-share" class="shares__img popup-link">
 							<img src="images/content_img/shares/04.jpg" alt="">
 						</a>
-
 
 					</div>
 				</div>
@@ -3103,7 +3104,7 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- Main script file -->
-	<script src="js/script.js"></script>
+	<script src="js/script.js?v=1"></script>
 </body>
 
 </html>

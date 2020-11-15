@@ -4501,6 +4501,7 @@ svg rect {
   opacity: 0;
   visibility: hidden;
   display: none;
+  height: 100%; /* TODO */
 }
 
 @media (max-width: 768px) {
