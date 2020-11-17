@@ -325,14 +325,14 @@ $(document).ready(function () {
 
 	AOS.init();
 
-	if ($(window).width() <= 769) {
-		$('.item-news__title').click(function (event) {
-			$('.item-news__title').not($(this)).removeClass('_active');
-			$('.item-news__text').not($(this).next()).slideUp(500);
 
-			$(this).toggleClass('_active').next().slideToggle(500);
-		});
-	} else { }
+	$('.item-news__title').click(function (event) {
+		$('.item-news__title').not($(this)).removeClass('_active');
+		$('.item-news__text').not($(this).next()).slideUp(500);
+
+		$(this).toggleClass('_active').next().slideToggle(500);
+	});
+
 
 	var aquaImg = $('.aqua__bg');
 	$('.aqua__link-aqua--man').click(function () {

@@ -1,7 +1,6 @@
 .news {
 	padding: 40px 0 150px 0;
 	position: relative;
-
 	@media (max-width: $xs) {
 		padding: 40px 0;
 	}
@@ -98,9 +97,6 @@
 		}
 	}
 
-	&__item {
-	}
-
 	&__column-small {
 		flex: 0 1 20%;
 
@@ -171,23 +167,21 @@
 			line-height: 30px;
 		}
 
-		@media (max-width: $xs) {
-			cursor: pointer;
-			position: relative;
-			padding: 0 25px 0 0;
-			&:before {
-				content: url("../images/system_img/Vector-news.svg");
-				position: absolute;
-				top: 0;
-				right: 10px;
-				transition: 0.5s;
-			}
+		cursor: pointer;
+		position: relative;
+		padding: 0 35px 0 0;
+		&:before {
+			content: url("../images/system_img/Vector-news.svg");
+			position: absolute;
+			top: 0;
+			right: 10px;
+			transition: 0.5s;
+		}
 
-			&._active {
-				&:before {
-					transform: rotate(-180deg);
-					transition: 0.5s;
-				}
+		&._active {
+			&:before {
+				transform: rotate(-180deg);
+				transition: 0.5s;
 			}
 		}
 	}
@@ -205,9 +199,7 @@
 			line-height: 24px;
 		}
 
-		@media (max-width: $xs) {
-			display: none;
-		}
+		display: none;
 	}
 
 	@media (max-width: $lg) {
@@ -242,6 +234,7 @@
 	&--big {
 		flex: 0 1 100%;
 		flex-direction: row;
+		align-items: start;
 
 		padding: 0 25px 0 0;
 
