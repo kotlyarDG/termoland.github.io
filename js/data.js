@@ -77,35 +77,12 @@ $(document).ready(function () {
 
 		var data = 
         {
-            "base_pass_id": 28,
-            "referrer": "web",
-            "standard_fields": [  
-                { 
-                    "id": "0", 
-                    "value": $('#first_name').val()
-                },
-                {
-                    "id":"1",
-                    "value": $('#last_name').val()
-                },
-                {
-                    "id":"2",
-                    "value": $('#email').val()
-                },
-                {
-                    "id":"3",
-                    "value": $('#instagram').val()
-                },
-                {
-                    "id":"4",
-                    "value":$('#phone').val()
-                }
-            ],
-            "custom_fields": [
-                {
-                    "id":"0", "value":$('#position').val()
-                }
-            ]
+            "name": $('#name').val(),
+			"phone": $('#phone').val(),
+			"service_id": $('#service_id').val(),
+			"master_id": $('#master_id').val(),
+			"date": $('#date').val(),
+			"time": $('#time').val(),
         };
 		$.ajax({
             type: "POST",
