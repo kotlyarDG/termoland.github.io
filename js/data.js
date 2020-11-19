@@ -32,7 +32,37 @@ $(document).ready(function () {
             type: "GET",
             url: 'https://termoland.herokuapp.com/v1/sales/list',
             success: function(data){
-				console.log("Sales = ", data)
+                console.log("Sales = ", data)
+                
+                for(let item of data) {
+                    $(".shares__slider").append(
+                        `<a href="#first-share" class="shares__img popup-link">
+                            <img src="${item['image']}" alt="">
+                        </a>`
+                    );
+                }
+
+                $('.shares__slider').slick({
+                    arrows: true,
+                    slidesToShow: 1,
+                    infinite: true,
+                    centerMode: true,
+                    centerPadding: '30%',
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    speed: 1000,
+                    responsive: [
+                        {
+                            breakpoint: 769,
+                            settings: {
+                                arrows: true,
+                                centerMode: true,
+                                centerPadding: '0',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
             },
             error: function(errMsg) {
                 console.log("Error: ", errMsg)

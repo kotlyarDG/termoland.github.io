@@ -290,27 +290,27 @@ $(document).ready(function () {
 		]
 	});
 
-	$('.shares__slider').slick({
-		arrows: true,
-		slidesToShow: 1,
-		infinite: true,
-		centerMode: true,
-		centerPadding: '30%',
-		autoplay: true,
-		autoplaySpeed: 10000,
-		speed: 1000,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					arrows: true,
-					centerMode: true,
-					centerPadding: '0',
-					slidesToShow: 1
-				}
-			}
-		]
-	});
+	// $('.shares__slider').slick({
+	// 	arrows: true,
+	// 	slidesToShow: 1,
+	// 	infinite: true,
+	// 	centerMode: true,
+	// 	centerPadding: '30%',
+	// 	autoplay: true,
+	// 	autoplaySpeed: 10000,
+	// 	speed: 1000,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 769,
+	// 			settings: {
+	// 				arrows: true,
+	// 				centerMode: true,
+	// 				centerPadding: '0',
+	// 				slidesToShow: 1
+	// 			}
+	// 		}
+	// 	]
+	// });
 
 	// Функция для скролла по ссылке-якорю
 	// вместо class-link - реальный класс ссылки-якоря
