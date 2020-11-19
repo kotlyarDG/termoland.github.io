@@ -1,6 +1,11 @@
 // Проверка, загрузилась ли страница
 $(document).ready(function () {
-	
+    
+    
+    Sales = [];
+    Events = [];
+    News = [];
+
 	getEvents();
 	getSales();
 	getNews();
@@ -9,7 +14,16 @@ $(document).ready(function () {
 	getBlockById(1);
 	getBlockById(2);
 	getBlockById(3);
-	getBlockById(4);
+    getBlockById(4);
+    
+
+    function openSaleModal(sale) {
+        console.log("Open sale = ", sale);
+        $('#sales-popup-img').attr('src',sale.image);
+        $('#sales-popup-title').text(sale.name);
+        $('#sales-popup-description').text(sale.description);
+        $('#sales-popup').addClass('open');
+    }
 
 
 	function getEvents() {
@@ -34,13 +48,29 @@ $(document).ready(function () {
             success: function(data){
                 console.log("Sales = ", data)
                 
-                for(let item of data) {
+                Sales = data;
+
+                for(let item of Sales) {
                     $(".shares__slider").append(
-                        `<a href="#first-share" class="shares__img popup-link">
+                        `<p class="shares__img popup-sale-link" data-id="${item['id']}">
                             <img src="${item['image']}" alt="">
-                        </a>`
+                        </p>`
                     );
                 }
+
+                const popupLinks = document.querySelectorAll('.popup-sale-link');
+                if (popupLinks.length > 0) {
+                    for (let index = 0; index < popupLinks.length; index++) {
+                        const popupLink = popupLinks[index];
+                        popupLink.addEventListener("click", function (e) {
+                            const popupId = +popupLink.getAttribute('data-id');
+                            const sale = Sales.find(el=>el.id == popupId);
+                            openSaleModal(sale)
+                            e.preventDefault();
+                        });
+                    }
+                }
+
 
                 $('.shares__slider').slick({
                     arrows: true,
