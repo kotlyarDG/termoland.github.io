@@ -236,82 +236,6 @@ $(document).ready(function () {
 		}
 	})();
 
-
-	$('.second-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		asNavFor: '.buttons-slider',
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					arrows: true,
-					adaptiveHeight: true,
-				}
-			}
-		]
-	});
-
-	$('.buttons-slider').slick({
-		slidesToShow: 4,
-		asNavFor: '.second-slider',
-		focusOnSelect: true,
-		arrows: true,
-
-		responsive: [
-			{
-				breakpoint: 1281,
-				settings: {
-					slidesToShow: 3,
-					asNavFor: '.second-slider',
-					focusOnSelect: true,
-					arrows: true
-				}
-			},
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 2,
-					asNavFor: '.second-slider',
-					focusOnSelect: true,
-					arrows: true
-				}
-			},
-			{
-				breakpoint: 769,
-				settings: {
-					slidesToShow: 1,
-					asNavFor: '.second-slider',
-					focusOnSelect: true,
-					arrows: true
-				}
-			}
-		]
-	});
-
-	$('.shares__slider').slick({
-		arrows: true,
-		slidesToShow: 1,
-		infinite: true,
-		centerMode: true,
-		centerPadding: '30%',
-		autoplay: true,
-		autoplaySpeed: 10000,
-		speed: 1000,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					arrows: true,
-					centerMode: true,
-					centerPadding: '0',
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-
 	// Функция для скролла по ссылке-якорю
 	// вместо class-link - реальный класс ссылки-якоря
 	// вместо slow - необходимую скорость
@@ -325,13 +249,6 @@ $(document).ready(function () {
 
 	AOS.init();
 
-
-	$('.item-news__title').click(function (event) {
-		$('.item-news__title').not($(this)).removeClass('_active');
-		$('.item-news__text').not($(this).next()).slideUp(500);
-
-		$(this).toggleClass('_active').next().slideToggle(500);
-	});
 
 
 	var aquaImg = $('.aqua__bg');

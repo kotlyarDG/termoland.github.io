@@ -150,10 +150,13 @@
 	}
 
 	&__body {
-		max-height: 400px;
+		max-height: 350px;
 		display: flex;
 		flex-direction: column;
-		// overflow: auto;
+
+		&--big {
+			position: relative;
+		}
 	}
 
 	&__title {
@@ -166,31 +169,43 @@
 			font-size: 25px;
 			line-height: 30px;
 		}
-
-		cursor: pointer;
-		position: relative;
-		padding: 0 35px 0 0;
-		&:before {
-			content: url("../images/system_img/Vector-news.svg");
-			position: absolute;
-			top: 0;
-			right: 10px;
-			transition: 0.5s;
-		}
-
-		&._active {
+		@media (max-width: $lg) {
+			cursor: pointer;
+			position: relative;
+			padding: 0 35px 0 0;
 			&:before {
-				transform: rotate(-180deg);
+				content: url("../images/system_img/Vector-news.svg");
+				position: absolute;
+				top: 0;
+				right: 10px;
 				transition: 0.5s;
 			}
+
+			&._active {
+				&:before {
+					transform: rotate(-180deg);
+					transition: 0.5s;
+				}
+			}
+		}
+
+		cursor: pointer;
+	}
+
+	&__big-link {
+		margin: 5px 0 0 0;
+		cursor: pointer;
+		font-size: 20px;
+		line-height: 24px;
+
+		@media (max-width: $lg) {
+			display: none;
 		}
 	}
 
 	&__text {
 		font-size: 20px;
 		line-height: 24px;
-
-		// max-height: 300px;
 		overflow: auto;
 		flex: 1 1 auto;
 
@@ -200,6 +215,15 @@
 		}
 
 		display: none;
+
+		&--big {
+			@media (min-width: $lg) {
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 11;
+				-webkit-box-orient: vertical;
+			}
+		}
 	}
 
 	@media (max-width: $lg) {

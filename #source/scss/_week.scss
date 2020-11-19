@@ -14,14 +14,8 @@
 		z-index: 11;
 	}
 
-	&__main-slider {
-	}
-
-	&__second-slider {
-	}
-
 	&__buttons-slider {
-		margin: -100px 0 0 0;
+		margin: 0 0 0 0;
 		width: 70vw;
 		position: relative;
 		z-index: 15;
@@ -147,14 +141,6 @@
 .second-slider {
 	position: relative;
 	z-index: 12;
-	&__slide {
-	}
-
-	&__buttons {
-	}
-
-	&__button {
-	}
 
 	& .slick-track {
 		padding: 90px 0 0 0;
@@ -204,7 +190,7 @@
 		position: relative;
 		z-index: 1;
 
-		max-height: 400px;
+		max-height: 500px;
 		overflow-y: auto;
 
 		@media (max-width: $xs) {
@@ -217,7 +203,7 @@
 
 	&__title {
 		font-weight: bold;
-		@include adaptive-font(50, 25);
+		@include adaptive-font(40, 25);
 		line-height: 121%;
 
 		color: #395a71;
@@ -225,18 +211,8 @@
 	}
 
 	&__text {
-		font-size: 26px;
-		line-height: 32px;
-
-		@media (max-width: 1400px) {
-			font-size: 22px;
-			line-height: 29px;
-		}
-
-		@media (max-width: 600px) {
-			font-size: 18px;
-			line-height: 22px;
-		}
+		font-size: 18px;
+		line-height: 23px;
 	}
 
 	&__img {
