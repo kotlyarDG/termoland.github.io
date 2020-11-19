@@ -1,18 +1,9 @@
 // Проверка, загрузилась ли страница
 $(document).ready(function () {
-<<<<<<< HEAD
-
 
 	Sales = [];
 	Events = [];
 	News = [];
-=======
-
-
-    Sales = [];
-    Events = [];
-    News = [];
->>>>>>> bd12bb2ffe4a1d1c550f639ea1a8b7336fec7e4e
 
 	getEvents();
 	getSales();
