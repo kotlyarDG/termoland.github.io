@@ -21,6 +21,7 @@ $(document).ready(function () {
 		$('#sales-popup-img').attr('src', sale.image);
 		$('#sales-popup-title').text(sale.name);
 		$('#sales-popup-description').text(sale.description);
+		$('#sales-popup-limits').text(sale.limits);
 		$('#sales-popup').addClass('open');
 
 		$('#sales-popup').click(function (e) {
