@@ -74,11 +74,11 @@
 		}
 		/* Стрелка вправо */
 		.slick-arrow.slick-next {
-			transform: rotate(180deg);
+			background: url("../images/system_img/Vector-shares.png") center / cover no-repeat;
 			right: 20px;
 			@media (min-width: $xs) {
 				&:hover {
-					transform: translate(5px, -5px) rotate(179deg);
+					transform: translate(5px, -5px) rotate(360deg);
 				}
 			}
 		}

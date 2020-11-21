@@ -3901,17 +3901,15 @@ svg rect {
 }
 
 .shares__slider .slick-arrow.slick-next {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  background: url("../images/system_img/Vector-shares.png") center/cover no-repeat;
   right: 20px;
 }
 
 @media (min-width: 768px) {
   .shares__slider .slick-arrow.slick-next:hover {
-    -webkit-transform: translate(5px, -5px) rotate(179deg);
-        -ms-transform: translate(5px, -5px) rotate(179deg);
-            transform: translate(5px, -5px) rotate(179deg);
+    -webkit-transform: translate(5px, -5px) rotate(360deg);
+        -ms-transform: translate(5px, -5px) rotate(360deg);
+            transform: translate(5px, -5px) rotate(360deg);
   }
 }
 
