@@ -4324,6 +4324,7 @@ svg rect {
   cursor: pointer;
   font-size: 20px;
   line-height: 24px;
+  color: #395a71;
 }
 
 @media (max-width: 1336px) {
@@ -4349,9 +4350,10 @@ svg rect {
   }
 }
 
-@media (min-width: 1336px) {
+@media (min-width: 1337px) {
   .item-news__text--big {
     overflow: hidden;
+    display: block;
     display: -webkit-box;
     -webkit-line-clamp: 11;
     -webkit-box-orient: vertical;

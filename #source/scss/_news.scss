@@ -197,6 +197,7 @@
 		cursor: pointer;
 		font-size: 20px;
 		line-height: 24px;
+		color: $blue;
 
 		@media (max-width: $lg) {
 			display: none;
@@ -217,8 +218,9 @@
 		display: none;
 
 		&--big {
-			@media (min-width: $lg) {
+			@media (min-width: 1337px) {
 				overflow: hidden;
+				display: block;
 				display: -webkit-box;
 				-webkit-line-clamp: 11;
 				-webkit-box-orient: vertical;

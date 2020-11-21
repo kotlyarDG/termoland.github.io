@@ -15,7 +15,6 @@ $(document).ready(function () {
 	getBlockById(3);
 	getBlockById(4);
 
-
 	function openSaleModal(sale) {
 		console.log("Open sale = ", sale);
 		$('#sales-popup-img').attr('src', sale.image);
