@@ -3918,6 +3918,7 @@ svg rect {
 .shares__img {
   display: block;
   padding: 0 15px;
+  cursor: pointer;
 }
 
 .shares__img img {
