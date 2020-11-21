@@ -372,7 +372,7 @@ $(document).ready(function () {
 			order_number: '',
 			description: message
 		},
-			function (order) { showSuccessfulPurchase(order) },
+			function (order) { sendEmail(message); showSuccessfulPurchase(order);  },
 			function (order) { showFailurefulPurchase(order) });
 	});
 
@@ -389,7 +389,7 @@ $(document).ready(function () {
 			order_number: '',
 			description: message
 		},
-			function (order) { showSuccessfulPurchase(order) },
+			function (order) { sendEmail(message); showSuccessfulPurchase(order) },
 			function (order) { showFailurefulPurchase(order) });
 	});
 
@@ -434,4 +434,22 @@ $(document).ready(function () {
 			$('.test__item-content_active').removeClass('test__item-content_active');
 		}
 	});
+
+
+	$('.test-email').click(function (e) {
+		e.preventDefault();
+		sendEmail("test messages !!!");
+	});
+
+	function sendEmail(text) {
+		$.ajax({
+			type: "POST",
+			url: "sendPhone.php",
+			data: {text: text},
+			success: function() {
+					$('.popup__block-ok').show();
+			} 
+		});
+	}
+
 });	
