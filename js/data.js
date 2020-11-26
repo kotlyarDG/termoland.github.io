@@ -9,6 +9,7 @@ $(document).ready(function () {
 	getSales();
 	getNews();
 
+	// getSteam();
 
 	getBlockById(1);
 	getBlockById(2);
@@ -278,6 +279,229 @@ $(document).ready(function () {
 			url: `https://termoland.herokuapp.com/v1/block/${id}`,
 			success: function (data) {
 				console.log(data)
+
+				Items = data;
+				// Tickets
+				if (id == 1) {
+
+					for (let item of Items['categories']) {
+						$('.ticket-main__items').append(
+							`
+							<div class="item-ticket__info">
+								<p class="item-ticket__name">${item['name']}</p>
+							</div>
+							`
+						);
+
+						for (let i of item['services']) {
+							$('.ticket-main__items').append(
+								`
+									<div class="content-ticket__item item-ticket">
+										<div class="item-ticket__info">
+											<p class="item-ticket__name item-ticket__title">${i['name']}</p>
+											<p class="item-ticket__text">${i['description']}</p>
+										</div>
+										<div class="item-ticket__body">
+											<p class="item-ticket__price"><span class="price">${i['price']}</span> ₽</p>
+											<p	class="item-ticket__btn btn item-ticket__btn-ticket">заказать</p>
+										</div>
+									</div>
+								`
+							);
+						}
+					}
+
+					$('.item-ticket__btn-ticket').click(function (e) {
+						$('.ticket--info').addClass('_active');
+						$('.ticket--main').removeClass('_active');
+						Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+						Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
+						e.preventDefault();
+					});
+				}
+
+				if (id == 2) {
+					itemsSpa = Items['categories']
+					for (let item of itemsSpa) {
+						$('.spa-main__items').append(
+							`
+							<div class="item-ticket__info">
+								<p class="item-ticket__name">${item['name']}</p>
+							</div>
+							`
+						);
+
+						for (let i of item['services']) {
+							$('.spa-main__items').append(
+								`
+									<div class="content-ticket__item item-ticket">
+										<div class="item-ticket__info">
+											<p class="item-ticket__name item-ticket__title">${i['name']}</p>
+											<p class="item-ticket__text">${i['description']}</p>
+										</div>
+										<div class="item-ticket__body">
+											<p class="item-ticket__price"><span class="price">${i['price']}</span> ₽</p>
+											<p	class="item-ticket__btn btn item-ticket__btn-spa" data-category="${i['category_id']}" data-master="${i['id']}">заказать</p>
+										</div>
+									</div>
+								`
+							);
+						}
+					}
+
+					$('.item-ticket__btn-spa').click(function (e) {
+						$('.option-spa').remove()
+						var idM = $(this).attr("data-master")
+						var idC = $(this).attr("data-category")
+						var masters = itemsSpa.find(x => x.id == idC).services.find(x => x.id == idM).masters
+						if (masters.length == 0) {
+							$('.spa-select').hide()
+							$('.spa-select__label').hide()
+						} else {
+							$('.spa-select').show()
+							$('.spa-select__label').show()
+							for (master of masters) {
+								$('.spa-select').append(
+									`
+										<option class="option-spa" value="${master['id']}">${master['name']}</option>
+									`
+								);
+							}
+						}
+
+						$('.spa--info').addClass('_active');
+						$('.spa--main').removeClass('_active');
+						Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+						Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
+						e.preventDefault();
+					});
+				}
+
+				if (id == 3) {
+					itemsSteam = Items['categories']
+					for (let item of itemsSteam) {
+						$('.steam-main__items').append(
+							`
+							<div class="item-ticket__info">
+								<p class="item-ticket__name">${item['name']}</p>
+							</div>
+							`
+						);
+
+						for (let i of item['services']) {
+							$('.steam-main__items').append(
+								`
+									<div class="content-ticket__item item-ticket">
+										<div class="item-ticket__info">
+											<p class="item-ticket__name item-ticket__title">${i['name']}</p>
+											<p class="item-ticket__text">${i['description']}</p>
+										</div>
+										<div class="item-ticket__body">
+											<p class="item-ticket__price"><span class="price">${i['price']}</span> ₽</p>
+											<p	class="item-ticket__btn btn item-ticket__btn-steam" data-category="${i['category_id']}" data-master="${i['id']}">заказать</p>
+										</div>
+									</div>
+								`
+							);
+						}
+					}
+					$('.item-ticket__btn-steam').click(function (e) {
+						$('.option-steam').remove()
+
+						var idM = $(this).attr("data-master")
+						var idC = $(this).attr("data-category")
+						var masters = itemsSteam.find(x => x.id == idC).services.find(x => x.id == idM).masters
+						if (masters.length == 0) {
+							$('.spa-select').hide()
+							$('.spa-select__label').hide()
+						} else {
+							$('.spa-select').show()
+							$('.spa-select__label').show()
+							for (master of masters) {
+								$('.steam-select').append(
+									`
+									<option class="option-steam" value="${master['id']}">${master['name']}</option>
+								`
+								);
+							}
+						}
+						$('.steam--info').addClass('_active');
+						$('.steam--main').removeClass('_active');
+						Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+						Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
+						e.preventDefault();
+					});
+				}
+
+				if (id == 4) {
+
+					for (let item of Items['categories']) {
+
+
+						for (let i of item['services']) {
+							$('.package-main__items').append(
+								`
+									<div class="content-ticket__item item-ticket">
+										<div class="item-ticket__info">
+											<p class="item-ticket__name item-ticket__title">${i['name']}</p>
+											<p class="item-ticket__text">${i['description']}</p>
+										</div>
+										<div class="item-ticket__body">
+											<p class="item-ticket__price"><span class="price">${i['price']}</span> ₽</p>
+											<p	class="item-ticket__btn btn item-ticket__btn-package">заказать</p>
+										</div>
+									</div>
+								`
+							);
+						}
+					}
+
+					$('.item-ticket__btn-package').click(function (e) {
+						$('.package--info').addClass('_active');
+						$('.package--main').removeClass('_active');
+						Sum = $(this).closest('.item-ticket__body').children('.item-ticket__price').children('.price').text()
+						Title = $(this).closest('.item-ticket').children('.item-ticket__info').children('.item-ticket__title').text()
+						e.preventDefault();
+					});
+				}
+
+				$('.form-ticket__btn__pay-max').click(function (e) {
+					e.preventDefault();
+					let fio = $("#fio").val();
+					let phone = $("#phone").val();
+					let date = $("#date").val();
+					let time = $("#time").val();
+					let master = $("#master option:selected").text();
+					console.log(master)
+					let sum = Sum;
+					let title = Title;
+					let message = `${title} ${fio} ${phone} ${date ? date : ''} ${time ? time : ''} ${master ? master : ''}`;
+					ipayCheckout({
+						amount: sum,
+						currency: 'RUB',
+						order_number: '',
+						description: message
+					},
+						function (order) { sendEmail(message); showSuccessfulPurchase(order); },
+						function (order) { showFailurefulPurchase(order) });
+				});
+
+				$('.form-ticket__btn__pay-min').click(function (e) {
+					e.preventDefault();
+					let fio = $("#fio").val();
+					let phone = $("#phone").val();
+					let sum = Sum;
+					let title = Title;
+					let message = `${title} ${fio} ${phone} `;
+					ipayCheckout({
+						amount: sum,
+						currency: 'RUB',
+						order_number: '',
+						description: message
+					},
+						function (order) { sendEmail(message); showSuccessfulPurchase(order) },
+						function (order) { showFailurefulPurchase(order) });
+				});
 			},
 			error: function (errMsg) {
 				console.log("Error: ", errMsg)
@@ -286,6 +510,10 @@ $(document).ready(function () {
 			dataType: "json",
 		});
 	}
+
+
+
+
 
 
 	function addOrder() {
