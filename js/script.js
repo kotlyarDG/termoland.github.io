@@ -279,7 +279,7 @@ $(document).ready(function () {
 			if (item.hasClass('services__item_not-active')) {
 				item.removeClass('services__item_not-active');
 				item.addClass('services__item_active');
-				$('.services__item').not($(this)).hide(350, function () {
+				$('.services__item').not(item).hide(350, function () {
 
 					setTimeout(function () {
 						item.next().show(350);
@@ -323,11 +323,66 @@ $(document).ready(function () {
 
 	});
 
+	$('#spa-link').click(function (e) {
+		$('body').removeClass('_lock')
+		$('.popup').removeClass('open')
+		var item = $('.services__item--spa');
+		if ($(window).width() > 990) {
+
+
+			if (item.hasClass('services__item_not-active')) {
+				item.removeClass('services__item_not-active');
+				item.addClass('services__item_active');
+				$('.services__item').not(item).hide(350, function () {
+
+					setTimeout(function () {
+						item.next().show(350);
+					}, 300);
+				});
+
+
+			}
+			else {
+				if (item.hasClass('services__item_active')) {
+					item.removeClass('services__item_active');
+					item.addClass('services__item_not-active');
+					item.next().hide(350, function () {
+						setTimeout(function () {
+							$('.services__item').not(item).show(350);
+						}, 300);
+					});
+
+					setTimeout(function () {
+						$('.content-ticket--info').removeClass('_active');
+						$('.content-ticket--main').addClass('_active');
+					}, 700);
+
+				}
+			}
+
+		}
+		else {
+			$('.test__item-content_active').not(item.next()).slideUp(350);
+			$('.test__item-content_active').not(item.next()).removeClass('test__item-content_active');
+			item.next().toggleClass('test__item-content_active');
+			item.next().slideToggle(350);
+			$('.content-ticket--info').removeClass('_active');
+			$('.content-ticket--main').addClass('_active');
+
+			setTimeout(function () {
+				$('.content-ticket--info').removeClass('_active');
+				$('.content-ticket--main').addClass('_active');
+			}, 500);
+		}
+	});
+
 	$('.content-ticket__btn-back--info-ticket').click(function (e) {
 		$('.ticket--info').removeClass('_active');
 		$('.ticket--main').addClass('_active');
 		e.preventDefault();
 	});
+
+
 
 	$('.content-ticket__btn-back--info-spa').click(function (e) {
 		$('.spa--info').removeClass('_active');
