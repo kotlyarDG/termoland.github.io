@@ -3573,7 +3573,7 @@ svg rect {
 
 .week__leaf-s {
   position: absolute;
-  bottom: -30%;
+  bottom: -20%;
   right: -10%;
   z-index: 5;
   max-width: 35vw;
